@@ -1,7 +1,7 @@
 /*
 Theme Name: fliggle
 Theme URI: http://blog.fligtar.com
-Description: fligtar's theme made from scratch
+Description: a new direction for fligtarded 1.0
 Version: 1.0
 Author: Justin Scott
 */
@@ -150,15 +150,11 @@ a.invisible:hover {
     /*text-shadow: 170px 0px 9px #2D79AB, 340px 0px 9px #30AB4A, 510px 0px 9px #913FAB;*/
     text-shadow: 2px 2px 0px #FFFFFF, 20px 20px 20px #2D79AB, -30px -15px 20px #30AB4A, 40px -30px 20px #913FAB;
     display: inline-block;
-    -moz-border-radius-bottomright: 6px;
-    -moz-border-radius-bottomleft: 6px;
-    -webkit-border-bottom-right-radius: 6px;
-    -webkit-border-bottom-left-radius: 6px;
     color: #333;
     border-bottom: none;
 }
 #header h1 a:hover {
-    color: #D0E7F5;
+    text-shadow: 170px 0px 9px #2D79AB, 340px 0px 9px #30AB4A, 510px 0px 9px #913FAB;
 }
 #header h2 {
     float: right;
@@ -201,6 +197,27 @@ a.invisible:hover {
 
 article {
     margin: 2em 0;
+    padding-left: 2em;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+/* purple */
+article:nth-of-type(3n) {
+    border-left: 5px solid rgba(145, 63, 171, 0.5);
+}
+article:nth-of-type(3n) .entry a {
+    color: #913FAB;
+}
+/* blue */
+article:nth-of-type(3n+1) {
+    border-left: 5px solid rgba(45, 121, 171, 0.5);
+}
+/* green */
+article:nth-of-type(3n+2) {
+    border-left: 5px solid rgba(48, 171, 74, 0.5);
+}
+article:nth-of-type(3n+2) .entry a {
+    color: #30AB4A;
 }
 
 article h1 {

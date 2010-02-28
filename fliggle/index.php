@@ -11,7 +11,7 @@
             </header>
             
 			<div class="entry">
-				<?php the_content('read the rest of this entry &raquo;'); ?>
+				<?php /*the_excerpt();*/ the_content('read the rest of this entry &raquo;'); ?>
 			</div>
 
 			<footer><?php comments_popup_link('no comments &#187;', '1 comment &#187;', '% comments &#187;', 'comments-link', 'comments closed'); ?></footer>
