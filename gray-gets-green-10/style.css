@@ -1,0 +1,469 @@
+/*
+	Theme Name: Gray Gets Green
+	Theme URI: http://www.mexico.vg
+	Description: Gray Theme With Green Text.
+	Version: 1.0
+	Author: Fred Banuelos
+	Author URI: http://www.mexico.vg
+.
+Released under the <a href="http://www.opensource.org/licenses/gpl-license.php">GPL</a>.
+.
+*/
+
+/************************************************
+*	if you Use the theme Please be nice :) and a link to http://www.mexico.vg its all i ask 							*
+************************************************/
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #242424;
+	color: #999999;
+	font-style:normal; font-variant:normal; font-weight:normal; line-height:15px; font-size:11px; font-family:Lucida Grande, sans-serif;
+}
+#wrap {
+	width: 800px;
+	overflow: hidden;
+	position:relative;
+	margin: 0px auto;
+    background: #2d2d2d;
+}
+#content {
+	width: 500px;
+	float: left;
+	display:inline;
+	text-align: justify;
+	padding: 10px;
+	margin: 8px;
+}
+#nav {
+	height: 49px;
+	width: 790px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#sidebar {
+	width: 220px;
+	float: right;
+	line-height: 1.5em;
+	display:inline;
+	margin: 8px 8px 8px 0px;
+	padding: 10px;
+	font-size:10px;
+}
+#pages h1{
+	margin:0px;
+	padding:0px;
+}
+#pages h1 a{
+	text-transform:uppercase;
+	text-decoration:none;
+	color:#999;
+	font: 18px Arial, Helvetica, sans-serif;
+	margin:0px;
+	padding:13px 0px 0px 10px;
+	letter-spacing: -1px;
+	float: left;
+}
+#pages h1 a:hover{
+	text-decoration:underline;
+}
+
+h3, h4 {
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+#logo {
+	background: url('images/top.png') no-repeat;
+	height: 200px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto
+	}
+#tagline {
+	height: 20px;
+	text-align: right;
+	margin-top: -30px;
+	margin-right: 25px;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+div#pages {
+	height: 40px;
+	margin: 0px auto 0px;
+	width:800px;
+    background: #2d2d2d;
+
+}
+
+div#pages ul {
+	padding: 10px 0px 0px;
+	white-space: nowrap;
+	list-style-type: none;
+	margin: 0px;	
+}
+div#pages ul li {
+	float:right;
+}
+
+div#pages ul li.current_page_item a  {
+	text-decoration: underline;
+}
+div#pages ul li a {
+	display: block;
+	text-decoration: none;
+    border-left: 1px dotted #333;
+	font-size:12px;
+	padding:5px 10px 5px 10px;
+	text-transform: uppercase;
+	color: #999999;
+}
+div#pages ul li a:hover {
+	color: #333333;
+}
+
+
+#footer {
+	clear: both;
+	text-align: center;
+	height: 40px;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #666;
+	width: 774px;
+	padding: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#footer p{
+	padding:10px;
+	margin:0px;
+}
+
+.entry{
+	padding-top: 0px;
+	padding-bottom: 30px;
+	padding-left: 0px;
+	/*font-size: 0.80em;*/
+	line-height: 1.5em;
+}
+.firstpost {
+	margin-bottom:15px
+}
+h3.entrytitle, h3 {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 5px;
+
+}
+h3.entrytitle a, h3.entrytitle a:visited, h3 a{
+	color: #9c3;
+	text-decoration:none;
+	border-style: none;
+	font-size: 14px;
+	font-weight: bolder;
+	text-transform: none;
+}
+h3.entrytitle a:hover, h3 a:hover{
+text-decoration:underline;}
+.entrymeta{
+	margin-top: 0;
+	font-size: 10px;
+	color: #666;
+	border-top:dotted 1px #666;
+	padding-top:4px;
+	margin-bottom: 8px;
+}
+.entrymeta a img{
+	border:none;
+}
+
+.entrybody a {
+	height: 16px;
+	margin-top: 0;
+	font-size: 10px;
+	color: #829917;
+}
+
+.entrybody img {
+	padding: 4px;
+	border: 1px solid #DFDFDF;
+}
+.entrybody ul {
+	margin-left: 20px;
+	padding-left:0px;
+	list-style-type: none;
+}
+.entrybody ol{
+	margin-left:20px;
+	padding-left:0px;
+}
+.entrybody ul li {
+	list-style:square;
+}
+.commentlink img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+h4, h3, h2, #commentblock h2 {
+	margin: 0;
+	padding: 0px;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color:#999;
+}
+h2{
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+a, a:visited{
+	color: #9c3;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+.entrybody p{
+margin:8px 0;
+padding:0;
+}
+.entrybody ul {
+	margin-left: 30px;
+	padding-left:0px;
+	list-style-type: none;
+}
+.entrybody ol{
+	margin-left:30px;
+	padding-left:0px;
+}
+.entrybody ul li {
+	list-style:square;
+}
+#sidebar h2 {
+	color: #999;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 8px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	border-bottom: 1px solid #ccc;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#sidebar ul {
+	list-style: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+#sidebar ul li {
+	display: inline;
+	margin:0;
+	padding:0
+}
+#sidebar li{
+	list-style: none;
+
+}
+
+#sidebar ul li a {
+	border-bottom: 1px dotted #666;
+	color: #9c3;
+	display: block;
+	text-decoration: none !important;
+	margin-left: 0px;
+	padding-top: 4px;
+	padding-right: 0px;
+	padding-bottom: 4px;
+	padding-left: 25px;
+	background-image: url('images/navbulle.gif');
+	background-repeat: no-repeat;
+	background-position: 10px 50%
+}
+
+
+#sidebar ul li a:hover{
+	color: #9c3;
+	background-color: #666;
+}
+
+
+
+#searchdiv {
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
+.comments-link {
+	background-image:url('.images/comments.gif');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left:16px
+}
+/************************************************
+*	Comments													*
+************************************************/
+#commentblock h2{
+	padding:2px;
+	margin-bottom:10px;
+	margin-top:30px;
+}
+#commentblock {
+	float:left;
+	padding-top: 0px;
+	padding-bottom: 20px;
+
+	text-align: left;	/*font-size: 0.8em;*/
+}
+
+ol#commentlist {
+	margin-top:0px;
+	padding: 5px;
+	margin-left: 0px;
+	list-style-type: none;
+}
+.commentdate {
+	font-size:0.8em;
+	padding-left:5px;
+}
+#commentlist li  p{
+	margin-bottom: 8px;
+	line-height: 20px;
+	padding:0;
+}
+
+.commentname {
+	margin: 0;
+	padding: 5px;
+}
+
+.commentinfo{
+clear:both;
+}
+
+.commenttext {
+	clear: both;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding: 10px;
+	width:450px;
+	background: #333333;
+}
+
+.commenttext-admin {
+	clear: both;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding: 10px;
+	width:450px;
+	background: #333333;
+}
+
+#commentsformheader{
+	padding-left:0px;
+}
+
+#commentsform{
+	margin-top:0;
+	text-align:center;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+#commentsform form{
+	text-align:left;
+	margin:0px;
+}
+
+#commentsform p{
+	margin:5px;
+}
+
+#commentsform form textarea{
+	width:99%;
+}
+p.comments_link  img{
+	margin: 0px;
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+blockquote{
+margin: 0 2em;
+border: 1px dashed #666;
+padding: 1em;
+}
+.adwrap,
+.adwrapwide,
+.adwrap-lu,
+.adwrapbutton {
+	border-left:0px solid #d5d7d0; border-right:0px solid #d5d7d0; border-top:1px solid #d5d7d0; border-bottom:1px solid #d5d7d0; background:#fff; margin-left:0; margin-right:0; margin-top:0; margin-bottom:1em; padding-left:0; padding-right:0; padding-top:4px; padding-bottom:4px
+}
+
+.adwrap object {
+	width:336px;
+	height:280px;
+}
+
+.adwrapwide iframe,
+.adwrapwide object {
+	width:468px;
+	height:65px;
+}
+
+.adwrap-lu {
+	margin:0 0 1em 1em;
+	width:180px;
+	float:right;
+}
+
+.adwrap-lu object {
+	width:180px;
+	height:90px;
+}
+
+.adwrapbutton iframe,
+.adwrapbutton object {
+	width:180px;
+	height:150px;
+}
+
+
+table{
+	margin:10px;
+}
+td, th{
+	padding:3px;
+	font-weight:normal;
+
+}
+
+/* fligtar.com custom */
+.flig_prettytable td {
+border-bottom: 1px dotted #666666;
+text-align: left;
+}
+.flig_prettytable_heading td {
+background-color: #333333;
+font-size: 110%;
+}
+.flig_prettytable_label {
+border-right: 1px dotted #666666;
+background-color: #333333;
+}
