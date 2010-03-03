@@ -879,6 +879,30 @@ article.index-highlight {
     margin-right: 0.5em;
 }
 
+.headshot-boxes div {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin: 0 1px;
+}
+.headshot-boxes .blue {
+    background-color: #91B7D0;
+    opacity: 0.2;
+}
+.headshot-boxes .green {
+    background-color: #92D09F;
+    opacity: 0.2;
+}
+.headshot-boxes .purple {
+    background-color: #C39AD0;
+    opacity: 0.2;
+}
+
+#footer.index-footer {
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 1em auto;
+}
 
 /* About Page */
 #post-16 header {

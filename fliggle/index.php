@@ -33,8 +33,21 @@ if (have_posts()):
 		</article>
 		
 		<aside id="index-sidebar">
-        h
-        </aside>
+		    <div class="headshot-boxes">
+    		    <div class="blue"></div>
+    		    <div><img src="<?php bloginfo('template_url'); ?>/images/headshot-sm.jpg" alt="Picture of Justin Scott" /></div>
+    		    <div class="green"></div>
+    		    <div class="purple"></div>
+		    </div>
+            <div class="about-me">
+                <p>Justin Scott is Add-ons Product Manager at Mozilla. He thinks chicken teriyaki is delicious and plays no musical instruments. <a href="<?php bloginfo('siteurl'); ?>/about-me/">read more</a></p>
+            </div>
+        
+            <ul>
+                <li class="subscribe"><a href="<?php bloginfo('rss2_url'); ?>">subscribe</a></li>
+                <li class="twitter"><a href="http://www.twitter.com/fligtar">follow me on Twitter</a></li>
+            </ul>
+            </aside>
 		
 		<section class="index-recent">
 		    <span class="flag"><?php next_posts_link('recent posts') ?></span>

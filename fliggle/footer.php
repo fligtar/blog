@@ -1,6 +1,12 @@
     </section> <!-- /#content -->
     
-    <footer id="footer">
+    <?php
+        /* Figure out if we're on the index page */
+        $on_index = (is_front_page() && !is_paged());
+    ?>
+    
+    <footer id="footer"<?php if ($on_index) { echo ' class="index-footer"'; } ?>>
+    <?php if (!$on_index): ?>
         <div>
             <section class="about">
                 <h3><a href="<?php bloginfo('siteurl'); ?>/about-me/" class="invisible">about the author</a></h3>
@@ -41,8 +47,9 @@
                 </div>
             </section>
         </div>
+        <?php endif; ?>
         <p class="copyright">Unless otherwise noted, this work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.<br />
-        powered by <a href="http://www.wordpress.org">WordPress</a> &middot; bacon photo by <a href="http://www.flickr.com/photos/shawnzam/31302636/">shawnzam</a></p>
+        powered by <a href="http://www.wordpress.org">WordPress</a> and rainbows</p>
     </footer>
     
     
