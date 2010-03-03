@@ -27,7 +27,7 @@
     <header id="header">
         <div>
         	<h1><a href="<?php echo get_option('home'); ?>/">fligtar</a></h1>
-            <h2>delightfully paranoid</h2>
+            <h2><a href="http://twitter.com/fligtar/status/7648477490">delightfully paranoid</a></h2>
         </div>
     </header>
     

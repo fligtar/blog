@@ -6,6 +6,13 @@ Version: 1.0
 Author: Justin Scott
 */
 
+/*
+COLORS!
+Blue: #2D79AB      Light Blue: #91B7D0
+Green: #30AB4A     Light Green: #92D09F
+Purple: #913FAB    Light Purple: #C39AD0
+Light Gray: #F5F5F5
+*/
 
 /* A font by Jos Buivenga (exljbris) -> www.exljbris.nl */
 @font-face {
@@ -109,12 +116,21 @@ a:hover,
     border-bottom: 1px solid #2D79AB;
 }
 
-article a {
+article a,
+.blue-links a,
+.green-links a,
+.purple-links a {
     text-decoration: underline;
     color: #2D79AB;
     border-bottom: none;
 }
-article a:hover {
+.green-links a {
+    color: #30AB4A;
+}
+article a:hover,
+.blue-links a:hover,
+.green-links a:hover,
+.purple-links a:hover {
     color: #999999;
     border-bottom: none;
 }
@@ -131,9 +147,12 @@ a.invisible:hover {
     text-decoration: none;
 }
 
+/* Header */
+
 #header {
     padding: 0.5em 0;
     margin: 2em 0;
+    background-color: #F5F5F5;
 }
 #header div {
     width: 900px;
@@ -150,19 +169,31 @@ a.invisible:hover {
     /*text-shadow: 170px 0px 9px #2D79AB, 340px 0px 9px #30AB4A, 510px 0px 9px #913FAB;*/
     text-shadow: 2px 2px 0px #FFFFFF, 20px 20px 20px #2D79AB, -30px -15px 20px #30AB4A, 40px -30px 20px #913FAB;
     display: inline-block;
-    color: #333;
+    color: #333333;
     border-bottom: none;
 }
 #header h1 a:hover {
-    text-shadow: 170px 0px 9px #2D79AB, 340px 0px 9px #30AB4A, 510px 0px 9px #913FAB;
+    text-shadow: 2px 2px 0px #FFFFFF, 20px 20px 20px #888888, -30px -15px 20px #888888, 40px -30px 20px #888888;
 }
 #header h2 {
     float: right;
+    margin-top: 0.85em;
+}
+#header h2 a {
+    display: inline-block;
     font-family: georgia;
     font-style: italic;
-    color: #FFFFFF;
+    color: #666666;
+    text-decoration: none;
+    border: none;
+    font-size: 1em;
+    padding: 0.8em;
+    background-color: #FFFFFF;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
 }
 
+/* Content */
 #content {
     padding: 0 1em;
     width: 900px;
@@ -195,26 +226,25 @@ a.invisible:hover {
     margin: -2em 0 5em;
 }
 
+/* posts */
 article {
     margin: 2em 0;
-    padding-left: 2em;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
+    padding: 1em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    background-color: #F5F5F5;
+    border-left: 5px solid #91B7D0;
 }
 /* purple */
 article:nth-of-type(3n) {
-    border-left: 5px solid rgba(145, 63, 171, 0.5);
+    border-left: 5px solid #C39AD0;
 }
 article:nth-of-type(3n) .entry a {
     color: #913FAB;
 }
-/* blue */
-article:nth-of-type(3n+1) {
-    border-left: 5px solid rgba(45, 121, 171, 0.5);
-}
 /* green */
 article:nth-of-type(3n+2) {
-    border-left: 5px solid rgba(48, 171, 74, 0.5);
+    border-left: 5px solid #92D09F;
 }
 article:nth-of-type(3n+2) .entry a {
     color: #30AB4A;
@@ -286,23 +316,35 @@ nav li.right {
     height: 2em;
 }
 .page-nav a,
-.more-link {
-    font-family: "Diavlo", georgia;
+a.more-link,
+.more-link a {
     display: inline-block;
     background: #FFFFFF;
-    background: rgba(255, 255, 255, 0.5);
     text-decoration: none;
-    padding: 0.5em 1em;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border: none;
+    padding: 0.25em 0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    float: right;
+    border: 1px solid #FFFFFF;
+    color: #2D79AB;
+    font-family: "Diavlo", georgia, serif;
+}
+.green-links a.more-link,
+.green-links.more-link a {
+    color: #30AB4A;
 }
 .page-nav a:hover,
-.more-link:hover {
-    background: #D0E7F5;
-    background: rgba(208, 231, 245, 0.5);
+a.more-link:hover,
+.more-link a:hover {
+    border: 1px solid #91B7D0;
     color: #2D79AB;
 }
+.green-links a.more-link:hover,
+.green-links.more-link a:hover {
+    border: 1px solid #92D09F;
+    color: #30AB4A;
+}
+
 .post-nav {
     font-size: 0.85em;
     margin: -1em 0 5em 0;
@@ -327,18 +369,18 @@ nav li.right {
     cursor: pointer;
 }
 
+/* Footer */
 #footer {
     width: 900px;
     margin: 1em auto 0;
     clear: both;
     padding: 1em 1em;
     color: #666666;
-    background: #FFFFFF;
-    background: rgba(255, 255, 255, 0.5);
-    -moz-border-radius-topleft: 20px;
-    -moz-border-radius-topright: 20px;
-    -webkit-border-top-left-radius: 20px;
-    -webkit-border-top-right-radius: 20px;
+    background-color: #F5F5F5;
+    -moz-border-radius-topleft: 0.5em;
+    -moz-border-radius-topright: 0.5em;
+    -webkit-border-top-left-radius: 0.5em;
+    -webkit-border-top-right-radius: 0.5em;
 }
 #footer div {
     display: table-row;
@@ -769,6 +811,72 @@ article .entry dl.pretty dd {
 
 .rssonly {
     display: none;
+}
+
+/* Index only - at the bottom to overwrite generic post styling */
+article.index-highlight {
+    display: inline-block;
+    width: 600px;
+    margin: 0 0 1em;
+    padding-top: 0;
+    border-left: 5px solid #91B7D0;
+}
+.flag {
+    background-color: #91B7D0;
+    margin: 0 0 1em -1.11em;
+    display: inline-block;
+    -moz-border-radius-bottomright: 0.5em;
+    -webkit-border-bottom-left-radius: 0.5em;
+    font-family: "Diavlo", georgia,serif;
+    padding: 0.25em 0.5em 0.25em 0.25em;
+    font-style: italic;
+    font-size: 0.85em;
+}
+.flag a,
+.flag a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    border: none;
+}
+
+#index-sidebar {
+    display: inline-block;
+    background-color: #F5F5F5;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0 0 1em 1em;
+    width: 226px;
+    vertical-align: top;
+}
+
+.index-recent {
+    display: inline-block;
+    background-color: #F5F5F5;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    padding: 0 1em 1em;
+    border-left: 5px solid #92D09F;
+}
+.index-recent .flag {
+    background-color: #92D09F;
+}
+.index-recent dt {
+    font-family: "Diavlo", georgia;
+    vertical-align: middle;
+}
+.index-recent dd {
+    margin: 0.5em 0 1em 1em;
+    font-size: 0.9em;
+}
+.index-recent time {
+    display: inline-block;
+    -moz-border-radius: 0.5em;
+    font-family: georgia, serif;
+    font-style: italic;
+    color: #66666;
+    font-size: 0.85em;
+    margin-right: 0.5em;
 }
 
 
