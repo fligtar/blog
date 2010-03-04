@@ -33,19 +33,19 @@ if (have_posts()):
 		</article>
 		
 		<aside id="index-sidebar">
-		    <div class="headshot-boxes">
-    		    <div class="blue"></div>
-    		    <div><img src="<?php bloginfo('template_url'); ?>/images/headshot-sm.jpg" alt="Picture of Justin Scott" /></div>
-    		    <div class="green"></div>
-    		    <div class="purple"></div>
-		    </div>
+		    <div class="headshot">
+		        <img src="<?php bloginfo('template_url'); ?>/images/headshot-annotated.jpg" alt="Picture of Justin Scott" />
+	        </div>
+		    
             <div class="about-me">
-                <p>Justin Scott is Add-ons Product Manager at Mozilla. He thinks chicken teriyaki is delicious and plays no musical instruments. <a href="<?php bloginfo('siteurl'); ?>/about-me/">read more</a></p>
+                <p class="intro">Hi, I'm <strong>Justin Scott</strong>, and I work on <a href="https://addons.mozilla.org">add-ons</a> at <a href="http://www.mozilla.com">Mozilla</a>.</p>
+                
+                <p>I opened my first IHOP franchise at age 12, rode a bucking Giant Seahorse for 7 seconds, often go by the pseudonym <em>Gaston du Circus</em>, and compulsively lie in mini-bios. <a href="<?php bloginfo('siteurl'); ?>/about-me/">read more</a></p>
             </div>
         
             <ul>
                 <li class="subscribe"><a href="<?php bloginfo('rss2_url'); ?>">subscribe</a></li>
-                <li class="twitter"><a href="http://www.twitter.com/fligtar">follow me on Twitter</a></li>
+                <li class="twitter"><a href="http://www.twitter.com/fligtar">my Twitter follower count seems inadequate</a></li>
             </ul>
             </aside>
 		
