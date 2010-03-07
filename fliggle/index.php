@@ -32,26 +32,28 @@ if (have_posts()):
 			</div>
 		</article>
 		
-		<aside id="index-sidebar">
+		<aside id="index-sidebar" class="rounded-box">
 		    <div class="headshot">
 		        <img src="<?php bloginfo('template_url'); ?>/images/headshot-annotated.jpg" alt="Picture of Justin Scott" />
 	        </div>
 		    
             <div class="about-me">
-                <p class="intro">Hi, I'm <strong>Justin Scott</strong>, and I work on <a href="https://addons.mozilla.org">add-ons</a> at <a href="http://www.mozilla.com">Mozilla</a>.</p>
+                <p class="intro">I'm <strong>Justin Scott</strong> and I work on <a href="https://addons.mozilla.org">add-ons</a> at <a href="http://www.mozilla.com">Mozilla</a>.</p>
                 
-                <p>I opened my first IHOP franchise at age 12, rode a bucking Giant Seahorse for 7 seconds, often go by the pseudonym <em>Gaston du Circus</em>, and compulsively lie in mini-bios. <a href="<?php bloginfo('siteurl'); ?>/about-me/">read more</a></p>
+                <p class="details">I opened my first IHOP franchise at age 12, rode a bucking Giant Seahorse for 7.6 seconds, often go by the pseudonym <em>Gaston du Circus</em>, and compulsively lie in mini-bios.</p>
+                
+                <p class="more"><a href="<?php bloginfo('siteurl'); ?>/about-me/">more about me</a></p>
             </div>
         
-            <ul>
+            <ul class="links">
                 <li class="subscribe"><a href="<?php bloginfo('rss2_url'); ?>">subscribe</a></li>
                 <li class="twitter"><a href="http://www.twitter.com/fligtar">my Twitter follower count seems inadequate</a></li>
             </ul>
-            </aside>
+        </aside>
 		
-		<section class="index-recent">
+		<section id="index-recent" class="rounded-box green-box">
 		    <span class="flag"><?php next_posts_link('recent posts') ?></span>
-		    <dl class="green-links">
+		    <dl>
 
 <?php else: ?>
     <dt><time datetime="<?php the_time('Y-m-d\TH:i:sP') ?>" pubdate><?php the_time('M. j') ?></time> <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></dt>
@@ -62,7 +64,34 @@ if (have_posts()):
 ?>
         </dl>
         
-        <p class="green-links more-link"><?php next_posts_link('more recent posts &raquo;') ?></p>
+        <p class="more-link"><?php next_posts_link('more recent posts &raquo;') ?></p>
+    </section>
+    
+    <section id="index-all" class="rounded-box purple-box">
+        <span class="flag"><a>all posts</a></span>
+        
+        <div>
+            <div class="categories">
+                <h3>categories</h3>
+                <ul>
+                <?php wp_list_categories('orderby=name&show_count=true&title_li=&exclude=1'); ?>
+                </ul>
+            </div>
+        
+            <div class="tags">
+                <h3>tags</h3>
+                <?php wp_tag_cloud(array('unit' => 'em', 'smallest' => '0.5', 'largest' => '1.5', 'number' => 40)); ?>
+            </div>
+        </div>
+        
+        <div class="archives">
+            <h3>archives &amp; search</h3>
+            <select onchange="window.location.href = this.value;">
+            <?php wp_get_archives(array('type' => 'monthly', 'format' => 'option', 'show_post_count' => true)); ?>
+            </select>
+            
+            <?php get_search_form(); ?>
+        </div>
     </section>
 
 <?php else : ?>
