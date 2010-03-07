@@ -2,7 +2,7 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+	<article <?php post_class('single') ?> id="post-<?php the_ID(); ?>">
         <header>
     	    <h1><?php the_title(); ?></h1>
     	    <time datetime="<?php the_time('Y-m-d\TH:i:sP') ?>" pubdate><?php strtolower(the_time('F jS, Y')) ?></time>

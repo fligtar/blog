@@ -1,12 +1,12 @@
     </section> <!-- /#content -->
     
     <?php
-        /* Figure out if we're on the index page */
-        $on_index = (is_front_page() && !is_paged());
+        /* Figure out if we're on the index page or about page*/
+        $big_footer = (is_front_page() && is_paged()) && !is_single('16');
     ?>
     
-    <footer id="footer"<?php if ($on_index) { echo ' class="index-footer"'; } ?>>
-    <?php if (!$on_index): ?>
+    <footer id="footer"<?php if (!$big_footer) { echo ' class="small-footer"'; } ?>>
+    <?php if ($big_footer): ?>
         <div>
             <section class="about">
                 <h3><a href="<?php bloginfo('siteurl'); ?>/about-me/" class="invisible">about the author</a></h3>

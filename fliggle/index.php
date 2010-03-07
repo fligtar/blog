@@ -33,16 +33,12 @@ if (have_posts()):
 		</article>
 		
 		<aside id="index-sidebar" class="rounded-box">
-		    <div class="headshot">
-		        <img src="<?php bloginfo('template_url'); ?>/images/headshot-annotated.jpg" alt="Picture of Justin Scott" />
-	        </div>
-		    
             <div class="about-me">
-                <p class="intro">I'm <strong>Justin Scott</strong> and I work on <a href="https://addons.mozilla.org">add-ons</a> at <a href="http://www.mozilla.com">Mozilla</a>.</p>
+                <p class="intro"><img src="<?php bloginfo('template_url'); ?>/images/headshot-annotated.jpg" alt="Picture of Justin Scott" />I'm <strong>Justin Scott</strong> and I work on <a href="https://addons.mozilla.org" class="subtle">add-ons</a> at <a href="http://www.mozilla.com" class="subtle">Mozilla</a>.</p>
                 
-                <p class="details">I opened my first IHOP franchise at age 12, rode a bucking Giant Seahorse for 7.6 seconds, often go by the pseudonym <em>Gaston du Circus</em>, and compulsively lie in mini-bios.</p>
+                <p class="details">I also opened my first IHOP franchise at age 12, rode a bucking Giant Seahorse for 7.6 seconds, often go by the pseudonym <em>Gaston du Circus</em>, and compulsively lie in mini-bios.</p>
                 
-                <p class="more"><a href="<?php bloginfo('siteurl'); ?>/about-me/">more about me</a></p>
+                <p class="more"><a href="<?php bloginfo('siteurl'); ?>/about-me/">more about me &raquo;</a></p>
             </div>
         
             <ul class="links">
