@@ -1,0 +1,1043 @@
+/*
+Theme Name: fligdelity
+Theme URI: http://blog.fligtar.com
+Description: a new direction for fligtarded 1.0
+Version: 1.0
+Author: Justin Scott
+*/
+
+/*
+COLORS!
+Blue: #2D79AB      Light Blue: #91B7D0
+Green: #30AB4A     Light Green: #92D09F
+Purple: #913FAB    Light Purple: #C39AD0
+Light Gray: #F5F5F5
+*/
+
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.nl */
+@font-face {
+    font-family: "Diavlo";
+    src: url(images/Diavlo_BLACK_II_37.otf);
+    font-weight: bolder;
+}
+@font-face {
+    font-family: "Diavlo";
+    src: url(images/Diavlo_MEDIUM_II_37.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Diavlo";
+    src: url(images/Diavlo_BOOK_II_37.otf);
+    font-weight: lighter;
+}
+@font-face {
+    font-family: "Diavlo";
+    src: url(images/Diavlo_BOLD_II_37.otf);
+    font-weight: bold;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+	
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/* End reset stylesheet */
+
+/* HTML 5 */
+aside, nav, section, header, footer, time, article {
+    display: block;
+}
+
+
+body {
+	background: #FFFFFF;
+    margin: 0 auto;
+	padding: 0;
+	font-family: helvetica;
+	font-size: 1em;
+	color: #333333;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a,
+.chrome a {
+    color: #666666;
+    text-decoration: none;
+    border-bottom: 1px dotted #2D79AB;
+}
+a:hover,
+.chrome a:hover {
+    color: #2D79AB;
+    border-bottom: 1px solid #2D79AB;
+}
+
+article a,
+.blue-box a,
+.green-box a,
+.purple-box a {
+    text-decoration: underline;
+    color: #2D79AB;
+    border-bottom: none;
+}
+.green-box a {
+    color: #30AB4A;
+}
+.purple-box a {
+    color: #913FAB;
+}
+article a:visited,
+.blue-box a:visited {
+    color: #20577A;
+}
+.green-box a:visited {
+    color: #227A35;
+}
+.purple-box a:visited {
+    color: #682D7A;
+}
+article a:hover,
+.blue-box a:hover,
+.green-box a:hover,
+.purple-box a:hover {
+    color: #999999;
+    border-bottom: none;
+}
+
+a.subtle,
+a.subtle:visited {
+    color: #333333;
+}
+a.subtle:hover {
+    color: #2D79AB;
+}
+a.invisible,
+a.invisible:hover {
+    border: none;
+    text-decoration: none;
+}
+
+/* Common boxes and flags */
+.rounded-box {
+    display: inline-block;
+    background-color: #F5F5F5;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    vertical-align: top;
+}
+
+.pretty-button,
+#searchform input[type="submit"] {
+    background: #222222 url(images/button-gradient.png) repeat-x; 
+    display: inline-block; 
+    padding: 5px 10px 6px; 
+    color: #FFFFFF; 
+    text-decoration: none;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+.pretty-button:hover,
+#searchform input[type="submit"]:hover {
+    background-color: #111111;
+    color: #FFFFFF;
+}
+.pretty-button:active,
+#searchform input[type="submit"]:active {
+    top: 1px;
+}
+#searchform input[type="submit"] {
+    background-color: #913FAB;
+    font-size: 0.8em;
+    padding: 2px 7px 3px;
+}
+#searchform input[type="submit"]:hover {
+    background-color: #682D7A;
+}
+
+/* Header */
+
+#header {
+    margin-top: 1em;
+    background-color: #EEEEEE;
+    border-top: 10px dashed #FFFFFF;
+    border-bottom: 10px dashed #FFFFFF;
+}
+#header div {
+    width: 900px;
+    margin: 0 auto;
+}
+#header h1 {
+    display: inline-block;
+    background: #2D79AB;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #91B7D0), color-stop(1, #2D79AB));
+    background: -moz-linear-gradient(left top -90deg, #91B7D0 0%, #2D79AB 100%) repeat scroll 0 0 transparent;
+    -moz-border-radius-bottomleft: 3em;
+    -moz-border-radius-bottomright: 3em;
+    -webkit-border-bottom-left-radius: 3em;
+    -webkit-border-bottom-right-radius: 3em;
+    margin: -2.5em 0 -1em;
+    padding: 3em 1em 0.5em;
+    -moz-box-shadow: 2px 2px 5px #000000;
+    -webkit-box-shadow: 2px 2px 5px #000000;
+}
+#header h1 a {
+    font-size: 4.5em;
+    font-weight: bolder;
+    text-decoration: none;
+    font-family: "Diavlo", georgia;
+    display: inline-block;
+    color: #F5F5F5;
+    border-bottom: none;
+    text-shadow: 2px 2px 0 #333333;
+    border-bottom: 5px solid #91B7D0;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+}
+
+#header h2 {
+    float: right;
+    margin-top: 1.6em;
+}
+#header h2 a {
+    display: inline-block;
+    font-family: "Diavlo", georgia;
+    color: #333333;
+    text-decoration: none;
+    border: none;
+    font-size: 1.8em;
+}
+#header h2 a .d {
+    font-style: italic;
+    color: #999999;
+}
+#header h2 a .p {
+    font-weight: bold;
+    color: #666666;
+}
+
+/* Content */
+#content {
+    width: 900px;
+    margin: 0 auto;
+}
+#content h1.pagetitle {
+    font-family: "Diavlo", georgia;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1em;
+}
+#content h1.error {
+    font-family: "Diavlo", georgia;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 3em 0 1em;
+}
+#content h2.error {
+    font-family: "Diavlo", georgia;
+    font-size: 1.1em;
+    text-align: center;
+    margin: 0 0 3em;
+}
+
+#searchform {
+    text-align: center;
+    margin: -2em 0 5em;
+}
+
+/* posts */
+article {
+    margin: 2em 0;
+    padding: 1em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    background-color: #F5F5F5;
+}
+
+article h1 {
+    font-family: "Diavlo",georgia;
+    color: #333333;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+article h1 a,
+article h1 a:visited {
+    text-decoration: none;
+    color: #333333;
+}
+article h1 a:hover {
+    color: #2D79AB;
+}
+/* purple */
+article:nth-of-type(3n) h1 a:hover {
+    color: #913FAB;
+}
+/* green */
+article:nth-of-type(3n+2) h1 a:hover {
+    color: #30AB4A;
+}
+
+article time {
+    font-size: 0.8em;
+    font-family: georgia;
+    font-style: italic;
+    color: #666666;
+}
+article .entry {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+article footer {
+    text-align: right;
+    border-top: 1px solid #CCCCCC;
+    padding: 0.2em 0;
+    clear: both;
+    font-size: 0.9em;
+    color: #666666;
+    line-height: 1.3;
+}
+
+article footer .comments-link {
+    font-family: "Diavlo", georgia;
+    text-decoration: none;
+    color: #666666;
+}
+article footer a:hover {
+    color: #2D79AB;
+}
+article footer .footer-meta {
+    font-size: 0.9em;
+}
+article footer .footer-meta li.rejected {
+    color: #333333;
+    font-size: 1.1em;
+}
+article footer .footer-meta li span {
+    font-family: georgia;
+    font-style: italic;
+    color: #888888;
+}
+
+nav li.left {
+    float: left;
+}
+nav li.right {
+    float: right;
+}
+.page-nav {
+    height: 2em;
+}
+.page-nav a,
+a.more-link,
+.more-link a {
+    display: inline-block;
+    background: #FFFFFF;
+    text-decoration: none;
+    padding: 0.25em 0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    float: right;
+    border: 1px solid #FFFFFF;
+    color: #2D79AB;
+    font-family: "Diavlo", georgia, serif;
+}
+.green-box a.more-link,
+.green-box .more-link a {
+    color: #30AB4A;
+}
+.page-nav a:hover,
+a.more-link:hover,
+.more-link a:hover {
+    border: 1px solid #91B7D0;
+    color: #2D79AB;
+}
+.green-box a.more-link:hover,
+.green-box .more-link a:hover {
+    border: 1px solid #92D09F;
+    color: #30AB4A;
+}
+
+.post-nav {
+    font-size: 0.85em;
+    margin: -1em 0 5em 0;
+}
+.post-nav span {
+    font-family: georgia;
+    font-style: italic;
+}
+
+/* Footer */
+#footer {
+    width: 870px;
+    margin: 1em auto 0;
+    clear: both;
+    padding: 15px;
+    color: #666666;
+    background-color: #F5F5F5;
+    -moz-border-radius-topleft: 0.5em;
+    -moz-border-radius-topright: 0.5em;
+    -webkit-border-top-left-radius: 0.5em;
+    -webkit-border-top-right-radius: 0.5em;
+}
+#footer div {
+    display: table-row;
+}
+#footer section {
+    display: table-cell;
+    width: 33%;
+    vertical-align: top;
+    font-size: 0.8em;
+    border-left: 1px solid #DDDDDD;
+    padding: 0 1em;
+    /* these hacks are for IE6 and 7, which don't support display: table-cell */
+    *float: left;
+    *display: block;
+    *width: 30%;
+}
+#footer section:first-child {
+    border-left: none;
+}
+#footer ul {
+    margin-left: 1.5em;
+}
+#footer li {
+    margin-top: 0.1em;
+    line-height: 1.3;
+    list-style: disc;
+}
+#footer h3 {
+    font-family: "Diavlo", georgia;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#footer .about-me img {
+    -moz-box-shadow: #666666 1px 1px 5px;
+    float: left;
+}
+#footer .about-me p {
+    margin-left: 60px;
+}
+#footer .about ul {
+    margin: 0;
+}
+#footer .about h3 {
+    margin-bottom: 0.3em;
+}
+#footer .subscribe,
+#footer .twitter {
+    list-style: none;
+    margin: 1em 0.5em;
+    padding: 2px 2px 2px 20px;
+    display: inline-block;
+}
+#footer .subscribe {
+    background: url(images/feedicon.png) 0% 50% no-repeat;
+}
+#footer .twitter {
+    background: url(images/twitter.png) 0% 50% no-repeat;
+}
+#footer #tagcats h3 {
+    font-weight: normal;
+}
+#footer #tags {
+    display: none;
+    line-height: 1.3;
+}
+#footer #categories-link {
+    font-weight: bold;
+}
+#footer #tags-link {
+    border-bottom: 1px dotted #CCC;
+}
+#footer #tagcats.show-tags #tags {
+    display: block;
+}
+#footer #tagcats.show-tags #tags-link {
+    font-weight: bold;
+    border: none;
+}
+#footer #tagcats.show-tags #categories-link {
+    font-weight: normal;
+    border-bottom: 1px dotted #CCC;
+}
+#footer #tagcats.show-tags #categories {
+    display: none;
+}
+#footer .copyright {
+    *clear: left;
+    font-family: georgia;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.75em;
+    margin-top: 2em;
+    line-height: 1.5;
+}
+
+/* Comments */
+#comments {
+    clear: both;
+}
+#comments h2,
+#comments h3 {
+    font-family: "Diavlo", georgia;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+#comments h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+#comments .auto-disabled {
+    margin: 3em 0;
+}
+#comments article {
+    background: #D0E7F5;
+    background: rgba(208, 231, 245, 0.7);
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    padding: 1em;
+    margin: 0.5em 0;
+    border: 1px solid #FFF;
+}
+#comments .bypostauthor {
+    background: #D3F8C0;
+    background: rgba(211, 248, 192, 0.7);
+}
+#comments .pingback {
+    background: #CCCCCC;
+    background: rgba(204, 204, 204, 0.7);
+}
+#comments .awaiting {
+    float: right;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: italic;
+}
+#comments .metadata {
+    display: block;
+}
+#comments time {
+    display: inline;
+}
+#comments .metadata a {
+    font-size: 0.8em;
+}
+#comments .anchor {
+    text-decoration: none;
+}
+#comments .avatar {
+    float: left;
+    margin-right: 0.5em;
+}
+#comments .entry {
+    clear: both;
+}
+#comments .entry p {
+    margin: 1em 0 0 0;
+}
+#pings {
+    margin-top: 1em;
+}
+#comments .depth-2 {
+    margin-left: 2em;
+}
+#comments .depth-3 {
+    margin-left: 4em;
+}
+#comments .depth-4 {
+    margin-left: 6em;
+}
+
+#comments .depth-5 {
+    margin-left: 8em;
+}
+
+#comments .depth-6 {
+    margin-left: 10em;
+}
+
+
+/* Reply */
+#respond {
+    background-color: #FFFFFF;
+    border: 2px solid #D0E7F5;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    padding: 0.5em;
+}
+#respond .left,
+#respond .right {
+    display: inline-block;
+    vertical-align: top;
+}
+#respond .left {
+    min-width: 20em;
+}
+#respond .clear {
+    margin-top: 0.5em;
+}
+#respond .cancel-reply {
+    font-size: 0.8em;
+    font-weight: normal;
+    font-family: helvetica;
+    margin-left: 2em;
+}
+#respond dt {
+    margin: 0.5em 0 0.2em 0;
+    font-size: 0.9em;
+}
+#respond dt span,
+#respond .info {
+    color: #666666;
+    font-size: 0.8em;
+    font-style: italic;
+}
+#respond .required {
+    color: #996666;
+}
+#respond input,
+#respond textarea {
+    font-size: 1em;
+    font-family: helvetica;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border: 1px solid #999;
+    color: #2D79AB;
+}
+#respond input:focus,
+#respond textarea:focus {
+    -moz-box-shadow: 0px 0px 15px #D0E7F5;
+    -webkit-box-shadow: 0px 0px 15px #D0E7F5;
+}
+#respond .subscribe-to-comments input {
+    border: none;
+}
+#respond .subscribe-to-comments {
+    font-size: 0.9em;
+}
+#respond textarea {
+    width: 40em;
+    height: 5em;
+}
+#respond #submit {
+    background-color: #D0E7F5;
+    border: 2px solid #D0E7F5;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    color: #333333;
+    font-family: "Diavlo", georgia;
+    font-weight: bold;
+    margin: 0.5em 0;
+    padding: 0.2em 0.5em 0.1em;
+    cursor: pointer;
+}
+
+/* Post content styles */
+.center {
+    text-align: center;
+}
+
+article .entry p {
+    margin: 1em 0;
+}
+.nomargin,
+article .entry p.nomargin {
+    margin: 0;
+}
+article .entry em {
+    font-style: italic;
+}
+article .entry ul,
+article .entry ol {
+    margin-left: 2em;
+}
+article .entry ul li {
+    list-style: disc;
+}
+article .entry ol li {
+    list-style: decimal;
+}
+article .entry img {
+    -moz-box-shadow: 2px 2px 6px #999999;
+    -webkit-box-shadow: 2px 2px 6px #999999;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    padding: 0.5em;
+    background: #FFFFFF;
+    margin: 0.5em;
+}
+article .entry a:hover img {
+    -moz-box-shadow: 2px 2px 6px #2D79AB;
+    -webkit-box-shadow: 2px 2px 6px #2D79AB;
+}
+article .entry img.plain,
+article .entry img.wp-smiley,
+article .entry a img.plain,
+article .entry a:hover img.plain {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-border-radius: none;
+    -webkit-border-radius: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+article .entry .picturebox p {
+    margin: 0;
+}
+article .entry .picturebox cite {
+    text-align: center;
+    font-size: 0.85em;
+    font-style: italic;
+    display: block;
+}
+article .entry h2 {
+    font-family: "Diavlo", georgia;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+article .entry h3,
+article .entry h4,
+article .entry .important {
+    font-family: "Diavlo", georgia;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+article .entry tt,
+article .entry code,
+article .entry pre {
+    font-family: monospace;
+    white-space: pre;
+}
+article .entry blockquote {
+    border-left: 5px solid #CCCCCC;
+    padding-left: 1em;
+    margin-left: 1em;
+}
+article .entry blockquote.quote:before {
+    display: block;
+    float: left;
+    margin-left: -0.5em;
+    margin-top: .3em;
+    line-height: 0;
+    height: 0;
+    width: 0;
+    color: #CCCCCC;
+    font-family: georgia,serif;
+    font-size: 400%;
+    content: '\201C';
+}
+article .entry blockquote.quote {
+    border: none;
+    font-style: italic;
+    font-family: georgia;
+    color: #666666;
+    margin: 1em;
+}
+article .entry blockquote.quote cite {
+    display: block;
+    font-family: helvetica;
+    font-style: normal;
+    font-size: 0.85em;
+    text-align: right;
+    margin-top: 0.5em;
+}
+
+article .entry th {
+    font-family: "Diavlo", georgia;
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+article .entry th:first-child {
+    border-left: none;
+}
+article .entry tfoot th {
+    font-weight: normal;
+    font-size: 0.85em;
+    font-family: inherit;
+    font-style: italic;
+    border: none;
+}
+article .entry td {
+    padding: 2px;
+}
+article .entry .noborders th {
+    border-left: none;
+}
+article .entry .bottomsolid {
+    border-bottom: 1px solid #CCCCCC;
+}
+article .entry .bottomdotted {
+    border-bottom: 1px dotted #CCCCCC;
+}
+article .entry .rightdashed {
+    border-right: 1px dashed #CCCCCC;
+}
+article .entry th.leftdashed {
+    border-left: 1px dashed #CCCCCC;
+}
+article .entry th.noborders {
+    border: none;
+}
+
+article .entry dl.pretty {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1em;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+article .entry dl.pretty dt {
+    margin-top: 1em;
+    font-family: "Diavlo", georgia;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+article .entry dl.pretty dt:first-child {
+    margin-top: 0;
+}
+article .entry dl.pretty dd {
+    margin: 0.5em 0 0 1em;
+}
+
+
+.rssonly {
+    display: none;
+}
+
+/* Index only - at the bottom to overwrite generic post styling */
+article.index-highlight {
+    display: inline-block;
+    width: 600px;
+    margin: 0 0 1em;
+    padding-top: 0;
+    border-left: 5px solid #91B7D0;
+}
+
+#index-recent {
+    margin-right: 1em;
+    width: 400px;
+}
+#index-recent dt {
+    font-family: "Diavlo", georgia;
+    vertical-align: middle;
+}
+#index-recent dd {
+    margin: 0.5em 0 1em 1em;
+    font-size: 0.9em;
+}
+#index-recent time {
+    display: inline-block;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    font-family: georgia, serif;
+    font-style: italic;
+    color: #66666;
+    font-size: 0.85em;
+    margin-right: 0.5em;
+}
+
+#index-all {
+    width: 400px;
+    font-size: 0.9em;
+}
+#index-all h3 {
+    font-family: "Diavlo", georgia, serif;
+    font-weight: bold;
+    text-align: left;
+}
+#index-all .categories {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+#index-all .categories ul {
+    margin-left: 1.5em;
+}
+#index-all .categories li {
+    margin-top: 0.1em;
+    line-height: 1.3;
+    list-style: disc;
+}
+#index-all .tags {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    text-align: center;
+}
+#index-all .archives {
+    margin-top: 1em;
+}
+#index-all #searchform {
+    margin: 0 0 0 1em;
+    text-align: left;
+    display: inline;
+}
+
+#index-sidebar {
+    padding: 0.5em;
+    margin: 0 0 1em 1em;
+    width: 226px;
+    vertical-align: top;
+    line-height: 1.3;
+    font-size: 0.9em;
+}
+#index-sidebar .about-me .intro {
+    font-family: "Diavlo", georgia, serif;
+    text-align: center;
+    height: 77px;
+    margin-top: 1em;
+}
+#index-sidebar .about-me .intro img {
+    float: right;
+    margin: -0.5em -1.5em 0 0.5em;
+}
+#index-sidebar .about-me .details {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    text-align: justify;
+}
+#index-sidebar .about-me .details em {
+    font-style: italic;
+}
+#index-sidebar .about-me .more {
+    text-align: right;
+    font-size: 0.9em;
+}
+#index-sidebar .about-me .more a {
+    color: #2D79AB;
+    border: none;
+}
+#index-sidebar .about-me .more a:hover {
+    text-decoration: underline;
+}
+#index-sidebar .links {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+}
+#index-sidebar .subscribe,
+#index-sidebar .twitter {
+    list-style: none;
+    margin: 0 0 0 0.5em;
+    padding: 2px 2px 2px 22px;
+}
+#index-sidebar .subscribe {
+    background: url(images/feedicon.png) 0% 50% no-repeat;
+}
+#index-sidebar .twitter {
+    background: url(images/twitter.png) 0% 50% no-repeat;
+}
+
+#footer.small-footer {
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 1em auto;
+}
+
+/* About Page */
+#post-16 header {
+    display: none;
+}
+#post-16 .entry {
+    margin-top: -1em;
+}
+#post-16 aside {
+    float: right;
+    width: 230px;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+#post-16 img {
+    margin: 0;
+}
+#post-16 h2 {
+    font-family: "Diavlo",georgia;
+    color: #333333;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#post-16 p.notop {
+    margin-top: 0;
+}
+#post-16 .intro {
+    font-family: "Diavlo", georgia;
+    font-weight: normal;
+    font-size: 1.3em;
+}
+#post-16 aside h4 {
+    font-family: "Diavlo", georgia;
+    font-weight: bold;
+    margin-top: 1em;
+}
+#post-16 aside ul {
+    color: #666666;
+}
+#post-16 dl {
+    margin: 0 0 1em 1em;
+}
+#post-16 dt {
+    font-weight: bold;
+    margin-top: 1em;
+}
+#post-16 dd {
+    margin-left: 2em;
+    font-style: italic;
+}
