@@ -180,8 +180,8 @@ a.invisible:hover {
     -moz-border-radius-bottomright: 3em;
     -webkit-border-bottom-left-radius: 3em;
     -webkit-border-bottom-right-radius: 3em;
-    border-bottom-left-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
     margin: -2.5em 0 -1em;
     padding: 3em 1em 0.5em;
     -moz-box-shadow: 2px 2px 5px #000000;
