@@ -25,10 +25,16 @@
 <body>
     
     <header id="header">
-        <div>
+        <hgroup>
         	<h1><a href="<?php echo get_option('home'); ?>/">fligtar</a></h1>
             <h2><a href="http://twitter.com/fligtar/status/7648477490"><span class="d">delightfully</span> <span class="p">paranoid</span></a></h2>
-        </div>
+        </hgroup>
     </header>
     
     <section id="content">
+        
+        <!--[if lt IE 9]>
+        <div id="oldbrowser">
+            <strong>Hey!</strong> My blog probably doesn't look too great to you, but that's because you're using a browser that doesn't support things like downloadbale fonts, gradients, and rounded corners. Not to mention the security problems. You should consider switching to <a href="http://www.getfirefox.com">Firefox</a>.
+        </div>
+        <![endif]-->

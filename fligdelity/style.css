@@ -166,9 +166,10 @@ a.invisible:hover {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #CCCCCC));
     background: -moz-linear-gradient(left top -90deg, #F5F5F5 0%, #CCCCCC 100%) repeat scroll 0 0 transparent;
 }
-#header div {
+#header hgroup {
     width: 900px;
     margin: 0 auto;
+    display: block;
 }
 #header h1 {
     display: inline-block;
@@ -179,6 +180,8 @@ a.invisible:hover {
     -moz-border-radius-bottomright: 3em;
     -webkit-border-bottom-left-radius: 3em;
     -webkit-border-bottom-right-radius: 3em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
     margin: -2.5em 0 -1em;
     padding: 3em 1em 0.5em;
     -moz-box-shadow: 2px 2px 5px #000000;
@@ -196,6 +199,7 @@ a.invisible:hover {
     border-bottom: 5px solid #91B7D0;
     -moz-border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
 }
 #header h1 a:hover {
     text-shadow: 2px 2px 5px #333333;
@@ -233,6 +237,7 @@ a.invisible:hover {
     font-size: 1.5em;
     text-align: center;
     margin-top: 1em;
+    text-shadow: 1px 1px 1px #CCCCCC;
 }
 #content h1.error {
     font-family: "Diavlo", georgia;
@@ -259,7 +264,11 @@ article {
     padding: 1em;
     -moz-border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
     background-color: #F5F5F5;
+    -moz-box-shadow: 1px 1px 5px #CCCCCC;
+    -webkit-box-shadow: 1px 1px 5px #CCCCCC;
+    box-shadow: 1px 1px 5px #CCCCCC;
 }
 
 article h1 {
@@ -343,6 +352,7 @@ a.more-link,
     padding: 0.4em 0.75em;
     -moz-border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
     float: right;
     color: #2D79AB;
     font-family: "Diavlo", georgia, serif;
@@ -384,6 +394,8 @@ a.more-link,
     -moz-border-radius-topright: 0.5em;
     -webkit-border-top-left-radius: 0.5em;
     -webkit-border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #CCCCCC));
     background: -moz-linear-gradient(left top -90deg, #F5F5F5 0%, #CCCCCC 100%) repeat scroll 0 0 transparent;
     border: 1px solid #CCCCCC;
@@ -423,6 +435,7 @@ a.more-link,
 #footer .about-me img {
     -moz-box-shadow: 1px 1px 5px #666666;
     -webkit-box-shadow: 1px 1px 5px #666666;
+    box-shadow: 1px 1px 5px #666666;
     float: left;
 }
 #footer .about-me p {
@@ -467,6 +480,8 @@ a.more-link,
 #footer #searchform input[type="text"] {
     background-color: #DDDDDD;
     -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
     vertical-align: middle;
 }
 #searchform input[type="submit"] {
@@ -475,6 +490,7 @@ a.more-link,
     background: -moz-linear-gradient(left top -90deg, #D0E7F5 0%, #91B7D0 100%) repeat scroll 0 0 transparent;
     -moz-border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
     color: #fff;
     font-family: "Diavlo", georgia;
     border: none;
@@ -539,6 +555,18 @@ a.more-link,
     line-height: 1.5;
 }
 
+#oldbrowser {
+    margin-top: 2em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+    background: #F5F5F5 url(images/fligdelity-corner.png) bottom right no-repeat;
+    border: 5px solid #996666;
+    padding: 1em 25em 1em 1em;
+    height: 8em;
+    line-height: 1.2;
+}
+
 /* Comments */
 #comments {
     clear: both;
@@ -561,6 +589,7 @@ a.more-link,
     background: #D0E7F5;
     -moz-border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
     padding: 1em;
     margin: 0.5em 0;
     border: 1px solid #FFF;
@@ -626,6 +655,7 @@ a.more-link,
     border: 2px solid #D0E7F5;
     -moz-border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
     padding: 1em;
 }
 #respond .left,
@@ -662,8 +692,9 @@ a.more-link,
 #respond textarea {
     font-size: 0.9em;
     font-family: helvetica;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
     border: 1px solid #D0E7F5;
     color: #2D79AB;
     padding: 2px;
@@ -688,6 +719,7 @@ a.more-link,
     background: -moz-linear-gradient(left top -90deg, #D0E7F5 0%, #91B7D0 100%) repeat scroll 0 0 transparent;
     -moz-border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
     color: #fff;
     font-family: "Diavlo", georgia;
     margin: 0.5em 0;
@@ -729,8 +761,10 @@ article .entry ol li {
 article .entry img {
     -moz-box-shadow: 2px 2px 6px #999999;
     -webkit-box-shadow: 2px 2px 6px #999999;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
+    box-shadow: 2px 2px 6px #999999;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
     padding: 0.5em;
     background: #FFFFFF;
     margin: 0.5em;
@@ -738,6 +772,7 @@ article .entry img {
 article .entry a:hover img {
     -moz-box-shadow: 2px 2px 6px #2D79AB;
     -webkit-box-shadow: 2px 2px 6px #2D79AB;
+    box-shadow: 2px 2px 6px #2D79AB;
 }
 article .entry img.plain,
 article .entry img.wp-smiley,
@@ -745,8 +780,10 @@ article .entry a img.plain,
 article .entry a:hover img.plain {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
+    box-shadow: none;
     -moz-border-radius: none;
     -webkit-border-radius: none;
+    border-radius: none;
     border: none;
     padding: 0;
     margin: 0;
@@ -855,10 +892,11 @@ article .entry th.noborders {
 }
 
 article .entry dl.pretty {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #FFFFFF;
     padding: 1em;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
 }
 article .entry dl.pretty dt {
     margin-top: 1em;

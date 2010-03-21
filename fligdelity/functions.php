@@ -1,4 +1,6 @@
 <?php
+$continue_choices = array('continue reading', 'more, please!', 'read the rest of this entry', 'om nom nom');
+
 function fligtar_comment($comment, $args, $depth) {
    $GLOBALS['comment'] = $comment;
 ?>

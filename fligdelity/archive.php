@@ -28,7 +28,7 @@
             </header>
             
 			<div class="entry">
-				<?php the_content('continue reading &raquo;'); ?>
+				<?php the_content($continue_choices[array_rand($continue_choices)].' &raquo;'); ?>
 			</div>
 
 			<footer class="noborder"></footer>
