@@ -10,13 +10,14 @@
     	    <header>
     		    <h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
     		    <time datetime="<?php the_time('Y-m-d\TH:i:sP') ?>" pubdate><?php strtolower(the_time('F jS, Y')) ?></time>
+    		    <?php comments_popup_link('', '1 comment', '% comments', 'comments-link', ''); ?>
             </header>
         
     		<div class="entry">
     			<?php the_content('read the rest of this entry &raquo;'); ?>
     		</div>
 
-    		<footer><?php comments_popup_link('no comments &#187;', '1 comment &#187;', '% comments &#187;'); ?></footer>
+    		<footer class="noborder"></footer>
     	</article>
 
 	<?php endwhile; ?>

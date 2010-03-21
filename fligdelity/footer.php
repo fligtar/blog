@@ -2,26 +2,25 @@
     
     <?php
         /* Figure out if we're on the index page or about page*/
-        $big_footer = !is_single('16');
+        $big_footer = !is_page('16');
     ?>
     
     <footer id="footer"<?php if (!$big_footer) { echo ' class="small-footer"'; } ?>>
     <?php if ($big_footer): ?>
         <div>
             <section class="about">
-                <h3><a href="<?php bloginfo('siteurl'); ?>/about-me/" class="invisible">about the author</a></h3>
+                <h3><a href="<?php bloginfo('siteurl'); ?>/about-me/" class="invisible">about me</a></h3>
                 <div class="about-me">
                     <a href="<?php bloginfo('siteurl'); ?>/about-me/" class="invisible"><img src="<?php bloginfo('template_url'); ?>/images/headshot-sm.jpg" alt="Picture of Justin Scott" /></a>
-                    <p>Justin Scott is Add-ons Product Manager at Mozilla. He thinks chicken teriyaki is delicious and plays no musical instruments. <a href="<?php bloginfo('siteurl'); ?>/about-me/">read more</a></p>
+                    <p>Hi! I'm <strong>Justin Scott</strong>, and I work on <a href="https://addons.mozilla.org">add-ons</a> at <a href="http://www.mozilla.com">Mozilla</a>.</p>
+                    
+                    <p class="more"><a href="<?php bloginfo('siteurl'); ?>/about-me/">more about me &raquo;</a></p>
                 </div>
                 
                 <ul>
-                    <li class="subscribe"><a href="<?php bloginfo('rss2_url'); ?>">subscribe</a></li>
-                    <li class="twitter"><a href="http://www.twitter.com/fligtar">follow me on Twitter</a></li>
+                    <li class="subscribe"><a href="<?php bloginfo('rss2_url'); ?>">subscribe to feed</a></li>
+                    <li class="twitter"><a href="http://www.twitter.com/fligtar">my Twitter follower count seems inadequate</a></li>
                 </ul>
-                
-                <h3>search</h3>
-                <?php get_search_form(); ?>
             </section>
         
             <section>
@@ -29,12 +28,15 @@
                 <ul>
                 <?php wp_get_archives('type=postbypost&limit=5'); ?>
                 </ul>
+                
+                <h3 class="search">search</h3>
+                <?php get_search_form(); ?>
             </section>
         
-            <section id="tagcats">
-                <h3><a href="#" onclick="$('#tagcats').removeClass('show-tags'); return false;" id="categories-link" class="invisible">categories</a>
-                 &amp; 
-                <a href="#" onclick="$('#tagcats').addClass('show-tags'); return false;" id="tags-link" class="invisible">tags</a></h3>
+            <section id="archives" class="show-category">
+                <h3><strong>posts by </strong><a href="#" onclick="$('#archives').removeClass('show-tags show-date').addClass('show-category'); return false;" id="categories-link" class="invisible">category</a>, 
+                <a href="#" onclick="$('#archives').removeClass('show-category show-date').addClass('show-tags'); return false;" id="tags-link" class="invisible">tag</a>, or
+                <a href="#" onclick="$('#archives').removeClass('show-tags show-category').addClass('show-date'); return false;" id="date-link" class="invisible">date</a></h3>
                 
                 <div id="categories">
                     <ul>
@@ -43,13 +45,21 @@
                 </div>
                 
                 <div id="tags">
-                    <?php wp_tag_cloud(); ?>
+                    <?php wp_tag_cloud(array('unit' => 'em', 'smallest' => '0.8', 'largest' => '1.5', 'number' => 35)); ?>
+                </div>
+                
+                <div id="date">
+                    <p>select a month: 
+                    <select onchange="window.location.href = this.value;">
+                    <?php wp_get_archives(array('type' => 'monthly', 'format' => 'option', 'show_post_count' => true)); ?>
+                    </select>
+                    </p>
                 </div>
             </section>
         </div>
         <?php endif; ?>
         <p class="copyright">Unless otherwise noted, this work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.<br />
-        powered by <a href="http://www.wordpress.org">WordPress</a> and rainbows</p>
+        powered by <a href="http://www.wordpress.org">WordPress</a> and <a href="http://en.wikipedia.org/wiki/Rainbow">rainbows</a></p>
     </footer>
     
     

@@ -14,7 +14,11 @@ function fligtar_comment($comment, $args, $depth) {
             <span class="metadata">
                 <time datetime="<?php comment_date('Y-m-d')?>T<?php comment_time('H:i:sP') ?>" pubdate><?php printf(__('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?></time>
                 <a class="anchor" title="link to this comment" href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">#</a>
-                <?php comment_reply_link(array_merge( $args, array('reply_text' => 'reply', 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+                <?php 
+                if ($comment->comment_type != 'pingback'):
+                    comment_reply_link(array_merge( $args, array('reply_text' => 'reply', 'depth' => $depth, 'max_depth' => $args['max_depth'])));
+                endif; 
+                ?>
             </span>
         </header>
       

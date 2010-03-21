@@ -10,7 +10,7 @@
  	  <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
 		<h1 class="pagetitle">posts on <?php the_time('F jS, Y'); ?></h1>
  	  <?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-		<h1 class="pagetitle">posts during <?php the_time('F, Y'); ?></h1>
+		<h1 class="pagetitle">posts during <?php the_time('F Y'); ?></h1>
  	  <?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
 		<h1 class="pagetitle">posts during <?php the_time('Y'); ?></h1>
 	  <?php /* If this is an author archive */ } elseif (is_author()) { ?>
@@ -24,13 +24,14 @@
 		    <header>
 			    <h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 			    <time datetime="<?php the_time('Y-m-d\TH:i:sP') ?>" pubdate><?php strtolower(the_time('F jS, Y')) ?></time>
+			    <?php comments_popup_link('', '1 comment', '% comments', 'comments-link', ''); ?>
             </header>
             
 			<div class="entry">
 				<?php the_content('read the rest of this entry &raquo;'); ?>
 			</div>
 
-			<footer><?php comments_popup_link('no comments &#187;', '1 comment &#187;', '% comments &#187;', 'comments-link', 'comments closed'); ?></footer>
+			<footer class="noborder"></footer>
 		</article>
 
 		<?php endwhile; ?>
