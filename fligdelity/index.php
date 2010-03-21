@@ -12,7 +12,7 @@
             </header>
             
 			<div class="entry">
-				<?php the_content('read the rest of this entry &raquo;'); ?>
+				<?php the_content('continue reading &raquo;'); ?>
 			</div>
 			
 			<footer class="noborder"></footer>
