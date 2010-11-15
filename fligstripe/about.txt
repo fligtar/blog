@@ -1,0 +1,40 @@
+<aside class="chrome">
+    <img src="http://blog.fligtar.com/wp-content/uploads/2006/11/headshot-med.jpg" alt="Photo of Justin Scott" />
+    
+    <h4>how to find me</h4>
+    <ul>
+        <li><a href="http://www.twitter.com/fligtar">Twitter</a></li>
+        <li><a href="http://www.facebook.com/fligtar">Facebook</a></li>
+        <li><a href="http://www.linkedin.com/in/fligtar">LinkedIn</a></li>
+        quora
+        flickr
+        github
+        battle.net
+        <li><a href="#" onclick="$(this).parent().html('E-mail: fligtar').append('@gmail').append('.com'); return false;">E-mail</a></li>
+    </ul>
+</aside>
+
+<p class="intro chrome">Hi! My name is <strong>Justin Scott</strong>, and I work on improving the <a href="https://addons.mozilla.org/firefox" class="subtle">add-ons</a> experience at <a href="http://www.mozilla.com" class="subtle">Mozilla</a>. I usually blog about Firefox add-ons and web development.</p>
+
+<h2>a little about me</h2>
+<p class="notop">I grew up in Baton Rouge, Louisiana and acquired the nickname "fligtar" after my first character's name in the <abbr title="Massively Multiplayer Online Roleplaying Game">MMORPG</abbr> <a href="http://www.everquest.com">EverQuest</a> back in 2001.</p>
+
+<p>I started using Firefox in 2004 and shortly afterwards wrote my first extension. I began volunteering with the <a href="https://addons.mozilla.org">Mozilla Add-ons</a> website in early 2006, with no idea it would eventually become my full-time job. I worked for Mozilla part-time while attending <a href="http://www.lsu.edu">Louisiana State University</a> and <a href="http://i.fligtar.com/zombie-transcript.png">learning about zombies</a>. After graduation in 2008, I made the move to the San Francisco Bay Area so that I could be made fun of for my pronunciation of 'pen' and using words like 'putt putt' instead of 'minigolf' and 'fixing' instead of 'getting ready'.</p>
+
+<p>As Add-ons Product Manager, I primarily work on the <a href="https://addons.mozilla.org">add-ons website</a> and other special projects with the rest of the add-ons team to keep Firefox the most customizable browser with the largest selection of add-ons built by thousands of community members who love Firefox. *phew*</p>
+
+<h2>things I've made</h2>
+<p class="notop">I started coding in middle school, so I've managed to rack up a lot of personal projects, some still in use and others that never saw the light of day. A couple that I still try to make time for are listed below.</p>
+
+<dl>
+    <dt><a href="https://addons.mozilla.org/addon/2848?src=external-blogabout">Password Exporter</a></dt>
+    <dd>An add-on for Firefox and Thunderbird that can export and import your saved usernames and passwords for transferring between computers or backing up. More than 1.4 million downloads and 220,000 daily users.</dd>
+    <dt><a href="https://addons.mozilla.org/addon/2140?src=external-blogabout">FavLoc</a></dt>
+    <dd>An add-on for Firefox that adds custom save locations to the context menu, file menu, and download dialog. More than 85,000 downloads and 8,000 daily users.</dd>
+</dl>
+
+<h2>see also</h2>
+<ul>
+    <li><a href="http://blog.mozilla.com/addons/author/jscottmozillacom/">my posts</a> on the <a href="http://blog.mozilla.com/addons">Mozilla Add-ons Blog</a></li>
+    <li><a href="http://www.techcrunch.com">TechCrunch</a> calls <a href="http://blog.fligtar.com/2009/05/20/feature-presentation/">something I made</a> <a href="http://www.techcrunch.com/2009/05/20/strap-in-mozillas-jetpack-may-be-the-next-step-in-browser-extensions/">"truly useless"</a></li>
+</ul>
