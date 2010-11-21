@@ -28,6 +28,10 @@
   
 	<?php comments_template(); ?>
 	
+	<footer>
+	  <p class="copyright">This post is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.</p>
+	</footer>
+	
 <?php endwhile; else: ?>
 
 		<p>Sorry, no posts matched your criteria.</p>

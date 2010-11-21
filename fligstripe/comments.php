@@ -6,7 +6,7 @@
 
 <section id="comments">
   <?php // Display current comments ?>
-  <?php if (get_comments_number_by_type('comment') < 0 ): ?>
+  <?php if (get_comments_number_by_type('comment') > 0 ): ?>
     
     <h2><?php comments_number_by_type('comment', 'no comments yet', '1 comment', '% comments' );?></h2>
     
@@ -16,7 +16,7 @@
 
     <?php if ('open' == $post->comment_status) : ?>
       <h2>Comments</h2>
-    	<p class="notice">no comments yet</p>
+    	<p class="notice">(no comments yet)</p>
     <?php endif; ?>
   <?php endif; ?>
   
@@ -64,11 +64,12 @@
     </section>
     
   <?php else: ?>
-      <h3 class="auto-disabled">(this post is more than a year old and new comments have been automatically disabled)</h3>
+      <p class="notice">(this post is more than a year old and new comments have been automatically disabled)</p>
   <?php endif; ?>
 
   <?php // Display pings and tracebacks ?>
   <?php if (get_comments_number_by_type('pings') > 0): ?>
+    <p class="show-pings"><a href="#pings" onclick="$('#pings').show(); $(this).hide(); return false;"><?php comments_number_by_type('pings', 'no pings yet', 'show 1 ping', 'show % pings' ); ?></a></p>
     <section id="pings">
     	<h2><?php comments_number_by_type('pings', 'no pings yet', '1 ping', '% pings' );?></h2>
 	
