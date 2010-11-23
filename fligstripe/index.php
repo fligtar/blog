@@ -27,8 +27,10 @@
 	</nav>
 
 <?php else : ?>
-    <h1 class="error">no posts found</h1>
-    <h2 class="error">try the navigation options below, or <a href="<?php echo get_option('home'); ?>">start from the beginning</a></h2>
+  <div class="error">
+    <h1>there's nothing here!</h1>
+    <p><a href="<?php echo get_option('home'); ?>">start from the beginning</a></p>
+  </div>
 <?php endif; ?>
 
 <?php get_footer(); ?>

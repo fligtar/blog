@@ -8,10 +8,8 @@ Author: Justin Scott
 
 /*
 COLORS!
-Blue: #2D79AB      Light Blue: #91B7D0
-Green: #30AB4A     Light Green: #92D09F
-Purple: #913FAB    Light Purple: #C39AD0
-Light Gray: #F5F5F5
+Blue: #2D79AB    Green: #30AB4A
+Red: #B84343     Beige: #EAF2F7
 */
 
 /* A font by Jos Buivenga (exljbris) -> www.exljbris.nl */
@@ -55,6 +53,7 @@ Light Gray: #F5F5F5
 	font-style: italic;
 }
 
+/* Reset Styles */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -102,7 +101,6 @@ content: "";
 blockquote, q {
 quotes: "" "";
 }
-
 /* End reset stylesheet */
 
 /* HTML 5 */
@@ -110,23 +108,18 @@ aside, nav, section, header, footer, time, article, hgroup {
   display: block;
 }
 
-
 body {
   margin: 0 auto;
   padding: 0;
   font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
   font-size: 1em;
   color: #555;
-  background: -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
-}
-body.rainbow {
-    background: -moz-repeating-linear-gradient(-45deg, red, red 20px, orange 20px, orange 40px, yellow 40px, yellow 60px, green 60px, green 80px, blue 80px, blue 100px, purple 100px, purple 120px) fixed;
+  background: -moz-radial-gradient(center center 45deg, circle , rgba(0, 0, 0, 0.5) 0%, #000000 100%) fixed, -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
 }
 
 strong {
   font-weight: bold;
 }
-
 a {
   text-decoration: underline;
   color: #2D79AB;
@@ -141,10 +134,10 @@ a:hover {
 /* Header */
 #header {
   padding: 50px 0;
-  background: -moz-radial-gradient(center center 45deg, circle, rgba(0, 0, 0, 0.5) 0%, #000 100%) repeat;
+  background: -moz-radial-gradient(center center 45deg, circle , rgba(0, 0, 0, 0.5) 0%, #000000 100%), -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
 }
 #header:hover {
-  background: -moz-radial-gradient(center center 45deg, circle, rgba(0, 0, 0, 0.5) 0%, #000000 100%), -moz-repeating-linear-gradient(45deg, transparent, transparent 7px, rgba(255, 255, 255, 0.3) 7px, rgba(255, 255, 255, 0.3) 14px), -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #913FAB 7px, #913FAB 14px) fixed;
+  background: -moz-radial-gradient(center center 45deg, circle, rgba(0, 0, 0, 0.5) 0%, #000000 100%), -moz-repeating-linear-gradient(45deg, transparent, transparent 7px, rgba(255, 255, 255, 0.3) 7px, rgba(255, 255, 255, 0.3) 14px) fixed, -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #913FAB 7px, #913FAB 14px) fixed;
 }
 #header .inner {
   width: 900px;
@@ -166,7 +159,6 @@ a:hover {
 #header h1 a:hover strong {
   text-shadow: 1px 1px 0 #000, 1px 3px 0 #913FAB;
 }
-
 #header h2 {
   font-size: 1em;
   margin-top: 1em;
@@ -184,16 +176,16 @@ a:hover {
 
 /* Content */
 #content {
-  background: -moz-radial-gradient(center center 45deg, circle , #FFF 70%, rgba(253, 243, 233, 0.9) 100%) fixed;
-  margin: 0.3em 0;
-  padding: 3em 0;
+  background: -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  padding: 0.3em 0;
 }
 #content .outer {
-  
+  background: -moz-radial-gradient(center center 45deg, circle , #FFFFFF 70%, rgba(253, 243, 233, 0.8) 100%) fixed;
 }
 #content .inner {
   width: 900px;
   margin: 0 auto;
+  padding: 3em 0;
 }
 #content h1.pagetitle {
   font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
@@ -201,6 +193,9 @@ a:hover {
   text-align: center;
   color: #999;
   margin: -0.5em 0 1.5em;
+}
+#content .error {
+  text-align: center;
 }
 #content .error h1 {
   font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
@@ -213,11 +208,6 @@ a:hover {
   font-size: 1.1em;
   text-align: center;
   margin: 0 0 3em;
-}
-
-#searchform {
-  text-align: center;
-  margin: -2em 0 5em;
 }
 
 /* posts */
@@ -325,6 +315,7 @@ article a.more-link {
   font-family: 'Diavlo';
 }
 
+/* Navigation */
 nav li.left {
   float: left;
 }
@@ -334,7 +325,6 @@ nav li.right {
 .page-nav {
   height: 2em;
 }
-
 .post-nav {
   font-size: 0.85em;
   margin: 0 0 3em;
@@ -343,6 +333,8 @@ nav li.right {
 .post-nav span {
   font-style: italic;
 }
+
+/* Footer */
 .copyright {
   color: #CCC;
   font-size: 0.8em;
@@ -354,15 +346,23 @@ nav li.right {
 }
 
 #oldbrowser {
-  margin-top: 2em;
+  font-family: helvetica, arial, sans-serif;
+  margin: -1em 0 2em;
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
-  background: #F5F5F5 url(images/fligdelity-corner.png) bottom right no-repeat;
-  border: 5px solid #996666;
+  background: #EAF2F7 url(images/fligstripe-corner.png) bottom right no-repeat;
+  border: 5px solid #B84343;
   padding: 1em 25em 1em 1em;
   height: 8em;
   line-height: 1.2;
+  color: #555;
+  
+}
+#oldbrowser h3 {
+  font-weight: bold;
+  color: #B84343;
+  margin-bottom: 0.25em;
 }
 
 /* Comments */
@@ -522,7 +522,10 @@ nav li.right {
   width: 50em;
   height: 7em;
 }
-#respond #submit {
+#respond #submit,
+input[type="button"],
+input[type="submit"],
+button {
   background: #D0E7F5;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #D0E7F5), color-stop(1, #91B7D0));
   background: -moz-linear-gradient(left top -90deg, #D0E7F5 0%, #91B7D0 100%) repeat scroll 0 0 transparent;
@@ -536,7 +539,10 @@ nav li.right {
   cursor: pointer;
   text-shadow: 1px 1px 0px #333;
 }
-#respond #submit:hover {
+#respond #submit:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:hover {
   background: -moz-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%) repeat scroll 0 0%, -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #2D79AB 7px, #2D79AB 14px) repeat scroll 0 0 transparent;
 }
 
@@ -563,9 +569,11 @@ article .entry ol {
 }
 article .entry ul li {
   list-style: disc;
+  margin-bottom: 0.5em;
 }
 article .entry ol li {
   list-style: decimal;
+  margin-bottom: 0.5em;
 }
 article .entry img {
   padding: 0.3em;
@@ -592,6 +600,7 @@ article .entry .picturebox cite {
   font-size: 0.85em;
   font-style: italic;
   display: block;
+  margin: -0.5em 0 1em;
 }
 article .entry h2 {
   font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
@@ -604,6 +613,7 @@ article .entry .important {
   font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
   font-size: 1.2em;
   font-weight: bold;
+  margin: 1.5em 0 -0.5em;
 }
 article .entry tt,
 article .entry code,
@@ -687,7 +697,7 @@ article .entry th.noborders {
 }
 
 article .entry dl.pretty {
-  background-color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.025);
   padding: 1em;
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
@@ -720,7 +730,6 @@ article .entry dl.pretty dd {
 
 /* About Page */
 .about-page {
-  background: -moz-radial-gradient(center center 45deg, circle , rgba(0, 0, 0, 0.5) 0%, #000000 100%) repeat scroll 0 0%, -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
   color: #EAF2F7;
 }
 .about-page #header,
@@ -741,6 +750,9 @@ article .entry dl.pretty dd {
   background: none;
   padding: 0;
   margin-top: -1em;
+}
+.about-page #content .outer {
+  background: none;
 }
 .about-page #content .inner {
   -moz-border-radius: 1em;

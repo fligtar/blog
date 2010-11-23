@@ -40,6 +40,7 @@
       
       <!--[if lt IE 9]>
       <div id="oldbrowser">
-          <strong>Hey!</strong> My blog probably doesn't look too great to you, but that's because you're using a browser that doesn't support things like downloadbale fonts, gradients, and rounded corners. Not to mention the security problems. You should consider switching to <a href="http://www.getfirefox.com">Firefox</a>.
+        <h3>It's not me. It's you.</h3>
+        <p>If you were using a current browser my blog would look a whole lot nicer than what you're seeing right now. Your web clunker doesn't support downloadable fonts, gradients, or even rounded corners! Not to mention the security problems.  You should strongly consider upgrading to the latest version of your browser. Or just <a href="http://www.getfirefox.com">download Firefox</a>.
       </div>
       <![endif]-->
