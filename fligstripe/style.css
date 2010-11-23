@@ -188,27 +188,28 @@ a:hover {
   margin: 0.3em 0;
   padding: 3em 0;
 }
+#content .outer {
+  
+}
 #content .inner {
   width: 900px;
   margin: 0 auto;
 }
 #content h1.pagetitle {
   font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
-  margin-top: 1em;
-  text-shadow: 1px 1px 1px #CCCCCC;
+  color: #999;
+  margin: -0.5em 0 1.5em;
 }
-#content h1.error {
+#content .error h1 {
   font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
   font-weight: bold;
   font-size: 1.4em;
   text-align: center;
   margin: 3em 0 1em;
 }
-#content h2.error {
-  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+#content .error p {
   font-size: 1.1em;
   text-align: center;
   margin: 0 0 3em;
@@ -270,6 +271,7 @@ article .entry {
 }
 article.single footer {
   text-align: right;
+  clear: both;
 }
 article.single .striped {
   margin: 1em 0;
@@ -726,11 +728,19 @@ article .entry dl.pretty dd {
   background: none;
 }
 .about-page #header h2 {
-  display: none;
+  visibility: hidden;
+  margin-top: 0.5em;
+}
+.about-page #header h2 a {
+  color: #2D79AB;
+}
+.about-page #header:hover h2 {
+  visibility: visible;
 }
 .about-page #content {
   background: none;
   padding: 0;
+  margin-top: -1em;
 }
 .about-page #content .inner {
   -moz-border-radius: 1em;
@@ -772,4 +782,16 @@ article .entry dl.pretty dd {
 .about-page article dd {
   margin-left: 2em;
   font-style: italic;
+}
+.about-page article .accounts {
+  margin: 0;
+  text-align: center;
+}
+.about-page article .accounts li {
+  list-style: circle;
+  display: inline-block;
+  margin: 0.5em 1em;
+}
+.about-page article .accounts li a {
+  font-size: 1.1em;
 }

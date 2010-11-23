@@ -6,19 +6,18 @@
 
 	<?php while (have_posts()) : the_post(); ?>
 
-    	<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-    	    <header>
-    		    <h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-    		    <time datetime="<?php the_time('Y-m-d\TH:i:sP') ?>" pubdate><?php strtolower(the_time('F jS, Y')) ?></time>
-    		    <?php comments_popup_link('', '1 comment', '% comments', 'comments-link', ''); ?>
-            </header>
-        
-    		<div class="entry">
-    			<?php the_content($continue_choices[array_rand($continue_choices)].' &raquo;'); ?>
-    		</div>
-
-    		<footer class="noborder"></footer>
-    	</article>
+		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+	    <header>
+		    <h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+		    <time datetime="<?php the_time('Y-m-d\TH:i:sP') ?>" pubdate><?php the_time('F j<\s\u\p>S</\s\u\p>, Y') ?></time>
+      </header>
+            
+			<div class="entry">
+				<?php the_content('continue reading &raquo;'); ?>
+			</div>
+			
+			<footer class="striped"></footer>
+		</article>
 
 	<?php endwhile; ?>
 

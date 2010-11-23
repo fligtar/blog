@@ -26,12 +26,17 @@
   <header id="header">
     <hgroup class="inner">
       <h1><a href="<?php echo get_option('home'); ?>/">Hey. I'm <strong>Justin Scott</strong>, often known as <strong>fligtar</strong>.</a></h1>
-      <h2>I work on <a href="https://addons.mozilla.org" class="mozilla">Firefox add-ons</a> at <a href="http://www.mozilla.com" class="mozilla">Mozilla</a>. You can <a href="http://www.twitter.com/fligtar">follow me on Twitter</a> or <a href="<?php bloginfo('siteurl'); ?>/about-me/">learn more about me</a>.</h2>
+      <?php if (is_page(16)): ?>
+        <h2><a href="<?php echo get_option('home'); ?>/">back to blog</a></h2>
+      <?php else: ?>
+        <h2>I work on <a href="https://addons.mozilla.org" class="mozilla">Firefox add-ons</a> at <a href="http://www.mozilla.com" class="mozilla">Mozilla</a>. You can <a href="http://www.twitter.com/fligtar">follow me on Twitter</a> or <a href="<?php bloginfo('siteurl'); ?>/about-me/">learn more about me</a>.</h2>
+      <?php endif; ?>
     </hgroup>
   </header>
   
   <section id="content">
-    <div class="inner">
+    <div class="outer">
+      <div class="inner">
       
       <!--[if lt IE 9]>
       <div id="oldbrowser">

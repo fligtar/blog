@@ -1,4 +1,5 @@
-    </div><!-- /.inner -->
+      </div><!-- /.inner -->
+    </div><!-- /.outer -->
   </section> <!-- /#content -->
 
   <script type="text/javascript" src="http://g.fligtar.com/jquery.js"></script>
