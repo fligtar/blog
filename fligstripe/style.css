@@ -114,7 +114,16 @@ body {
   font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
   font-size: 1em;
   color: #555;
-  background: -moz-radial-gradient(center center 45deg, circle , rgba(0, 0, 0, 0.5) 0%, #000000 100%) fixed, -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  background: #000;
+  background: -moz-radial-gradient(center center, circle , rgba(0, 0, 0, 0.5) 0%, #000 100%) fixed, -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  background: -webkit-gradient(radial, center center, 0, center center, 900, from(rgba(0, 0, 0, 0.5)), to(#000)) fixed, 
+    -webkit-gradient(linear, left top, right bottom, 
+      color-stop(0, #333), color-stop(0.25, #333), 
+      color-stop(0.25, #2D79AB), color-stop(0.50, #2D79AB), 
+      color-stop(0.50, #333), color-stop(0.75, #333),
+      color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
+      ) repeat fixed;
+  -webkit-background-size: auto, 22px;
 }
 
 strong {
@@ -134,10 +143,34 @@ a:hover {
 /* Header */
 #header {
   padding: 50px 0;
-  background: -moz-radial-gradient(center center 45deg, circle , rgba(0, 0, 0, 0.5) 0%, #000000 100%), -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  background: #000 url(images/gradient.png) no-repeat top center;
+  background: -moz-radial-gradient(center center, circle , rgba(0, 0, 0, 0.5) 0%, #000 100%), -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  background: -webkit-gradient(radial, center center, 0, center center, 900, from(rgba(0, 0, 0, 0.5)), to(#000)), 
+    -webkit-gradient(linear, left top, right bottom, 
+      color-stop(0, #333), color-stop(0.25, #333), 
+      color-stop(0.25, #2D79AB), color-stop(0.50, #2D79AB), 
+      color-stop(0.50, #333), color-stop(0.75, #333),
+      color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
+      ) repeat fixed;
+  -webkit-background-size: auto, 22px;
 }
 #header:hover {
-  background: -moz-radial-gradient(center center 45deg, circle, rgba(0, 0, 0, 0.5) 0%, #000000 100%), -moz-repeating-linear-gradient(45deg, transparent, transparent 7px, rgba(255, 255, 255, 0.3) 7px, rgba(255, 255, 255, 0.3) 14px) fixed, -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #913FAB 7px, #913FAB 14px) fixed;
+  background: #000 url(images/gradient-hover.png) no-repeat top center;
+  background: -moz-radial-gradient(center center, circle, rgba(0, 0, 0, 0.5) 0%, #000 100%), -moz-repeating-linear-gradient(45deg, transparent, transparent 7px, rgba(255, 255, 255, 0.3) 7px, rgba(255, 255, 255, 0.3) 14px) fixed, -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #913FAB 7px, #913FAB 14px) fixed;
+  background: -webkit-gradient(radial, center center, 0, center center, 900, from(rgba(0, 0, 0, 0.5)), to(#000)), 
+    -webkit-gradient(linear, left top, right bottom, 
+      color-stop(0, transparent), color-stop(0.25, transparent), 
+      color-stop(0.25, rgba(255, 255, 255, 0.3)), color-stop(0.50, rgba(255, 255, 255, 0.3)), 
+      color-stop(0.50, transparent), color-stop(0.75, transparent),
+      color-stop(0.75, rgba(255, 255, 255, 0.3)), color-stop(1, rgba(255, 255, 255, 0.3))
+      ) repeat fixed,
+    -webkit-gradient(linear, right top, left bottom, 
+      color-stop(0, #333), color-stop(0.25, #333), 
+      color-stop(0.25, #913FAB), color-stop(0.50, #913FAB), 
+      color-stop(0.50, #333), color-stop(0.75, #333),
+      color-stop(0.75, #913FAB), color-stop(1, #913FAB)
+      ) repeat fixed;
+  -webkit-background-size: auto, 22px, 22px;
 }
 #header .inner {
   width: 900px;
@@ -176,11 +209,21 @@ a:hover {
 
 /* Content */
 #content {
-  background: -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  background: #000 url(images/stripes.png) repeat;
+  background: -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  background: -webkit-gradient(linear, left top, right bottom, 
+      color-stop(0, #333), color-stop(0.25, #333), 
+      color-stop(0.25, #2D79AB), color-stop(0.50, #2D79AB), 
+      color-stop(0.50, #333), color-stop(0.75, #333),
+      color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
+      ) repeat fixed;
+  -webkit-background-size: 22px;
   padding: 0.3em 0;
 }
 #content .outer {
-  background: -moz-radial-gradient(center center 45deg, circle , #FFFFFF 70%, rgba(253, 243, 233, 0.8) 100%) fixed;
+  background: #EAF2F7;
+  background: -moz-radial-gradient(center center, circle, #FFF 70%, rgba(253, 243, 233, 0.8) 100%) fixed;
+  background: -webkit-gradient(radial, center center, 600, center center, 1000, from(#FFF), to(rgba(253, 253, 253, 0.8))) fixed;
 }
 #content .inner {
   width: 900px;
@@ -218,14 +261,14 @@ article {
 
 article h1 {
   font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  color: #333333;
+  color: #333;
   font-size: 1.5em;
   font-weight: bold;
 }
 article h1 a,
 article h1 a:visited {
   text-decoration: none;
-  color: #333333;
+  color: #333;
 }
 article h1 a:hover {
   color: #2D79AB;
@@ -253,8 +296,18 @@ article .entry {
 
 .striped {
   -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
   height: 0.3em;
-  background: -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  background: #000 url(images/stripes.png) repeat;
+  background: -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  background: -webkit-gradient(linear, left top, right bottom, 
+      color-stop(0, #333), color-stop(0.25, #333), 
+      color-stop(0.25, #2D79AB), color-stop(0.50, #2D79AB), 
+      color-stop(0.50, #333), color-stop(0.75, #333),
+      color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
+      ) repeat fixed;
+  -webkit-background-size: 22px;
   padding: 0;
   margin: 2em 0 3em;
   border: none;
@@ -270,6 +323,8 @@ article.single .striped {
 /* Tags */
 .tag {
   -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
   position: relative;
   display: inline-block;
   background-color: #CCC;
@@ -312,7 +367,7 @@ article a.more-link {
   display: inline-block;
   margin-right: 5em;
   text-transform: uppercase;
-  font-family: 'Diavlo';
+  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
 }
 
 /* Navigation */
@@ -384,7 +439,6 @@ nav li.right {
   border-radius: 0.5em;
   padding: 1em;
   margin: 0.5em 0;
-  border: 1px solid #FFF;
 }
 #comments .bypostauthor {
   background: rgba(211, 248, 192, 0.4); /*#D3F8C0*/
@@ -526,10 +580,16 @@ nav li.right {
 input[type="button"],
 input[type="submit"],
 button {
-  background: #D0E7F5;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #D0E7F5), color-stop(1, #91B7D0));
-  background: -moz-linear-gradient(left top -90deg, #D0E7F5 0%, #91B7D0 100%) repeat scroll 0 0 transparent;
-  background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 60%) repeat scroll 0 0%, -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #2D79AB 7px, #2D79AB 14px) repeat scroll 0 0 transparent;
+  background: #000 url(images/stripes.png) repeat;
+  background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 60%), -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.5)), color-stop(0.6, rgba(255, 255, 255, 0.2))), 
+    -webkit-gradient(linear, left top, right bottom, 
+      color-stop(0, #333), color-stop(0.25, #333), 
+      color-stop(0.25, #2D79AB), color-stop(0.50, #2D79AB), 
+      color-stop(0.50, #333), color-stop(0.75, #333),
+      color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
+      ) repeat fixed;
+  -webkit-background-size: auto, 22px;
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
@@ -543,7 +603,16 @@ button {
 input[type="button"]:hover,
 input[type="submit"]:hover,
 button:hover {
-  background: -moz-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%) repeat scroll 0 0%, -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #2D79AB 7px, #2D79AB 14px) repeat scroll 0 0 transparent;
+  background: #000 url(images/stripes.png) repeat;
+  background: -moz-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%), -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.3)), color-stop(0.6, rgba(255, 255, 255, 0))), 
+    -webkit-gradient(linear, left top, right bottom, 
+      color-stop(0, #333), color-stop(0.25, #333), 
+      color-stop(0.25, #2D79AB), color-stop(0.50, #2D79AB), 
+      color-stop(0.50, #333), color-stop(0.75, #333),
+      color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
+      ) repeat fixed;
+  -webkit-background-size: auto, 22px;
 }
 
 /* Post content styles */
@@ -577,11 +646,28 @@ article .entry ol li {
 }
 article .entry img {
   padding: 0.3em;
-  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.75)) repeat scroll 0 0%, -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #2D79AB 7px, #2D79AB 14px) repeat;
+  background: #000 url(images/stripes.png) repeat;
+  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.75)), -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  background: -webkit-gradient(linear, right bottom, left top, color-stop(0, rgba(255, 255, 255, 0.6)), color-stop(1, rgba(255, 255, 255, 0.75))), 
+    -webkit-gradient(linear, left top, right bottom, 
+      color-stop(0, #333), color-stop(0.25, #333), 
+      color-stop(0.25, #2D79AB), color-stop(0.50, #2D79AB), 
+      color-stop(0.50, #333), color-stop(0.75, #333),
+      color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
+      ) repeat fixed;
+  -webkit-background-size: auto, 22px;
   margin: 0.5em;
 }
 article .entry a:hover img {
-  background: -moz-repeating-linear-gradient(-45deg, #333333, #333333 7px, #2D79AB 7px, #2D79AB 14px) repeat;
+  background: #000 url(images/stripes.png) repeat;
+  background: -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) repeat;
+  background: -webkit-gradient(linear, left top, right bottom, 
+      color-stop(0, #333), color-stop(0.25, #333), 
+      color-stop(0.25, #2D79AB), color-stop(0.50, #2D79AB), 
+      color-stop(0.50, #333), color-stop(0.75, #333),
+      color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
+      ) repeat fixed;
+  -webkit-background-size: 22px;
 }
 article .entry img.plain,
 article .entry img.wp-smiley,
@@ -634,7 +720,7 @@ article .entry blockquote.quote:before {
   line-height: 0;
   height: 0;
   width: 0;
-  color: #CCCCCC;
+  color: #CCC;
   font-family: georgia, serif;
   font-size: 400%;
   content: '\201C';
@@ -643,7 +729,7 @@ article .entry blockquote.quote {
   border: none;
   font-style: italic;
   font-family: georgia;
-  color: #666666;
+  color: #666;
   margin: 1em;
 }
 article .entry blockquote.quote cite {
@@ -659,8 +745,8 @@ article .entry th {
   font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
   font-weight: bold;
   text-align: center;
-  border-left: 1px solid #CCCCCC;
-  border-bottom: 1px solid #CCCCCC;
+  border-left: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
   padding: 5px 10px;
   vertical-align: middle;
 }
@@ -681,16 +767,16 @@ article .entry .noborders th {
   border-left: none;
 }
 article .entry .bottomsolid {
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCC;
 }
 article .entry .bottomdotted {
-  border-bottom: 1px dotted #CCCCCC;
+  border-bottom: 1px dotted #CCC;
 }
 article .entry .rightdashed {
-  border-right: 1px dashed #CCCCCC;
+  border-right: 1px dashed #CCC;
 }
 article .entry th.leftdashed {
-  border-left: 1px dashed #CCCCCC;
+  border-left: 1px dashed #CCC;
 }
 article .entry th.noborders {
   border: none;
@@ -756,7 +842,11 @@ article .entry dl.pretty dd {
 }
 .about-page #content .inner {
   -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  background: #333;
   background: -moz-linear-gradient(left top , rgba(45, 121, 171, 0.1), rgba(0, 0, 0, 0.3), rgba(45, 121, 171, 0.1)) fixed;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(45, 121, 171, 0.1)), color-stop(0.5, rgba(0, 0, 0, 0.3)), color-stop(1, rgba(45, 121, 171, 0.1))) repeat fixed;
   padding: 1em;
 }
 .about-page article header {
