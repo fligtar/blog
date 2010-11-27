@@ -33,22 +33,22 @@ Red: #B84343     Beige: #EAF2F7
 }
 @font-face {
 	font-family: 'AurulentSans';
-	src: url('AurulentSans-Italic-webfont.eot');
-	src: local('☺'), url('AurulentSans-Italic-webfont.woff') format('woff'), url('AurulentSans-Italic-webfont.ttf') format('truetype'), url('AurulentSans-Italic-webfont.svg#webfontogvr0PJj') format('svg');
+	src: url('fonts/AurulentSans-Italic-webfont.eot');
+	src: local('☺'), url('fonts/AurulentSans-Italic-webfont.woff') format('woff'), url('fonts/AurulentSans-Italic-webfont.ttf') format('truetype'), url('fonts/AurulentSans-Italic-webfont.svg#webfontogvr0PJj') format('svg');
 	font-weight: normal;
 	font-style: italic;
 }
 @font-face {
 	font-family: 'AurulentSans';
-	src: url('AurulentSans-Bold-webfont.eot');
-	src: local('☺'), url('AurulentSans-Bold-webfont.woff') format('woff'), url('AurulentSans-Bold-webfont.ttf') format('truetype'), url('AurulentSans-Bold-webfont.svg#webfontOatbJaPk') format('svg');
+	src: url('fonts/AurulentSans-Bold-webfont.eot');
+	src: local('☺'), url('fonts/AurulentSans-Bold-webfont.woff') format('woff'), url('fonts/AurulentSans-Bold-webfont.ttf') format('truetype'), url('fonts/AurulentSans-Bold-webfont.svg#webfontOatbJaPk') format('svg');
 	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'AurulentSans';
-	src: url('AurulentSans-BoldItalic-webfont.eot');
-	src: local('☺'), url('AurulentSans-BoldItalic-webfont.woff') format('woff'), url('AurulentSans-BoldItalic-webfont.ttf') format('truetype'), url('AurulentSans-BoldItalic-webfont.svg#webfonteMYjLuzz') format('svg');
+	src: url('fonts/AurulentSans-BoldItalic-webfont.eot');
+	src: local('☺'), url('fonts/AurulentSans-BoldItalic-webfont.woff') format('woff'), url('fonts/AurulentSans-BoldItalic-webfont.ttf') format('truetype'), url('fonts/AurulentSans-BoldItalic-webfont.svg#webfonteMYjLuzz') format('svg');
 	font-weight: bold;
 	font-style: italic;
 }
@@ -114,7 +114,6 @@ body {
   font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
   font-size: 1em;
   color: #555;
-  background: #000;
   background: -moz-radial-gradient(center center, circle , rgba(0, 0, 0, 0.5) 0%, #000 100%) fixed, -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
   background: -webkit-gradient(radial, center center, 0, center center, 900, from(rgba(0, 0, 0, 0.5)), to(#000)) fixed, 
     -webkit-gradient(linear, left top, right bottom, 
@@ -124,6 +123,9 @@ body {
       color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
       ) repeat fixed;
   -webkit-background-size: auto, 22px;
+}
+.no-cssgradients body {
+  background: #000;
 }
 
 strong {
@@ -143,7 +145,6 @@ a:hover {
 /* Header */
 #header {
   padding: 50px 0;
-  background: #000 url(images/gradient.png) no-repeat top center;
   background: -moz-radial-gradient(center center, circle , rgba(0, 0, 0, 0.5) 0%, #000 100%), -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
   background: -webkit-gradient(radial, center center, 0, center center, 900, from(rgba(0, 0, 0, 0.5)), to(#000)), 
     -webkit-gradient(linear, left top, right bottom, 
@@ -153,6 +154,9 @@ a:hover {
       color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
       ) repeat fixed;
   -webkit-background-size: auto, 22px;
+}
+.no-cssgradients #header {
+  background: #000 url(images/gradient.png) no-repeat top center;
 }
 #header:hover {
   background: #000 url(images/gradient-hover.png) no-repeat top center;
@@ -171,6 +175,9 @@ a:hover {
       color-stop(0.75, #913FAB), color-stop(1, #913FAB)
       ) repeat fixed;
   -webkit-background-size: auto, 22px, 22px;
+}
+.no-cssgradients #header:hover {
+  background: #000 url(images/gradient-hover.png) no-repeat top center;
 }
 #header .inner {
   width: 900px;
@@ -209,7 +216,6 @@ a:hover {
 
 /* Content */
 #content {
-  background: #000 url(images/stripes.png) repeat;
   background: -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
   background: -webkit-gradient(linear, left top, right bottom, 
       color-stop(0, #333), color-stop(0.25, #333), 
@@ -220,10 +226,15 @@ a:hover {
   -webkit-background-size: 22px;
   padding: 0.3em 0;
 }
+.no-cssgradients #content {
+  background: #000 url(images/stripes.png) repeat;
+}
 #content .outer {
+  background: -moz-radial-gradient(center center, circle, #FFF 70%, rgba(253, 243, 233, 0.8) 100%) fixed transparent;
+  background: -webkit-gradient(radial, center center, 600, center center, 1000, from(#FFF), to(rgba(253, 253, 253, 0.8))) fixed transparent;
+}
+.no-cssgradients #content .outer {
   background: #EAF2F7;
-  background: -moz-radial-gradient(center center, circle, #FFF 70%, rgba(253, 243, 233, 0.8) 100%) fixed;
-  background: -webkit-gradient(radial, center center, 600, center center, 1000, from(#FFF), to(rgba(253, 253, 253, 0.8))) fixed;
 }
 #content .inner {
   width: 900px;
@@ -299,7 +310,6 @@ article .entry {
   -webkit-border-radius: 1em;
   border-radius: 1em;
   height: 0.3em;
-  background: #000 url(images/stripes.png) repeat;
   background: -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
   background: -webkit-gradient(linear, left top, right bottom, 
       color-stop(0, #333), color-stop(0.25, #333), 
@@ -311,6 +321,9 @@ article .entry {
   padding: 0;
   margin: 2em 0 3em;
   border: none;
+}
+.no-cssgradients .striped {
+  background: #000 url(images/stripes.png) repeat;
 }
 article.single footer {
   text-align: right;
@@ -394,13 +407,15 @@ nav li.right {
   color: #CCC;
   font-size: 0.8em;
   text-align: center;
+  margin-top: 3em;
 }
 .copyright a,
 .copyright a:hover {
   color: #CCC;
 }
 
-#oldbrowser {
+#ugly-notice {
+  display: none;
   font-family: helvetica, arial, sans-serif;
   margin: -1em 0 2em;
   -moz-border-radius: 0.5em;
@@ -414,10 +429,13 @@ nav li.right {
   color: #555;
   
 }
-#oldbrowser h3 {
+#ugly-notice h3 {
   font-weight: bold;
   color: #B84343;
   margin-bottom: 0.25em;
+}
+.no-cssgradients.no-borderradius #ugly-notice {
+  display: block;
 }
 
 /* Comments */
@@ -433,7 +451,8 @@ nav li.right {
   color: #999;
 }
 #comments article {
-  background: rgba(208, 231, 245, 0.2); /*#D0E7F5*/
+  background: #D0E7F5;
+  background: rgba(208, 231, 245, 0.2);
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
@@ -441,7 +460,14 @@ nav li.right {
   margin: 0.5em 0;
 }
 #comments .bypostauthor {
-  background: rgba(211, 248, 192, 0.4); /*#D3F8C0*/
+  background: #D3F8C0;
+  background: rgba(211, 248, 192, 0.4);
+}
+.no-cssgradients #comments article {
+  border: 1px solid #2D79AB;
+}
+.no-cssgradients #comments .bypostauthor {
+  border: 1px solid #30AB4A;
 }
 #comments .awaiting {
   float: right;
@@ -451,9 +477,11 @@ nav li.right {
 }
 #comments cite a {
   color: #333;
+  text-decoration: none;
 }
 #comments cite a:hover {
   color: #999;
+  text-decoration: underline;
 }
 #comments .metadata {
   display: block;
@@ -501,11 +529,15 @@ nav li.right {
   display: none;
 }
 #comments .pingback {
+  background: #EEE;
   background: rgba(0, 0, 0, 0.05);
+}
+.no-cssgradients #comments .pingback {
+  border: 1px solid #CCC;
 }
 #comments .show-pings {
   font-size: 0.9em;
-  margin: 3em 0;
+  margin-top: 3em;
 }
 #comments .show-pings a {
   color: #999;
@@ -554,12 +586,11 @@ nav li.right {
 #respond input,
 #respond textarea {
   font-size: 0.9em;
-  font-family: helvetica;
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
   border: 1px solid #D0E7F5;
-  color: #2D79AB;
+  color: #666;
   padding: 2px;
 }
 #respond input:focus,
@@ -580,7 +611,6 @@ nav li.right {
 input[type="button"],
 input[type="submit"],
 button {
-  background: #000 url(images/stripes.png) repeat;
   background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 60%), -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.5)), color-stop(0.6, rgba(255, 255, 255, 0.2))), 
     -webkit-gradient(linear, left top, right bottom, 
@@ -599,6 +629,12 @@ button {
   cursor: pointer;
   text-shadow: 1px 1px 0px #333;
 }
+.no-cssgradients #respond #submit,
+.no-cssgradients input[type="button"],
+.no-cssgradients input[type="submit"],
+.no-cssgradients button {
+  background: #000 url(images/stripes.png) repeat;
+}
 #respond #submit:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
@@ -613,6 +649,12 @@ button:hover {
       color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
       ) repeat fixed;
   -webkit-background-size: auto, 22px;
+}
+.no-cssgradients #respond #submit:hover,
+.no-cssgradients input[type="button"]:hover,
+.no-cssgradients input[type="submit"]:hover,
+.no-cssgradients button:hover {
+  background: #000 url(images/stripes.png) repeat;
 }
 
 /* Post content styles */
@@ -646,7 +688,6 @@ article .entry ol li {
 }
 article .entry img {
   padding: 0.3em;
-  background: #000 url(images/stripes.png) repeat;
   background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.75)), -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
   background: -webkit-gradient(linear, right bottom, left top, color-stop(0, rgba(255, 255, 255, 0.6)), color-stop(1, rgba(255, 255, 255, 0.75))), 
     -webkit-gradient(linear, left top, right bottom, 
@@ -658,6 +699,9 @@ article .entry img {
   -webkit-background-size: auto, 22px;
   margin: 0.5em;
 }
+.no-cssgradients article .entry img {
+  background: #000 url(images/stripes.png) repeat;
+}
 article .entry a:hover img {
   background: #000 url(images/stripes.png) repeat;
   background: -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) repeat;
@@ -668,6 +712,9 @@ article .entry a:hover img {
       color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
       ) repeat fixed;
   -webkit-background-size: 22px;
+}
+.no-cssgradients article .entry a:hover img {
+  background: #000 url(images/stripes.png) repeat;
 }
 article .entry img.plain,
 article .entry img.wp-smiley,
@@ -739,6 +786,14 @@ article .entry blockquote.quote cite {
   font-size: 0.85em;
   text-align: right;
   margin-top: 0.5em;
+}
+article .entry blockquote.quote cite time {
+  font-style: italic;
+  margin-left: 0.5em;
+  color: inherit;
+  font-size: 1em;
+  text-transform: none;
+  font-family: inherit;
 }
 
 article .entry th {
@@ -815,6 +870,9 @@ article .entry dl.pretty dd {
 }
 
 /* About Page */
+.no-cssgradients .about-page {
+  background: url(images/stripes-dark.png) repeat fixed;
+}
 .about-page {
   color: #EAF2F7;
 }
@@ -844,10 +902,15 @@ article .entry dl.pretty dd {
   -moz-border-radius: 1em;
   -webkit-border-radius: 1em;
   border-radius: 1em;
-  background: #333;
   background: -moz-linear-gradient(left top , rgba(45, 121, 171, 0.1), rgba(0, 0, 0, 0.3), rgba(45, 121, 171, 0.1)) fixed;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(45, 121, 171, 0.1)), color-stop(0.5, rgba(0, 0, 0, 0.3)), color-stop(1, rgba(45, 121, 171, 0.1))) repeat fixed;
   padding: 1em;
+}
+.no-cssgradients .about-page #content .inner  {
+  background: rgba(45, 121, 171, 0.1);
+}
+.no-rgba .about-page #content .inner {
+  background: #333;
 }
 .about-page article header {
   display: none;
@@ -855,7 +918,8 @@ article .entry dl.pretty dd {
 .about-page article .entry {
   margin-top: -1em;
 }
-.about-page article img {
+.about-page article img,
+.no-cssgradients .about-page article img {
   margin-left: 2em;
   margin-bottom: 2em;
   float: right;
@@ -890,8 +954,9 @@ article .entry dl.pretty dd {
   text-align: center;
 }
 .about-page article .accounts li {
-  list-style: circle;
+  list-style: none;
   display: inline-block;
+  *display: inline;
   margin: 0.5em 1em;
 }
 .about-page article .accounts li a {

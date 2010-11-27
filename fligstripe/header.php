@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
   <meta charset="utf-8" />
@@ -17,9 +17,8 @@
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
   <?php wp_head(); ?>
-  <!--[if IE]>
-  <script type="text/javascript" src="http://g.fligtar.com/html5-ie.js"></script>
-  <![endif]-->
+
+  <script type="text/javascript" src="http://g.fligtar.com/modernizr.min.js"></script>
 </head>
 
 <body<?php if (is_page(16)) { echo ' class="about-page"'; } ?>>
@@ -38,9 +37,7 @@
     <div class="outer">
       <div class="inner">
       
-      <!--[if lt IE 9]>
-      <div id="oldbrowser">
+      <div id="ugly-notice">
         <h3>It's not me. It's you.</h3>
         <p>If you were using a current browser my blog would look a whole lot nicer than what you're seeing right now. Your web clunker doesn't support downloadable fonts, gradients, or even rounded corners! Not to mention the security problems.  You should strongly consider upgrading to the latest version of your browser. Or just <a href="http://www.getfirefox.com">download Firefox</a>.
       </div>
-      <![endif]-->
