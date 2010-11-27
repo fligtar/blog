@@ -1,13 +1,13 @@
 <img src="http://blog.fligtar.com/wp-content/uploads/2006/11/headshot-med.jpg" alt="Photo of Justin Scott" />
 
-<p class="intro">I work on improving the <a href="https://addons.mozilla.org/firefox">Firefox add-ons</a> experience at <a href="http://www.mozilla.com">Mozilla</a>. Here you'll find posts on those topics and others.</p>
+<p class="intro">I work on improving the <a href="https://addons.mozilla.org/firefox">Firefox add-ons</a> experience at <a href="http://www.mozilla.com">Mozilla</a>. I enjoy web development, solving problems, and chicken teriyaki.</p>
 
 <h2>a little about me</h2>
 <p class="notop">I grew up in Baton Rouge, Louisiana and acquired the nickname &#147;fligtar&#148; after my first character's name in the <abbr title="Massively Multiplayer Online Roleplaying Game">MMORPG</abbr> <a href="http://www.everquest.com">EverQuest</a> back in 2001.</p>
 
-<p>I started using Firefox in 2004 and shortly afterwards wrote my first extension. I began volunteering with the <a href="https://addons.mozilla.org">Mozilla Add-ons</a> website in early 2006, with no idea it would eventually become my full-time job. I worked for Mozilla part-time while attending <a href="http://www.lsu.edu">Louisiana State University</a> and <a href="http://i.fligtar.com/zombie-transcript.png">learning about zombies</a>. After graduation in 2008, I made the move to the San Francisco Bay Area so that I could be made fun of for my pronunciation of &#145;pen&#146; and using words like &#145;putt putt&#146; instead of &#145;minigolf&#146; and &#145;fixing&#146; instead of &#145;getting ready&#146;.</p>
+<p>I started using Firefox in 2004 and shortly afterwards wrote my first extension. I began volunteering with the <a href="https://addons.mozilla.org">Mozilla Add-ons</a> website in early 2006, with no idea it would eventually become my full-time job. I worked for Mozilla part-time as a web developer while attending <a href="http://www.lsu.edu">Louisiana State University</a> and <a href="http://i.fligtar.com/zombie-transcript.png">learning about zombies</a>. After graduation in 2008, I made the move to the San Francisco Bay Area so that I could be made fun of for my pronunciation of &#145;pen&#146; and using words like &#145;putt putt&#146; instead of &#145;minigolf&#146; and &#145;fixing&#146; instead of &#145;getting ready&#146;.</p>
 
-<p>As Add-ons Product Manager, I work to make add-ons easier to discover, use, and create. Most of my time is spent with the <a href="https://addons.mozilla.org">add-ons gallery</a>, Firefox's Add-ons Manager, and other special projects with the rest of the add-ons team. We want to keep Firefox the most customizable browser with the largest selection of add-ons built by thousands of community members who love innovation.</p>
+<p>As Add-ons Product Manager, I try to make add-ons easier to discover, use, and create. Along with the rest of the add-ons team, I work on the <a href="https://addons.mozilla.org">add-ons gallery</a>, Firefox's Add-ons Manager, and other special projects.</p>
 
 <h2>things I've made</h2>
 <p class="notop">I started coding in middle school, so I've managed to rack up a lot of personal projects, some still in use and others that never saw the light of day. A couple that I still try to make time for are listed below.</p>
@@ -30,5 +30,6 @@
     <li><a href="http://www.stumbleupon.com/stumbler/fligtar/">StumbleUpon</a></li>
     <li><a href="https://addons.mozilla.org/en-US/firefox/user/9945/">Mozilla Add-ons</a></li>
     <li><a href="http://blog.mozilla.com/addons/author/jscottmozillacom/">Mozilla Add-ons Blog</a></li>
-    <li><a href="#" onclick="$(this).parent().html('E-mail: fligtar').append('@gmail').append('.com'); return false;">E-mail</a></li>
+    <li><a href="#" onclick="$(this).parent().html('fligtar').append('@gmail').append('.com'); return false;">Personal E-mail</a></li>
+    <li><a href="#" onclick="$(this).parent().html('fligtar').append('@mozilla').append('.com'); return false;">Mozilla E-mail</a></li>
 </ul>

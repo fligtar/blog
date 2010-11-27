@@ -414,28 +414,35 @@ nav li.right {
   color: #CCC;
 }
 
-#ugly-notice {
+#ugly-notice,
+#super-ugly-notice {
   display: none;
-  font-family: helvetica, arial, sans-serif;
+  border: 1px solid #2D79AB;
+  padding: 0.5em;
   margin: -1em 0 2em;
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
-  background: #EAF2F7 url(images/fligstripe-corner.png) bottom right no-repeat;
-  border: 5px solid #B84343;
-  padding: 1em 25em 1em 1em;
-  height: 8em;
-  line-height: 1.2;
-  color: #555;
-  
+  font-size: 0.8em;
+  color: #666;
 }
-#ugly-notice h3 {
-  font-weight: bold;
+#ugly-notice strong {
+  color: #2D79AB;
+}
+#super-ugly-notice {
+  border-color: #B84343;
+}
+#super-ugly-notice strong {
   color: #B84343;
-  margin-bottom: 0.25em;
+}
+.no-cssgradients #ugly-notice {
+  display: block;
+}
+.no-cssgradients.no-borderradius #super-ugly-notice {
+  display: block;
 }
 .no-cssgradients.no-borderradius #ugly-notice {
-  display: block;
+  display: none;
 }
 
 /* Comments */
@@ -639,7 +646,6 @@ button {
 input[type="button"]:hover,
 input[type="submit"]:hover,
 button:hover {
-  background: #000 url(images/stripes.png) repeat;
   background: -moz-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%), -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.3)), color-stop(0.6, rgba(255, 255, 255, 0))), 
     -webkit-gradient(linear, left top, right bottom, 
@@ -700,10 +706,9 @@ article .entry img {
   margin: 0.5em;
 }
 .no-cssgradients article .entry img {
-  background: #000 url(images/stripes.png) repeat;
+  background: #000 url(images/stripes-light.png) repeat;
 }
 article .entry a:hover img {
-  background: #000 url(images/stripes.png) repeat;
   background: -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) repeat;
   background: -webkit-gradient(linear, left top, right bottom, 
       color-stop(0, #333), color-stop(0.25, #333), 
@@ -939,7 +944,7 @@ article .entry dl.pretty dd {
   font-size: 1.3em;
 }
 .about-page article dl {
-  margin: 0 0 1em 1em;
+  margin: 0 0 1.5em 1em;
 }
 .about-page article dt {
   font-weight: bold;

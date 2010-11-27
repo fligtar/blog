@@ -37,7 +37,10 @@
     <div class="outer">
       <div class="inner">
       
+      <div id="super-ugly-notice">
+        <p><strong>It's not me. It's you.</strong> If you were using a modern browser, this blog would look a whole lot nicer. Your web clunker doesn't support downloadable fonts, gradients, or even rounded corners! Not to mention the security problems. Try a <a href="http://www.getfirefox.com">better browser</a>.</p>
+      </div>
+      
       <div id="ugly-notice">
-        <h3>It's not me. It's you.</h3>
-        <p>If you were using a current browser my blog would look a whole lot nicer than what you're seeing right now. Your web clunker doesn't support downloadable fonts, gradients, or even rounded corners! Not to mention the security problems.  You should strongly consider upgrading to the latest version of your browser. Or just <a href="http://www.getfirefox.com">download Firefox</a>.
+        <p><strong>FUN FACT!</strong> Your browser doesn't support CSS gradients. Anything pretty on this page is actually a screenshot of what it looks like in Firefox. Try a <a href="http://www.getfirefox.com">better browser</a> and see what else you've been missing out on.</p>
       </div>
