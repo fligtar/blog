@@ -925,8 +925,8 @@ article .entry dl.pretty dd {
 }
 .about-page article img,
 .no-cssgradients .about-page article img {
-  margin-left: 2em;
-  margin-bottom: 2em;
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
   float: right;
   background: none;
 }

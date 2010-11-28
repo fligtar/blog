@@ -1,6 +1,6 @@
 <img src="http://blog.fligtar.com/wp-content/uploads/2006/11/headshot-med.jpg" alt="Photo of Justin Scott" />
 
-<p class="intro">I work on improving the <a href="https://addons.mozilla.org/firefox">Firefox add-ons</a> experience at <a href="http://www.mozilla.com">Mozilla</a>. I enjoy web development, solving problems, and chicken teriyaki.</p>
+<p class="intro">I opened my first IHOP franchise at age 12, once rode a bucking Giant Seahorse for 7.6 seconds, and currently work on improving the <a href="https://addons.mozilla.org/firefox">Firefox add-ons</a> experience at <a href="http://www.mozilla.com">Mozilla</a>. At least one of these facts is probably not a lie.</p>
 
 <h2>a little about me</h2>
 <p class="notop">I grew up in Baton Rouge, Louisiana and acquired the nickname &#147;fligtar&#148; after my first character's name in the <abbr title="Massively Multiplayer Online Roleplaying Game">MMORPG</abbr> <a href="http://www.everquest.com">EverQuest</a> back in 2001.</p>
