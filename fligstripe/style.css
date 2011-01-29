@@ -910,6 +910,7 @@ article .entry dl.pretty dd {
   background: -moz-linear-gradient(left top , rgba(45, 121, 171, 0.1), rgba(0, 0, 0, 0.3), rgba(45, 121, 171, 0.1)) fixed;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(45, 121, 171, 0.1)), color-stop(0.5, rgba(0, 0, 0, 0.3)), color-stop(1, rgba(45, 121, 171, 0.1))) repeat fixed;
   padding: 1em;
+  margin-bottom: 4em;
 }
 .no-cssgradients .about-page #content .inner  {
   background: rgba(45, 121, 171, 0.1);
