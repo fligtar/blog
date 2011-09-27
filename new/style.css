@@ -12,27 +12,16 @@ Blue: #2D79AB    Green: #30AB4A
 Red: #B84343     Beige: #EAF2F7
 */
 
-/* A font by Jos Buivenga (exljbris) -> www.exljbris.nl */
 @font-face {
-  font-family: 'Diavlo';
-  src: url(fonts/Diavlo_MEDIUM_II_37.otf);
-  font-weight: normal;
-}
-@font-face {
-  font-family: 'Diavlo';
-  src: url(fonts/Diavlo_BOLD_II_37.otf);
-  font-weight: bold;
-}
-@font-face {
-    font-family: 'Bebas';
-    src: url('fonts/BEBAS___-webfont.eot?') format('eot'),
-         url('fonts/BEBAS___-webfont.woff') format('woff'),
-         url('fonts/BEBAS___-webfont.ttf') format('truetype'),
-         url('fonts/BEBAS___-webfont.svg#webfontOJIfwzl6') format('svg');
+    font-family: 'Franchise';
+    src: url('fonts/franchise-bold-hinted-webfont.eot');
+    src: url('fonts/franchise-bold-hinted-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/franchise-bold-hinted-webfont.woff') format('woff'),
+         url('fonts/franchise-bold-hinted-webfont.ttf') format('truetype'),
+         url('fonts/franchise-bold-hinted-webfont.svg#FranchiseRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
 	font-family: 'AurulentSans';
 	src: url('fonts/AurulentSans-Regular-webfont.eot');
@@ -61,73 +50,13 @@ Red: #B84343     Beige: #EAF2F7
 	font-weight: bold;
 	font-style: italic;
 }
-
 @font-face {
-    font-family: 'Folksolid';
-    src: url('fonts/Folksolid-webfont.eot');
-    src: url('fonts/Folksolid-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Folksolid-webfont.woff') format('woff'),
-         url('fonts/Folksolid-webfont.ttf') format('truetype'),
-         url('fonts/Folksolid-webfont.svg#Folksolid') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Folksketches';
-    src: url('Folksketches-webfont.eot');
-    src: url('Folksketches-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Folksketches-webfont.woff') format('woff'),
-         url('Folksketches-webfont.ttf') format('truetype'),
-         url('Folksketches-webfont.svg#Folksketches') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Folkoutline';
-    src: url('fonts/Folkoutline-webfont.eot');
-    src: url('fonts/Folkoutline-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Folkoutline-webfont.woff') format('woff'),
-         url('fonts/Folkoutline-webfont.ttf') format('truetype'),
-         url('fonts/Folkoutline-webfont.svg#Folkoutline') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Folkshadow';
-    src: url('fonts/Folkshadow-webfont.eot');
-    src: url('fonts/Folkshadow-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Folkshadow-webfont.woff') format('woff'),
-         url('fonts/Folkshadow-webfont.ttf') format('truetype'),
-         url('fonts/Folkshadow-webfont.svg#Folkshadow') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'nevisBold';
+    font-family: 'Nevis';
     src: url('fonts/nevis-webfont.eot');
     src: url('fonts/nevis-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/nevis-webfont.woff') format('woff'),
          url('fonts/nevis-webfont.ttf') format('truetype'),
          url('fonts/nevis-webfont.svg#nevisBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'FranchiseRegular';
-    src: url('fonts/franchise-bold-hinted-webfont.eot');
-    src: url('fonts/franchise-bold-hinted-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/franchise-bold-hinted-webfont.woff') format('woff'),
-         url('fonts/franchise-bold-hinted-webfont.ttf') format('truetype'),
-         url('fonts/franchise-bold-hinted-webfont.svg#FranchiseRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -194,7 +123,7 @@ body {
   font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
   font-size: 1em;
   color: #555;
-  background: url(images/2.jpg) repeat fixed;
+  background: url(images/darkwood.jpg) repeat fixed;
 }
 .no-cssgradients body {
   background: #000;
@@ -215,40 +144,36 @@ a:hover {
 }
 
 /* Header */
-#header {
-
-}
 #header .inner {
   width: 900px;
   margin: 0 auto;
-  color: #EAF2F7;
   text-align: center;
 }
 #header h1 a {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.35);
   font-size: 8em;
-  font-family: 'nevisBold', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-family: 'Franchise', helvetica, sans-serif;
   vertical-align: middle;
   text-decoration: none;
   border: none;
-  text-shadow: 2px 2px 35px #000;
 }
-#header h1 strong {
-  text-shadow: 1px 1px 0 #000, 1px 3px 0 #2D79AB;
+#header h1 a span {
+    display: none;
 }
-#header h1 a:hover strong {
-  text-shadow: 1px 1px 0 #000, 1px 3px 0 #913FAB;
+#header h1 a:hover {
+    text-shadow: 0 0 10px #2D79AB;
 }
-#header h2 {
-  font-size: 1em;
-  margin-top: 1em;
+#header h1 a:hover span {
+    display: inline;
 }
 #header h2 a {
   text-decoration: none;
-  color: #30AB4A;
+  font-family: 'Franchise', helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 2em;
 }
 #header h2 a:hover {
-  text-decoration: underline;
+  text-shadow: 0 0 10px #913FAB;
 }
 #header h2 a.mozilla {
   color: #B84343;
@@ -258,21 +183,12 @@ a:hover {
 #content {
   padding: 0.3em 0;
 }
-.no-cssgradients #content {
-  background: #000 url(images/stripes.png) repeat;
-}
-#content .outer {
-
-}
-.no-cssgradients #content .outer {
-  background: #EAF2F7;
-}
 #content .inner {
   width: 900px;
   margin: 0 auto;
 }
 #content h1.pagetitle {
-  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-family: 'Franchise', helvetica, sans-serif;
   font-size: 1.2em;
   text-align: center;
   color: #999;
@@ -282,7 +198,7 @@ a:hover {
   text-align: center;
 }
 #content .error h1 {
-  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-family: 'Franchise', helvetica, sans-serif;
   font-weight: bold;
   font-size: 1.4em;
   text-align: center;
@@ -296,34 +212,34 @@ a:hover {
 
 /* posts */
 article {
-  margin: 40px 0;
-  padding: 20px;
-background:  rgba(255, 255, 255, 0.7);
-box-shadow: 0 0 5px #FFFFFF, 0 0 3px #333333 inset;
+    margin: 40px 0;
+    padding: 20px;
+    background:  rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 5px #FFFFFF, 0 0 3px #333333 inset;
 }
-
 article h1 {
-  font-family: 'Bebas', 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  color: #333;
-  font-size: 1.8em;
-  letter-spacing: 1px;
-  word-spacing: 3px;
-  text-shadow: 2px 2px 1px #000000;
+    font-family: 'Franchise', helvetica, sans-serif;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 1px #000;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #DDD, 1px 2px 1px #666;
+    color: #2D79AB;
 }
 article h1 a,
 article h1 a:visited {
-  text-decoration: none;
-  color: #2D79AB;
+    color: #2D79AB;
+    text-decoration: none;
 }
 article h1 a:hover {
-  color: #333;
+    color: #555;
 }
 article time {
   font-size: 0.8em;
-  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  color: #999;
-  display: inline;
+  font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  color: #666;
+  display: inline-block;
   text-transform: uppercase;
+  margin-top: 5px;
 }
 article time sup {
   font-size: 0.8em;
@@ -398,7 +314,13 @@ article a.more-link {
   display: inline-block;
   margin-right: 5em;
   text-transform: uppercase;
-  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+}
+article a.more-link:hover {
+    color: #2D79AB;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 /* Navigation */
@@ -713,16 +635,10 @@ article .entry ol li {
 article .entry img {
   padding: 0.3em;
   margin: 0.5em;
-  background: url(images/2.jpg);
-}
-.no-cssgradients article .entry img {
-  background: #000 url(images/stripes-light.png) repeat;
+  background: url(images/darkwood.jpg);
 }
 article .entry a:hover img {
-
-}
-.no-cssgradients article .entry a:hover img {
-  background: #000 url(images/stripes.png) repeat;
+    background: rgba(255, 255, 255, 0.5);
 }
 article .entry img.plain,
 article .entry img.wp-smiley,

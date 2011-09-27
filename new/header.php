@@ -24,7 +24,8 @@
 <body<?php if (is_page(16)) { echo ' class="about-page"'; } ?>>
   <header id="header">
     <hgroup class="inner">
-      <h1><a href="<?php echo get_option('home'); ?>/">fligtar</a></h1>
+      <h1><a href="<?php echo get_option('home'); ?>/"><span>&middot;</span>FLIGTAR<span>&middot;</span></a></h1>
+      <h2><a href="#">about</a> &middot; <a href="#">twitter</a></h2>
     </hgroup>
   </header>
   
