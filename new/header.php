@@ -24,12 +24,7 @@
 <body<?php if (is_page(16)) { echo ' class="about-page"'; } ?>>
   <header id="header">
     <hgroup class="inner">
-      <h1><a href="<?php echo get_option('home'); ?>/">Hey. I'm <strong>Justin Scott</strong>, often known as <strong>fligtar</strong>.</a></h1>
-      <?php if (is_page(16)): ?>
-        <h2><a href="<?php echo get_option('home'); ?>/">back to blog</a></h2>
-      <?php else: ?>
-        <h2>I work on <a href="https://addons.mozilla.org" class="mozilla">Firefox add-ons</a> at <a href="http://www.mozilla.com" class="mozilla">Mozilla</a>. You can <a href="http://www.twitter.com/fligtar">follow me on Twitter</a> or <a href="<?php bloginfo('siteurl'); ?>/about-me/">learn more about me</a>.</h2>
-      <?php endif; ?>
+      <h1><a href="<?php echo get_option('home'); ?>/">fligtar</a></h1>
     </hgroup>
   </header>
   

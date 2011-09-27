@@ -62,6 +62,77 @@ Red: #B84343     Beige: #EAF2F7
 	font-style: italic;
 }
 
+@font-face {
+    font-family: 'Folksolid';
+    src: url('fonts/Folksolid-webfont.eot');
+    src: url('fonts/Folksolid-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Folksolid-webfont.woff') format('woff'),
+         url('fonts/Folksolid-webfont.ttf') format('truetype'),
+         url('fonts/Folksolid-webfont.svg#Folksolid') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Folksketches';
+    src: url('Folksketches-webfont.eot');
+    src: url('Folksketches-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Folksketches-webfont.woff') format('woff'),
+         url('Folksketches-webfont.ttf') format('truetype'),
+         url('Folksketches-webfont.svg#Folksketches') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Folkoutline';
+    src: url('fonts/Folkoutline-webfont.eot');
+    src: url('fonts/Folkoutline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Folkoutline-webfont.woff') format('woff'),
+         url('fonts/Folkoutline-webfont.ttf') format('truetype'),
+         url('fonts/Folkoutline-webfont.svg#Folkoutline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Folkshadow';
+    src: url('fonts/Folkshadow-webfont.eot');
+    src: url('fonts/Folkshadow-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Folkshadow-webfont.woff') format('woff'),
+         url('fonts/Folkshadow-webfont.ttf') format('truetype'),
+         url('fonts/Folkshadow-webfont.svg#Folkshadow') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nevisBold';
+    src: url('fonts/nevis-webfont.eot');
+    src: url('fonts/nevis-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/nevis-webfont.woff') format('woff'),
+         url('fonts/nevis-webfont.ttf') format('truetype'),
+         url('fonts/nevis-webfont.svg#nevisBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'FranchiseRegular';
+    src: url('fonts/franchise-bold-hinted-webfont.eot');
+    src: url('fonts/franchise-bold-hinted-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/franchise-bold-hinted-webfont.woff') format('woff'),
+         url('fonts/franchise-bold-hinted-webfont.ttf') format('truetype'),
+         url('fonts/franchise-bold-hinted-webfont.svg#FranchiseRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* Reset Styles */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -123,7 +194,7 @@ body {
   font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
   font-size: 1em;
   color: #555;
-  
+  background: url(images/2.jpg) repeat fixed;
 }
 .no-cssgradients body {
   background: #000;
@@ -145,41 +216,7 @@ a:hover {
 
 /* Header */
 #header {
-  padding: 50px 0;
-  background: -moz-radial-gradient(center center, circle , rgba(0, 0, 0, 0.5) 0%, #000 100%), -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
-  background: -webkit-gradient(radial, center center, 0, center center, 900, from(rgba(0, 0, 0, 0.5)), to(#000)), 
-    -webkit-gradient(linear, left top, right bottom, 
-      color-stop(0, #333), color-stop(0.25, #333), 
-      color-stop(0.25, #2D79AB), color-stop(0.50, #2D79AB), 
-      color-stop(0.50, #333), color-stop(0.75, #333),
-      color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
-      ) repeat fixed;
-  -webkit-background-size: auto, 22px;
-  display: none;
-}
-.no-cssgradients #header {
-  background: #000 url(images/gradient.png) no-repeat top center;
-}
-#header:hover {
-  background: #000 url(images/gradient-hover.png) no-repeat top center;
-  background: -moz-radial-gradient(center center, circle, rgba(0, 0, 0, 0.5) 0%, #000 100%), -moz-repeating-linear-gradient(45deg, transparent, transparent 7px, rgba(255, 255, 255, 0.3) 7px, rgba(255, 255, 255, 0.3) 14px) fixed, -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #913FAB 7px, #913FAB 14px) fixed;
-  background: -webkit-gradient(radial, center center, 0, center center, 900, from(rgba(0, 0, 0, 0.5)), to(#000)), 
-    -webkit-gradient(linear, left top, right bottom, 
-      color-stop(0, transparent), color-stop(0.25, transparent), 
-      color-stop(0.25, rgba(255, 255, 255, 0.3)), color-stop(0.50, rgba(255, 255, 255, 0.3)), 
-      color-stop(0.50, transparent), color-stop(0.75, transparent),
-      color-stop(0.75, rgba(255, 255, 255, 0.3)), color-stop(1, rgba(255, 255, 255, 0.3))
-      ) repeat fixed,
-    -webkit-gradient(linear, right top, left bottom, 
-      color-stop(0, #333), color-stop(0.25, #333), 
-      color-stop(0.25, #913FAB), color-stop(0.50, #913FAB), 
-      color-stop(0.50, #333), color-stop(0.75, #333),
-      color-stop(0.75, #913FAB), color-stop(1, #913FAB)
-      ) repeat fixed;
-  -webkit-background-size: auto, 22px, 22px;
-}
-.no-cssgradients #header:hover {
-  background: #000 url(images/gradient-hover.png) no-repeat top center;
+
 }
 #header .inner {
   width: 900px;
@@ -188,12 +225,13 @@ a:hover {
   text-align: center;
 }
 #header h1 a {
-  color: #EAF2F7;
-  font-size: 2em;
-  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 8em;
+  font-family: 'nevisBold', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
   vertical-align: middle;
   text-decoration: none;
   border: none;
+  text-shadow: 2px 2px 35px #000;
 }
 #header h1 strong {
   text-shadow: 1px 1px 0 #000, 1px 3px 0 #2D79AB;
@@ -218,7 +256,6 @@ a:hover {
 
 /* Content */
 #content {
-background: url(images/2.jpg) repeat fixed;
   padding: 0.3em 0;
 }
 .no-cssgradients #content {
@@ -233,7 +270,6 @@ background: url(images/2.jpg) repeat fixed;
 #content .inner {
   width: 900px;
   margin: 0 auto;
-  padding: 3em 0;
 }
 #content h1.pagetitle {
   font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
