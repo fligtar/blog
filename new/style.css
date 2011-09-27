@@ -1,0 +1,937 @@
+/*
+Theme Name: fligstripe
+Theme URI: http://blog.fligtar.com
+Description: overlayed gradients OMG
+Version: 1.0
+Author: Justin Scott
+*/
+
+/*
+COLORS!
+Blue: #2D79AB    Green: #30AB4A
+Red: #B84343     Beige: #EAF2F7
+*/
+
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.nl */
+@font-face {
+  font-family: 'Diavlo';
+  src: url(fonts/Diavlo_MEDIUM_II_37.otf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Diavlo';
+  src: url(fonts/Diavlo_BOLD_II_37.otf);
+  font-weight: bold;
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url('fonts/BEBAS___-webfont.eot?') format('eot'),
+         url('fonts/BEBAS___-webfont.woff') format('woff'),
+         url('fonts/BEBAS___-webfont.ttf') format('truetype'),
+         url('fonts/BEBAS___-webfont.svg#webfontOJIfwzl6') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'AurulentSans';
+	src: url('fonts/AurulentSans-Regular-webfont.eot');
+	src: local('☺'), url('fonts/AurulentSans-Regular-webfont.woff') format('woff'), url('fonts/AurulentSans-Regular-webfont.ttf') format('truetype'), url('fonts/AurulentSans-Regular-webfont.svg#webfontR1h6QdGF') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AurulentSans';
+	src: url('fonts/AurulentSans-Italic-webfont.eot');
+	src: local('☺'), url('fonts/AurulentSans-Italic-webfont.woff') format('woff'), url('fonts/AurulentSans-Italic-webfont.ttf') format('truetype'), url('fonts/AurulentSans-Italic-webfont.svg#webfontogvr0PJj') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'AurulentSans';
+	src: url('fonts/AurulentSans-Bold-webfont.eot');
+	src: local('☺'), url('fonts/AurulentSans-Bold-webfont.woff') format('woff'), url('fonts/AurulentSans-Bold-webfont.ttf') format('truetype'), url('fonts/AurulentSans-Bold-webfont.svg#webfontOatbJaPk') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AurulentSans';
+	src: url('fonts/AurulentSans-BoldItalic-webfont.eot');
+	src: local('☺'), url('fonts/AurulentSans-BoldItalic-webfont.woff') format('woff'), url('fonts/AurulentSans-BoldItalic-webfont.ttf') format('truetype'), url('fonts/AurulentSans-BoldItalic-webfont.svg#webfonteMYjLuzz') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* Reset Styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+outline: 0;
+}
+body {
+line-height: 1;
+color: black;
+background: white;
+
+}
+ol, ul {
+list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+border-collapse: separate;
+border-spacing: 0;
+}
+caption, th, td {
+text-align: left;
+font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: "";
+}
+blockquote, q {
+quotes: "" "";
+}
+/* End reset stylesheet */
+
+/* HTML 5 */
+aside, nav, section, header, footer, time, article, hgroup {
+  display: block;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-size: 1em;
+  color: #555;
+  
+}
+.no-cssgradients body {
+  background: #000;
+}
+
+strong {
+  font-weight: bold;
+}
+a {
+  text-decoration: underline;
+  color: #2D79AB;
+}
+a:visited {
+  color: #20577A;
+}
+a:hover {
+  color: #999999;
+}
+
+/* Header */
+#header {
+  padding: 50px 0;
+  background: -moz-radial-gradient(center center, circle , rgba(0, 0, 0, 0.5) 0%, #000 100%), -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  background: -webkit-gradient(radial, center center, 0, center center, 900, from(rgba(0, 0, 0, 0.5)), to(#000)), 
+    -webkit-gradient(linear, left top, right bottom, 
+      color-stop(0, #333), color-stop(0.25, #333), 
+      color-stop(0.25, #2D79AB), color-stop(0.50, #2D79AB), 
+      color-stop(0.50, #333), color-stop(0.75, #333),
+      color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
+      ) repeat fixed;
+  -webkit-background-size: auto, 22px;
+  display: none;
+}
+.no-cssgradients #header {
+  background: #000 url(images/gradient.png) no-repeat top center;
+}
+#header:hover {
+  background: #000 url(images/gradient-hover.png) no-repeat top center;
+  background: -moz-radial-gradient(center center, circle, rgba(0, 0, 0, 0.5) 0%, #000 100%), -moz-repeating-linear-gradient(45deg, transparent, transparent 7px, rgba(255, 255, 255, 0.3) 7px, rgba(255, 255, 255, 0.3) 14px) fixed, -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #913FAB 7px, #913FAB 14px) fixed;
+  background: -webkit-gradient(radial, center center, 0, center center, 900, from(rgba(0, 0, 0, 0.5)), to(#000)), 
+    -webkit-gradient(linear, left top, right bottom, 
+      color-stop(0, transparent), color-stop(0.25, transparent), 
+      color-stop(0.25, rgba(255, 255, 255, 0.3)), color-stop(0.50, rgba(255, 255, 255, 0.3)), 
+      color-stop(0.50, transparent), color-stop(0.75, transparent),
+      color-stop(0.75, rgba(255, 255, 255, 0.3)), color-stop(1, rgba(255, 255, 255, 0.3))
+      ) repeat fixed,
+    -webkit-gradient(linear, right top, left bottom, 
+      color-stop(0, #333), color-stop(0.25, #333), 
+      color-stop(0.25, #913FAB), color-stop(0.50, #913FAB), 
+      color-stop(0.50, #333), color-stop(0.75, #333),
+      color-stop(0.75, #913FAB), color-stop(1, #913FAB)
+      ) repeat fixed;
+  -webkit-background-size: auto, 22px, 22px;
+}
+.no-cssgradients #header:hover {
+  background: #000 url(images/gradient-hover.png) no-repeat top center;
+}
+#header .inner {
+  width: 900px;
+  margin: 0 auto;
+  color: #EAF2F7;
+  text-align: center;
+}
+#header h1 a {
+  color: #EAF2F7;
+  font-size: 2em;
+  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  vertical-align: middle;
+  text-decoration: none;
+  border: none;
+}
+#header h1 strong {
+  text-shadow: 1px 1px 0 #000, 1px 3px 0 #2D79AB;
+}
+#header h1 a:hover strong {
+  text-shadow: 1px 1px 0 #000, 1px 3px 0 #913FAB;
+}
+#header h2 {
+  font-size: 1em;
+  margin-top: 1em;
+}
+#header h2 a {
+  text-decoration: none;
+  color: #30AB4A;
+}
+#header h2 a:hover {
+  text-decoration: underline;
+}
+#header h2 a.mozilla {
+  color: #B84343;
+}
+
+/* Content */
+#content {
+background: url(images/2.jpg) repeat fixed;
+  padding: 0.3em 0;
+}
+.no-cssgradients #content {
+  background: #000 url(images/stripes.png) repeat;
+}
+#content .outer {
+
+}
+.no-cssgradients #content .outer {
+  background: #EAF2F7;
+}
+#content .inner {
+  width: 900px;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+#content h1.pagetitle {
+  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  color: #999;
+  margin: -0.5em 0 1.5em;
+}
+#content .error {
+  text-align: center;
+}
+#content .error h1 {
+  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 3em 0 1em;
+}
+#content .error p {
+  font-size: 1.1em;
+  text-align: center;
+  margin: 0 0 3em;
+}
+
+/* posts */
+article {
+  margin: 40px 0;
+  padding: 20px;
+background:  rgba(255, 255, 255, 0.7);
+box-shadow: 0 0 5px #FFFFFF, 0 0 3px #333333 inset;
+}
+
+article h1 {
+  font-family: 'Bebas', 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  color: #333;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  text-shadow: 2px 2px 1px #000000;
+}
+article h1 a,
+article h1 a:visited {
+  text-decoration: none;
+  color: #2D79AB;
+}
+article h1 a:hover {
+  color: #333;
+}
+article time {
+  font-size: 0.8em;
+  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  color: #999;
+  display: inline;
+  text-transform: uppercase;
+}
+article time sup {
+  font-size: 0.8em;
+  text-transform: lowercase;
+  vertical-align: text-top;
+}
+article header .comments-link {
+  font-family: georgia, serif;
+  font-size: 0.8em;
+}
+article .entry {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+
+.no-cssgradients .striped {
+  background: #000 url(images/stripes.png) repeat;
+}
+article.single footer {
+  text-align: right;
+  clear: both;
+}
+article.single .striped {
+  margin: 1em 0;
+}
+
+/* Tags */
+.tag {
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  position: relative;
+  display: inline-block;
+  background-color: #CCC;
+  font-size: 0.8em;
+  height: 20px;
+  line-height: 1.45;
+  margin: 0 1em;
+  padding: 0 7px 0 3px;
+  text-shadow: 1px 1px 0 #999;
+}
+.tag a,
+.tag a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+.tag span {
+  border-color: transparent #CCC transparent transparent;
+  border-style: solid;
+  border-width: 10px 7px 10px 10px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  display: inline-block;
+  left: -17px;
+}
+.tag:hover {
+  background-color: #2D79AB;
+  text-shadow: 1px 1px 0 #333;
+}
+.tag:hover span {
+  border-color: transparent #2D79AB transparent transparent;
+}
+
+article p.more-link {
+  text-align: right;
+  display: block;
+}
+article a.more-link {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 5em;
+  text-transform: uppercase;
+  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+}
+
+/* Navigation */
+nav li.left {
+  float: left;
+}
+nav li.right {
+  float: right;
+}
+.page-nav {
+  height: 2em;
+}
+.post-nav {
+  font-size: 0.85em;
+  margin: 0 0 3em;
+  height: 2em;
+}
+.post-nav span {
+  font-style: italic;
+}
+
+/* Footer */
+.copyright {
+  color: #CCC;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 3em;
+}
+.copyright a,
+.copyright a:hover {
+  color: #CCC;
+}
+
+#ugly-notice,
+#super-ugly-notice {
+  display: none;
+  border: 1px solid #2D79AB;
+  padding: 0.5em;
+  margin: -1em 0 2em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  font-size: 0.8em;
+  color: #666;
+}
+#ugly-notice strong {
+  color: #2D79AB;
+}
+#super-ugly-notice {
+  border-color: #B84343;
+}
+#super-ugly-notice strong {
+  color: #B84343;
+}
+.no-cssgradients #ugly-notice {
+  display: block;
+}
+.no-cssgradients.no-borderradius #super-ugly-notice {
+  display: block;
+}
+.no-cssgradients.no-borderradius #ugly-notice {
+  display: none;
+}
+
+/* Comments */
+#comments h2 {
+  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+#comments .notice {
+  font-style: italic;
+  font-size: 1em;
+  margin: 1em;
+  color: #999;
+}
+#comments article {
+  background: #D0E7F5;
+  background: rgba(208, 231, 245, 0.2);
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin: 0.5em 0;
+}
+#comments .bypostauthor {
+  background: #D3F8C0;
+  background: rgba(211, 248, 192, 0.4);
+}
+.no-cssgradients #comments article {
+  border: 1px solid #2D79AB;
+}
+.no-cssgradients #comments .bypostauthor {
+  border: 1px solid #30AB4A;
+}
+#comments .awaiting {
+  float: right;
+  font-size: 0.9em;
+  font-weight: bold;
+  font-style: italic;
+}
+#comments cite a {
+  color: #333;
+  text-decoration: none;
+}
+#comments cite a:hover {
+  color: #999;
+  text-decoration: underline;
+}
+#comments .metadata {
+  display: block;
+}
+#comments time {
+  display: inline;
+}
+#comments .metadata a {
+  font-size: 0.75em;
+}
+#comments .anchor {
+  text-decoration: none;
+}
+#comments .avatar {
+  float: left;
+  margin-right: 0.5em;
+}
+#comments .entry {
+  clear: both;
+}
+#comments .entry p {
+  margin: 1em 0 0 0;
+}
+#pings {
+  margin-top: 2em;
+}
+#comments .depth-2 {
+  margin-left: 2em;
+}
+#comments .depth-3 {
+  margin-left: 4em;
+}
+#comments .depth-4 {
+  margin-left: 6em;
+}
+
+#comments .depth-5 {
+  margin-left: 8em;
+}
+
+#comments .depth-6 {
+  margin-left: 10em;
+}
+#pings {
+  display: none;
+}
+#comments .pingback {
+  background: #EEE;
+  background: rgba(0, 0, 0, 0.05);
+}
+.no-cssgradients #comments .pingback {
+  border: 1px solid #CCC;
+}
+#comments .show-pings {
+  font-size: 0.9em;
+  margin-top: 3em;
+}
+#comments .show-pings a {
+  color: #999;
+}
+
+/* Reply */
+#respond {
+  background-color: #FFFFFF;
+  border: 2px solid #D0E7F5;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-top: 2em;
+}
+#respond .left,
+#respond .right {
+  display: inline-block;
+  vertical-align: top;
+}
+#respond .left {
+  min-width: 20em;
+}
+#respond .clear {
+  margin-top: 0.5em;
+}
+#respond .cancel-reply {
+  font-size: 0.8em;
+  font-weight: normal;
+  font-family: helvetica;
+  margin-left: 2em;
+}
+#respond dt {
+  margin: 1em 0 0.2em 0;
+  font-size: 0.9em;
+}
+#respond dt span,
+#respond .info {
+  color: #666666;
+  font-size: 0.8em;
+  font-style: italic;
+}
+#respond .required {
+  color: #996666;
+}
+#respond input,
+#respond textarea {
+  font-size: 0.9em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #D0E7F5;
+  color: #666;
+  padding: 2px;
+}
+#respond input:focus,
+#respond textarea:focus {
+  border-color: #999999;
+}
+#respond .subscribe-to-comments input {
+  border: none;
+}
+#respond .subscribe-to-comments {
+  font-size: 0.9em;
+}
+#respond textarea {
+  width: 50em;
+  height: 7em;
+}
+#respond #submit,
+input[type="button"],
+input[type="submit"],
+button {
+  background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 60%), -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.5)), color-stop(0.6, rgba(255, 255, 255, 0.2))), 
+    -webkit-gradient(linear, left top, right bottom, 
+      color-stop(0, #333), color-stop(0.25, #333), 
+      color-stop(0.25, #2D79AB), color-stop(0.50, #2D79AB), 
+      color-stop(0.50, #333), color-stop(0.75, #333),
+      color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
+      ) repeat fixed;
+  -webkit-background-size: auto, 22px;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  color: #FFF;
+  margin: 0.5em 0;
+  padding: 0.3em 0.5em;
+  cursor: pointer;
+  text-shadow: 1px 1px 0px #333;
+}
+.no-cssgradients #respond #submit,
+.no-cssgradients input[type="button"],
+.no-cssgradients input[type="submit"],
+.no-cssgradients button {
+  background: #000 url(images/stripes.png) repeat;
+}
+#respond #submit:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:hover {
+  background: -moz-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%), -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.3)), color-stop(0.6, rgba(255, 255, 255, 0))), 
+    -webkit-gradient(linear, left top, right bottom, 
+      color-stop(0, #333), color-stop(0.25, #333), 
+      color-stop(0.25, #2D79AB), color-stop(0.50, #2D79AB), 
+      color-stop(0.50, #333), color-stop(0.75, #333),
+      color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
+      ) repeat fixed;
+  -webkit-background-size: auto, 22px;
+}
+.no-cssgradients #respond #submit:hover,
+.no-cssgradients input[type="button"]:hover,
+.no-cssgradients input[type="submit"]:hover,
+.no-cssgradients button:hover {
+  background: #000 url(images/stripes.png) repeat;
+}
+
+/* Post content styles */
+.center {
+  text-align: center;
+}
+
+article .entry p {
+  margin: 1.2em 0;
+  line-height: 1.7;
+  font-size: 1em;
+}
+.nomargin,
+article .entry p.nomargin {
+  margin: 0;
+}
+article .entry em {
+  font-style: italic;
+}
+article .entry ul,
+article .entry ol {
+  margin-left: 2em;
+}
+article .entry ul li {
+  list-style: disc;
+  margin-bottom: 0.5em;
+}
+article .entry ol li {
+  list-style: decimal;
+  margin-bottom: 0.5em;
+}
+article .entry img {
+  padding: 0.3em;
+  margin: 0.5em;
+  background: url(images/2.jpg);
+}
+.no-cssgradients article .entry img {
+  background: #000 url(images/stripes-light.png) repeat;
+}
+article .entry a:hover img {
+
+}
+.no-cssgradients article .entry a:hover img {
+  background: #000 url(images/stripes.png) repeat;
+}
+article .entry img.plain,
+article .entry img.wp-smiley,
+article .entry a img.plain,
+article .entry a:hover img.plain {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+article .entry .picturebox p {
+  margin: 0;
+}
+article .entry .picturebox cite {
+  text-align: center;
+  font-size: 0.85em;
+  font-style: italic;
+  display: block;
+  margin: -0.5em 0 1em;
+}
+article .entry h2 {
+  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+article .entry h3,
+article .entry h4,
+article .entry .important {
+  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1.5em 0 -0.5em;
+}
+article .entry tt,
+article .entry code,
+article .entry pre {
+  font-family: monospace;
+  white-space: pre;
+}
+article .entry blockquote {
+  border-left: 5px solid #CCCCCC;
+  padding-left: 1em;
+  margin-left: 1em;
+}
+article .entry blockquote.quote:before {
+  display: block;
+  float: left;
+  margin-left: -0.5em;
+  margin-top: .3em;
+  line-height: 0;
+  height: 0;
+  width: 0;
+  color: #CCC;
+  font-family: georgia, serif;
+  font-size: 400%;
+  content: '\201C';
+}
+article .entry blockquote.quote {
+  border: none;
+  font-style: italic;
+  font-family: georgia;
+  color: #666;
+  margin: 1em;
+}
+article .entry blockquote.quote cite {
+  display: block;
+  font-family: helvetica;
+  font-style: normal;
+  font-size: 0.85em;
+  text-align: right;
+  margin-top: 0.5em;
+}
+article .entry blockquote.quote cite time {
+  font-style: italic;
+  margin-left: 0.5em;
+  color: inherit;
+  font-size: 1em;
+  text-transform: none;
+  font-family: inherit;
+}
+
+article .entry th {
+  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border-left: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  padding: 5px 10px;
+  vertical-align: middle;
+}
+article .entry th:first-child {
+  border-left: none;
+}
+article .entry tfoot th {
+  font-weight: normal;
+  font-size: 0.85em;
+  font-family: inherit;
+  font-style: italic;
+  border: none;
+}
+article .entry td {
+  padding: 2px;
+}
+article .entry .noborders th {
+  border-left: none;
+}
+article .entry .bottomsolid {
+  border-bottom: 1px solid #CCC;
+}
+article .entry .bottomdotted {
+  border-bottom: 1px dotted #CCC;
+}
+article .entry .rightdashed {
+  border-right: 1px dashed #CCC;
+}
+article .entry th.leftdashed {
+  border-left: 1px dashed #CCC;
+}
+article .entry th.noborders {
+  border: none;
+}
+
+article .entry dl.pretty {
+  background-color: rgba(0, 0, 0, 0.025);
+  padding: 1em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+article .entry dl.pretty dt {
+  margin-top: 1em;
+  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+article .entry dl.pretty dt:first-child {
+  margin-top: 0;
+}
+article .entry dl.pretty dd {
+  margin: 0.5em 0 0 1em;
+}
+
+
+.rssonly {
+  display: none;
+}
+
+#footer.small-footer {
+  background: transparent;
+  padding: 0;
+  margin: 1em auto;
+  border: none;
+}
+
+/* About Page */
+.no-cssgradients .about-page {
+  background: url(images/stripes-dark.png) repeat fixed;
+}
+.about-page {
+  color: #EAF2F7;
+}
+.about-page #header,
+.about-page #header:hover {
+  background: none;
+}
+.about-page #header h2 {
+  visibility: hidden;
+  margin-top: 0.5em;
+}
+.about-page #header h2 a {
+  color: #2D79AB;
+}
+.about-page #header:hover h2 {
+  visibility: visible;
+}
+.about-page #content {
+  background: none;
+  padding: 0;
+  margin-top: -1em;
+}
+.about-page #content .outer {
+  background: none;
+}
+.about-page #content .inner {
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  background: -moz-linear-gradient(left top , rgba(45, 121, 171, 0.1), rgba(0, 0, 0, 0.3), rgba(45, 121, 171, 0.1)) fixed;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(45, 121, 171, 0.1)), color-stop(0.5, rgba(0, 0, 0, 0.3)), color-stop(1, rgba(45, 121, 171, 0.1))) repeat fixed;
+  padding: 1em;
+  margin-bottom: 4em;
+}
+.no-cssgradients .about-page #content .inner  {
+  background: rgba(45, 121, 171, 0.1);
+}
+.no-rgba .about-page #content .inner {
+  background: #333;
+}
+.about-page article header {
+  display: none;
+}
+.about-page article .entry {
+  margin-top: -1em;
+}
+.about-page article img,
+.no-cssgradients .about-page article img {
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+  float: right;
+  background: none;
+}
+.about-page article h2 {
+  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.about-page article p.notop {
+  margin-top: 0;
+}
+.about-page article .intro {
+  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1.3em;
+}
+.about-page article dl {
+  margin: 0 0 1.5em 1em;
+}
+.about-page article dt {
+  font-weight: bold;
+  margin-top: 1em;
+}
+.about-page article dd {
+  margin-left: 2em;
+  font-style: italic;
+}
+.about-page article .accounts {
+  margin: 0;
+  text-align: center;
+}
+.about-page article .accounts li {
+  list-style: none;
+  display: inline-block;
+  *display: inline;
+  margin: 0.5em 1em;
+}
+.about-page article .accounts li a {
+  font-size: 1.1em;
+}
