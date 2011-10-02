@@ -1,9 +1,11 @@
-      </div><!-- /.inner -->
-    </div><!-- /.outer -->
   </section> <!-- /#content -->
 
   <script type="text/javascript" src="http://g.fligtar.com/jquery.js"></script>
   <?php wp_footer(); ?>
+  
+  <?php if ( is_singular() ): ?>
+  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+  <?php endif; ?>
   
   <!-- Google Analytics -->
   <script type="text/javascript">

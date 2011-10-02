@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -18,7 +18,6 @@
 
   <?php wp_head(); ?>
 
-  <script type="text/javascript" src="http://g.fligtar.com/modernizr.min.js"></script>
 </head>
 
 <body<?php if (is_page(16)) { echo ' class="about-page"'; } ?>>
@@ -30,13 +29,3 @@
   </header>
   
   <section id="content">
-    <div class="outer">
-      <div class="inner">
-      
-      <div id="super-ugly-notice">
-        <p><strong>It's not me. It's you.</strong> If you were using a modern browser, this blog would look a whole lot nicer. Your web clunker doesn't support downloadable fonts, gradients, or even rounded corners! Not to mention the security problems. Try a <a href="http://www.getfirefox.com">better browser</a>.</p>
-      </div>
-      
-      <div id="ugly-notice">
-        <p><strong>FUN FACT!</strong> Your browser doesn't support CSS gradients. Anything pretty on this page is actually a screenshot of what it looks like in Firefox. Try a <a href="http://www.getfirefox.com">better browser</a> and see what else you've been missing out on.</p>
-      </div>

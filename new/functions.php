@@ -8,6 +8,8 @@ function fligtar_more($text) {
 
 function fligtar_comment($comment, $args, $depth) {
    $GLOBALS['comment'] = $comment;
+   if ($depth == 1)
+    echo '<div class="thread">';
 ?>
     <article <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">
         <header class="comment-author vcard">
@@ -19,7 +21,7 @@ function fligtar_comment($comment, $args, $depth) {
          
             <cite><?php echo get_comment_author_link(); ?></cite>
             <span class="metadata">
-                <time datetime="<?php comment_date('Y-m-d')?>T<?php comment_time('H:i:sP') ?>" pubdate><?php comment_date('F j<\s\u\p>S</\s\u\p>, Y') ?> <?php comment_time('g:i a') ?></time>
+                <time datetime="<?php comment_date('Y-m-d')?>T<?php comment_time('H:i:sP') ?>" pubdate><?php comment_date('F j, Y') ?> <?php comment_time('g:i a') ?></time>
                 <a class="anchor" title="link to this comment" href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">#</a>
                 <?php 
                 if ($comment->comment_type != 'pingback'):
@@ -37,7 +39,9 @@ function fligtar_comment($comment, $args, $depth) {
 }
 
 function fligtar_end_comment($comment, $args, $depth) {
-    // This is so WP doesn't add a silly end tag.
+    // Close comment thread
+    if ($depth == 0)
+        echo '</div>';
 }
 
 /**

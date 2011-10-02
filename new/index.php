@@ -7,7 +7,7 @@
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 	    <header>
 		    <h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-		    <time datetime="<?php the_time('Y-m-d\TH:i:sP') ?>" pubdate><?php the_time('F j<\s\u\p>S</\s\u\p>, Y') ?></time>
+		    <time datetime="<?php the_time('Y-m-d\TH:i:sP') ?>" pubdate><?php the_time('F j, Y') ?></time>
       </header>
             
 			<div class="entry">

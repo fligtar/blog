@@ -1,15 +1,9 @@
 /*
-Theme Name: fligstripe
+Theme Name: fligwood
 Theme URI: http://blog.fligtar.com
-Description: overlayed gradients OMG
+Description: straightedge
 Version: 1.0
 Author: Justin Scott
-*/
-
-/*
-COLORS!
-Blue: #2D79AB    Green: #30AB4A
-Red: #B84343     Beige: #EAF2F7
 */
 
 @font-face {
@@ -49,17 +43,6 @@ Red: #B84343     Beige: #EAF2F7
 	src: local('☺'), url('fonts/AurulentSans-BoldItalic-webfont.woff') format('woff'), url('fonts/AurulentSans-BoldItalic-webfont.ttf') format('truetype'), url('fonts/AurulentSans-BoldItalic-webfont.svg#webfonteMYjLuzz') format('svg');
 	font-weight: bold;
 	font-style: italic;
-}
-@font-face {
-    font-family: 'Nevis';
-    src: url('fonts/nevis-webfont.eot');
-    src: url('fonts/nevis-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/nevis-webfont.woff') format('woff'),
-         url('fonts/nevis-webfont.ttf') format('truetype'),
-         url('fonts/nevis-webfont.svg#nevisBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 /* Reset Styles */
@@ -140,7 +123,7 @@ a:visited {
   color: #20577A;
 }
 a:hover {
-  color: #999999;
+  color: #666;
 }
 
 /* Header */
@@ -156,15 +139,36 @@ a:hover {
   vertical-align: middle;
   text-decoration: none;
   border: none;
+  -moz-animation-name: header;
+  -moz-animation-duration: 20s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease;
+  -moz-animation-direction: alternate;
+  -moz-animation-play-state: running;
+  -webkit-animation-name: header;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
 }
 #header h1 a span {
     display: none;
 }
 #header h1 a:hover {
     text-shadow: 0 0 10px #2D79AB;
+    -moz-animation-play-state: paused;
 }
 #header h1 a:hover span {
     display: inline;
+}
+@-moz-keyframes header {
+    from { text-shadow: none; }
+    to { text-shadow: 0 0 10px #2D79AB; }
+}
+@-webkit-keyframes header {
+    from { text-shadow: none; }
+    to { text-shadow: 0 0 10px #2D79AB; }
 }
 #header h2 a {
   text-decoration: none;
@@ -181,10 +185,7 @@ a:hover {
 
 /* Content */
 #content {
-  padding: 0.3em 0;
-}
-#content .inner {
-  width: 900px;
+  width: 940px;
   margin: 0 auto;
 }
 #content h1.pagetitle {
@@ -200,24 +201,21 @@ a:hover {
 #content .error h1 {
   font-family: 'Franchise', helvetica, sans-serif;
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 7.5em;
   text-align: center;
-  margin: 3em 0 1em;
-}
-#content .error p {
-  font-size: 1.1em;
-  text-align: center;
-  margin: 0 0 3em;
+  margin: 2em 0 0;
+  text-transform: uppercase;
+  color: #CCC;
 }
 
 /* posts */
-article {
+article.post {
     margin: 40px 0;
     padding: 20px;
-    background:  rgba(255, 255, 255, 0.7);
-    box-shadow: 0 0 5px #FFFFFF, 0 0 3px #333333 inset;
+    background:  rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 2px #FFFFFF, 0 0 5px #333333 inset;
 }
-article h1 {
+article.post h1 {
     font-family: 'Franchise', helvetica, sans-serif;
     font-size: 2.5em;
     text-shadow: 2px 2px 1px #000;
@@ -225,56 +223,40 @@ article h1 {
     text-shadow: 1px 1px 1px #DDD, 1px 2px 1px #666;
     color: #2D79AB;
 }
-article h1 a,
-article h1 a:visited {
+article.post h1 a,
+article.post h1 a:visited {
     color: #2D79AB;
     text-decoration: none;
 }
-article h1 a:hover {
+article.post h1 a:hover {
     color: #555;
 }
-article time {
+article.post time {
   font-size: 0.8em;
   font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  color: #666;
+  color: #888;
   display: inline-block;
   text-transform: uppercase;
-  margin-top: 5px;
+  margin-top: 10px;
 }
-article time sup {
-  font-size: 0.8em;
-  text-transform: lowercase;
-  vertical-align: text-top;
-}
-article header .comments-link {
+article.post header .comments-link {
   font-family: georgia, serif;
   font-size: 0.8em;
 }
-article .entry {
+article.post .entry {
   font-size: 0.9em;
   line-height: 1.4;
-}
-
-
-.no-cssgradients .striped {
-  background: #000 url(images/stripes.png) repeat;
 }
 article.single footer {
   text-align: right;
   clear: both;
 }
-article.single .striped {
-  margin: 1em 0;
-}
 
 /* Tags */
 .tag {
-  -moz-border-radius: 0 3px 3px 0;
-  -webkit-border-radius: 0 3px 3px 0;
-  border-radius: 0 3px 3px 0;
   position: relative;
   display: inline-block;
-  background-color: #CCC;
+  background-color: rgba(255, 255, 255, 0.2);
   font-size: 0.8em;
   height: 20px;
   line-height: 1.45;
@@ -288,7 +270,7 @@ article.single .striped {
   color: #FFF;
 }
 .tag span {
-  border-color: transparent #CCC transparent transparent;
+  border-color: transparent rgba(255, 255, 255, 0.2) transparent transparent;
   border-style: solid;
   border-width: 10px 7px 10px 10px;
   height: 0;
@@ -298,11 +280,11 @@ article.single .striped {
   left: -17px;
 }
 .tag:hover {
-  background-color: #2D79AB;
+  background-color: rgba(208, 231, 245, 0.8);
   text-shadow: 1px 1px 0 #333;
 }
 .tag:hover span {
-  border-color: transparent #2D79AB transparent transparent;
+  border-color: transparent rgba(208, 231, 245, 0.8) transparent transparent;
 }
 
 article p.more-link {
@@ -337,9 +319,20 @@ nav li.right {
   font-size: 0.85em;
   margin: 0 0 3em;
   height: 2em;
+  color: #999;
 }
 .post-nav span {
   font-style: italic;
+}
+.post-nav a {
+    color: #999;
+}
+.post-nav a:hover {
+    color: #CCC;
+}
+
+.twitter-share-button {
+    float: left;
 }
 
 /* Footer */
@@ -347,74 +340,43 @@ nav li.right {
   color: #CCC;
   font-size: 0.8em;
   text-align: center;
-  margin-top: 3em;
+  margin: 3em 0;
 }
 .copyright a,
 .copyright a:hover {
   color: #CCC;
 }
 
-#ugly-notice,
-#super-ugly-notice {
-  display: none;
-  border: 1px solid #2D79AB;
-  padding: 0.5em;
-  margin: -1em 0 2em;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  font-size: 0.8em;
-  color: #666;
-}
-#ugly-notice strong {
-  color: #2D79AB;
-}
-#super-ugly-notice {
-  border-color: #B84343;
-}
-#super-ugly-notice strong {
-  color: #B84343;
-}
-.no-cssgradients #ugly-notice {
-  display: block;
-}
-.no-cssgradients.no-borderradius #super-ugly-notice {
-  display: block;
-}
-.no-cssgradients.no-borderradius #ugly-notice {
-  display: none;
-}
-
 /* Comments */
 #comments h2 {
-  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  font-size: 1em;
-  font-weight: bold;
+  font-family: 'Franchise', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  color: #CCC;
+  color: rgba(255, 255, 255, 0.6);
 }
+#respond h2,
+#pings h2 {
+    color: #555;
+} 
 #comments .notice {
   font-style: italic;
   font-size: 1em;
   margin: 1em;
   color: #999;
 }
+#comments .thread {
+    background: #D0E7F5;
+    background: rgba(208, 231, 245, 0.8);
+    box-shadow: 0 0 3px #333333 inset;
+    padding: 1em;
+    margin: 1em 0;
+}
 #comments article {
-  background: #D0E7F5;
-  background: rgba(208, 231, 245, 0.2);
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  padding: 1em;
-  margin: 0.5em 0;
+    margin-top: 1em;
 }
-#comments .bypostauthor {
-  background: #D3F8C0;
-  background: rgba(211, 248, 192, 0.4);
-}
-.no-cssgradients #comments article {
-  border: 1px solid #2D79AB;
-}
-.no-cssgradients #comments .bypostauthor {
-  border: 1px solid #30AB4A;
+#comments article:first-child {
+    margin-top: 0;
 }
 #comments .awaiting {
   float: right;
@@ -435,6 +397,8 @@ nav li.right {
 }
 #comments time {
   display: inline;
+  color: #666;
+  font-size: 0.8em;
 }
 #comments .metadata a {
   font-size: 0.75em;
@@ -451,12 +415,19 @@ nav li.right {
 }
 #comments .entry p {
   margin: 1em 0 0 0;
+  font-size: 0.85em;
 }
 #pings {
   margin-top: 2em;
 }
-#comments .depth-2 {
+#comments .depth-2,
+#comments .depth-3,
+#comments .depth-4,
+#comments .depth-5,
+#comments .depth-6 {
   margin-left: 2em;
+  padding-left: 1em;
+  border-left: 5px solid rgba(255, 255, 255, 0.3);
 }
 #comments .depth-3 {
   margin-left: 4em;
@@ -464,23 +435,30 @@ nav li.right {
 #comments .depth-4 {
   margin-left: 6em;
 }
-
 #comments .depth-5 {
   margin-left: 8em;
 }
-
 #comments .depth-6 {
   margin-left: 10em;
 }
+#comments .bypostauthor {
+  background: #D3F8C0;
+  background: rgba(211, 248, 192, 0.5);
+  padding: 0.5em 0.5em 0.5em 1em;
+}
 #pings {
   display: none;
-}
-#comments .pingback {
   background: #EEE;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 3px #333333 inset;
 }
-.no-cssgradients #comments .pingback {
-  border: 1px solid #CCC;
+#pings h2 {
+    padding: 0.5em;
+}
+#pings .thread {
+    background: none;
+    box-shadow: none;
+    margin: 0;
 }
 #comments .show-pings {
   font-size: 0.9em;
@@ -492,11 +470,8 @@ nav li.right {
 
 /* Reply */
 #respond {
-  background-color: #FFFFFF;
-  border: 2px solid #D0E7F5;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
+  background: #FFF;
+  background: rgba(255, 255, 255, 0.8);
   padding: 1em;
   margin-top: 2em;
 }
@@ -533,16 +508,15 @@ nav li.right {
 #respond input,
 #respond textarea {
   font-size: 0.9em;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  border: 1px solid #D0E7F5;
+  border: none;
   color: #666;
-  padding: 2px;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 3px #666 inset;
 }
 #respond input:focus,
 #respond textarea:focus {
-  border-color: #999999;
+  background: rgba(255, 255, 255, 1);
 }
 #respond .subscribe-to-comments input {
   border: none;
@@ -558,49 +532,17 @@ nav li.right {
 input[type="button"],
 input[type="submit"],
 button {
-  background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 60%), -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.5)), color-stop(0.6, rgba(255, 255, 255, 0.2))), 
-    -webkit-gradient(linear, left top, right bottom, 
-      color-stop(0, #333), color-stop(0.25, #333), 
-      color-stop(0.25, #2D79AB), color-stop(0.50, #2D79AB), 
-      color-stop(0.50, #333), color-stop(0.75, #333),
-      color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
-      ) repeat fixed;
-  -webkit-background-size: auto, 22px;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  color: #FFF;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
   margin: 0.5em 0;
-  padding: 0.3em 0.5em;
   cursor: pointer;
-  text-shadow: 1px 1px 0px #333;
-}
-.no-cssgradients #respond #submit,
-.no-cssgradients input[type="button"],
-.no-cssgradients input[type="submit"],
-.no-cssgradients button {
-  background: #000 url(images/stripes.png) repeat;
+box-shadow: none;
 }
 #respond #submit:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
 button:hover {
-  background: -moz-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%), -moz-repeating-linear-gradient(-45deg, #333, #333 7px, #2D79AB 7px, #2D79AB 14px) fixed;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.3)), color-stop(0.6, rgba(255, 255, 255, 0))), 
-    -webkit-gradient(linear, left top, right bottom, 
-      color-stop(0, #333), color-stop(0.25, #333), 
-      color-stop(0.25, #2D79AB), color-stop(0.50, #2D79AB), 
-      color-stop(0.50, #333), color-stop(0.75, #333),
-      color-stop(0.75, #2D79AB), color-stop(1, #2D79AB)
-      ) repeat fixed;
-  -webkit-background-size: auto, 22px;
-}
-.no-cssgradients #respond #submit:hover,
-.no-cssgradients input[type="button"]:hover,
-.no-cssgradients input[type="submit"]:hover,
-.no-cssgradients button:hover {
-  background: #000 url(images/stripes.png) repeat;
+background: rgba(255, 255, 255, 0.9);
 }
 
 /* Post content styles */
@@ -660,17 +602,19 @@ article .entry .picturebox cite {
   margin: -0.5em 0 1em;
 }
 article .entry h2 {
-  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  font-size: 1.3em;
+  font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-size: 1.4em;
   font-weight: bold;
+  text-shadow: 1px 1px 1px #DDD, 1px 1px 1px #666;
 }
 article .entry h3,
 article .entry h4,
 article .entry .important {
-  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  font-size: 1.2em;
+  font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-size: 1.3em;
   font-weight: bold;
   margin: 1.5em 0 -0.5em;
+  text-shadow: 1px 1px 1px #DDD, 1px 1px 1px #666;
 }
 article .entry tt,
 article .entry code,
@@ -721,7 +665,7 @@ article .entry blockquote.quote cite time {
 }
 
 article .entry th {
-  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
   font-weight: bold;
   text-align: center;
   border-left: 1px solid #CCC;
@@ -770,7 +714,7 @@ article .entry dl.pretty {
 }
 article .entry dl.pretty dt {
   margin-top: 1em;
-  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+  font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
   font-weight: bold;
   font-size: 1.1em;
 }
@@ -781,109 +725,6 @@ article .entry dl.pretty dd {
   margin: 0.5em 0 0 1em;
 }
 
-
 .rssonly {
   display: none;
-}
-
-#footer.small-footer {
-  background: transparent;
-  padding: 0;
-  margin: 1em auto;
-  border: none;
-}
-
-/* About Page */
-.no-cssgradients .about-page {
-  background: url(images/stripes-dark.png) repeat fixed;
-}
-.about-page {
-  color: #EAF2F7;
-}
-.about-page #header,
-.about-page #header:hover {
-  background: none;
-}
-.about-page #header h2 {
-  visibility: hidden;
-  margin-top: 0.5em;
-}
-.about-page #header h2 a {
-  color: #2D79AB;
-}
-.about-page #header:hover h2 {
-  visibility: visible;
-}
-.about-page #content {
-  background: none;
-  padding: 0;
-  margin-top: -1em;
-}
-.about-page #content .outer {
-  background: none;
-}
-.about-page #content .inner {
-  -moz-border-radius: 1em;
-  -webkit-border-radius: 1em;
-  border-radius: 1em;
-  background: -moz-linear-gradient(left top , rgba(45, 121, 171, 0.1), rgba(0, 0, 0, 0.3), rgba(45, 121, 171, 0.1)) fixed;
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(45, 121, 171, 0.1)), color-stop(0.5, rgba(0, 0, 0, 0.3)), color-stop(1, rgba(45, 121, 171, 0.1))) repeat fixed;
-  padding: 1em;
-  margin-bottom: 4em;
-}
-.no-cssgradients .about-page #content .inner  {
-  background: rgba(45, 121, 171, 0.1);
-}
-.no-rgba .about-page #content .inner {
-  background: #333;
-}
-.about-page article header {
-  display: none;
-}
-.about-page article .entry {
-  margin-top: -1em;
-}
-.about-page article img,
-.no-cssgradients .about-page article img {
-  margin-left: 1.5em;
-  margin-bottom: 1.5em;
-  float: right;
-  background: none;
-}
-.about-page article h2 {
-  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  font-size: 1.3em;
-  font-weight: bold;
-}
-.about-page article p.notop {
-  margin-top: 0;
-}
-.about-page article .intro {
-  font-family: 'Diavlo', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  font-weight: normal;
-  font-size: 1.3em;
-}
-.about-page article dl {
-  margin: 0 0 1.5em 1em;
-}
-.about-page article dt {
-  font-weight: bold;
-  margin-top: 1em;
-}
-.about-page article dd {
-  margin-left: 2em;
-  font-style: italic;
-}
-.about-page article .accounts {
-  margin: 0;
-  text-align: center;
-}
-.about-page article .accounts li {
-  list-style: none;
-  display: inline-block;
-  *display: inline;
-  margin: 0.5em 1em;
-}
-.about-page article .accounts li a {
-  font-size: 1.1em;
 }
