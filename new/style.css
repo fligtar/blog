@@ -130,6 +130,7 @@ a:hover {
     text-align: center;
 }
 #header h1 a {
+    color: #666;
     color: rgba(255, 255, 255, 0.35);
     font-size: 8em;
     font-family: 'Franchise', helvetica, sans-serif;
@@ -170,6 +171,7 @@ a:hover {
 #header h2 a {
     text-decoration: none;
     font-family: 'Franchise', helvetica, sans-serif;
+    color: #999;
     color: rgba(255, 255, 255, 0.4);
     font-size: 2em;
 }
@@ -181,12 +183,16 @@ a:hover {
 #about {
     width: 880px;
     margin: 1em auto;
+    color: #DDD;
     color: rgba(255, 255, 255, 0.9);
     font-size: 2em;
     text-transform: uppercase;
     padding: 1em;
+    background: #111 url(images/headshot.jpg) no-repeat 1em 50%;
     background: rgba(0, 0, 0, 0.5) url(images/headshot.jpg) no-repeat 1em 50%;
     font-family: 'Franchise', helvetica, sans-serif;
+    -moz-box-shadow: 0 0 10px #2D79AB;
+    -webkit-box-shadow: 0 0 10px #2D79AB;
     box-shadow: 0 0 10px #2D79AB;
     text-align: center;
     display: none;
@@ -197,6 +203,7 @@ a:hover {
 }
 #about a {
     text-shadow: 1px 3px 0px #913FAB;
+    color: #DDD;
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
 }
@@ -206,6 +213,7 @@ a:hover {
 }
 #about a.mozilla {
     text-shadow: 1px 3px 0px #B84343;
+    color: #DDD;
     color: rgba(255, 255, 255, 0.9);
 }
 #about a.mozilla:hover {
@@ -214,6 +222,7 @@ a:hover {
 }
 #about a.twitter {
     text-shadow: 1px 3px 0px #2D79AB;
+    color: #DDD;
     color: rgba(255, 255, 255, 0.9);
 }
 #about a.twitter:hover {
@@ -222,11 +231,13 @@ a:hover {
 }
 #about a.more {
     text-shadow: none;
+    color: #CCC;
     color: rgba(255, 255, 255, 0.7);
     margin-left: 1em;
     font-size: 0.8em;
 }
 #about a.more:hover {
+    color: #888;
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -261,7 +272,10 @@ a:hover {
 article.post {
     margin: 40px 0;
     padding: 20px;
-    background:  rgba(255, 255, 255, 0.8);
+    background-color: #CCC;
+    background-color: rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: 0 0 2px #FFFFFF, 0 0 5px #333333 inset;
+    -webkit-box-shadow: 0 0 2px #FFFFFF, 0 0 5px #333333 inset;
     box-shadow: 0 0 2px #FFFFFF, 0 0 5px #333333 inset;
 }
 article.post h1 {
@@ -308,6 +322,7 @@ article.single footer {
 .tag {
     position: relative;
     display: inline-block;
+    background-color: #EEE;
     background-color: rgba(255, 255, 255, 0.2);
     font-size: 0.8em;
     height: 20px;
@@ -349,12 +364,14 @@ article a.more-link {
     margin-right: 5em;
     text-transform: uppercase;
     font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-    background: rgba(255, 255, 255, 0.2);
+    background-color: #EEE;
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 5px 10px;
 }
 article a.more-link:hover {
     color: #2D79AB;
-    background: rgba(255, 255, 255, 0.5);
+    background-color: #CCC;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Navigation */
@@ -419,8 +436,10 @@ nav li.right {
     color: #999;
 }
 #comments .thread {
-    background: #D0E7F5;
-    background: rgba(208, 231, 245, 0.8);
+    background-color: #D0E7F5;
+    background-color: rgba(208, 231, 245, 0.8);
+    -moz-box-shadow: 0 0 3px #333333 inset;
+    -webkit-box-shadow: 0 0 3px #333333 inset;
     box-shadow: 0 0 3px #333333 inset;
     padding: 1em;
     margin: 1em 0;
@@ -503,6 +522,8 @@ nav li.right {
     display: none;
     background: #EEE;
     background: rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: 0 0 3px #333333 inset;
+    -webkit-box-shadow: 0 0 3px #333333 inset;
     box-shadow: 0 0 3px #333333 inset;
 }
 #pings h2 {
@@ -510,6 +531,8 @@ nav li.right {
 }
 #pings .thread {
     background: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
     margin: 0;
 }
@@ -564,12 +587,15 @@ nav li.right {
     border: none;
     color: #666;
     padding: 4px;
-    background: rgba(255, 255, 255, 0.8);
+    background-color: #EEE;
+    background-color: rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: 0 0 3px #666 inset;
+    -webkit-box-shadow: 0 0 3px #666 inset;
     box-shadow: 0 0 3px #666 inset;
 }
 #respond input:focus,
 #respond textarea:focus {
-    background: rgba(255, 255, 255, 1);
+    background-color: #FFF;
 }
 #respond .subscribe-to-comments input {
     border: none;
@@ -585,17 +611,21 @@ nav li.right {
 input[type="button"],
 input[type="submit"],
 button {
-    background: rgba(255, 255, 255, 0.5);
+    background-color: #CCC;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 5px 10px;
     margin: 0.5em 0;
     cursor: pointer;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 #respond #submit:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
 button:hover {
-    background: rgba(255, 255, 255, 0.9);
+    background-color: #DDD;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Post content styles */
@@ -632,6 +662,7 @@ article .entry img {
     background: url(images/darkwood.jpg);
 }
 article .entry a:hover img {
+    background: #CCC;
     background: rgba(255, 255, 255, 0.5);
 }
 article .entry img.plain,
@@ -675,7 +706,8 @@ article .entry pre {
     white-space: pre;
 }
 article .entry blockquote {
-    background: rgba(255, 255, 255, 0.5);
+    background-color: #CCC;
+    background-color: rgba(255, 255, 255, 0.5);
     color: #666;
     margin: 0 2em;
     padding: 1px 1em;
@@ -759,6 +791,7 @@ article .entry th.noborders {
 }
 
 article .entry dl.pretty {
+    background-color: #CCC;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 1em;
 }
