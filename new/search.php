@@ -16,7 +16,7 @@
 				<?php the_content('continue reading &raquo;'); ?>
 			</div>
 			
-			<footer class="striped"></footer>
+			<footer></footer>
 		</article>
 
 	<?php endwhile; ?>
@@ -31,8 +31,6 @@
 <?php else : ?>
   <div class="error">
     <h1>there's nothing here!</h1>
-    <p>try a different search below, or <a href="<?php echo get_option('home'); ?>">start from the beginning</a></p>
-    <?php get_search_form(); ?>
   </div>
 <?php endif; ?>
 

@@ -34,7 +34,9 @@
 	
 <?php endwhile; else: ?>
 
-		<p>Sorry, no posts matched your criteria.</p>
+    <div class="error">
+      <h1>there's nothing here!</h1>
+    </div>
 
 <?php endif; ?>
 

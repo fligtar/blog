@@ -101,56 +101,56 @@ aside, nav, section, header, footer, time, article, hgroup {
 }
 
 body {
-  margin: 0 auto;
-  padding: 0;
-  font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  font-size: 1em;
-  color: #555;
-  background: url(images/darkwood.jpg) repeat fixed;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+    font-size: 1em;
+    color: #555;
+    background: url(images/darkwood.jpg) repeat fixed;
 }
 .no-cssgradients body {
-  background: #000;
+    background: #000;
 }
 
 strong {
-  font-weight: bold;
+    font-weight: bold;
 }
 a {
-  text-decoration: underline;
-  color: #2D79AB;
+    text-decoration: underline;
+    color: #2D79AB;
 }
 a:visited {
-  color: #20577A;
+    color: #20577A;
 }
 a:hover {
-  color: #666;
+    color: #666;
 }
 
 /* Header */
 #header .inner {
-  width: 900px;
-  margin: 0 auto;
-  text-align: center;
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
 }
 #header h1 a {
-  color: rgba(255, 255, 255, 0.35);
-  font-size: 8em;
-  font-family: 'Franchise', helvetica, sans-serif;
-  vertical-align: middle;
-  text-decoration: none;
-  border: none;
-  -moz-animation-name: header;
-  -moz-animation-duration: 20s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: ease;
-  -moz-animation-direction: alternate;
-  -moz-animation-play-state: running;
-  -webkit-animation-name: header;
-  -webkit-animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-play-state: running;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 8em;
+    font-family: 'Franchise', helvetica, sans-serif;
+    vertical-align: middle;
+    text-decoration: none;
+    border: none;
+    -moz-animation-name: header;
+    -moz-animation-duration: 20s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease;
+    -moz-animation-direction: alternate;
+    -moz-animation-play-state: running;
+    -webkit-animation-name: header;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
 }
 #header h1 a span {
     display: none;
@@ -171,41 +171,93 @@ a:hover {
     to { text-shadow: 0 0 10px #2D79AB; }
 }
 #header h2 a {
-  text-decoration: none;
-  font-family: 'Franchise', helvetica, sans-serif;
-  color: rgba(255, 255, 255, 0.2);
-  font-size: 2em;
+    text-decoration: none;
+    font-family: 'Franchise', helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 2em;
 }
 #header h2 a:hover {
-  text-shadow: 0 0 10px #913FAB;
+    text-shadow: 0 0 10px #913FAB;
 }
-#header h2 a.mozilla {
-  color: #B84343;
+
+/* About */
+#about {
+    width: 880px;
+    margin: 1em auto;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.5) url(images/headshot.jpg) no-repeat 1em 50%;
+    font-family: 'Franchise', helvetica, sans-serif;
+    box-shadow: 0 0 10px #2D79AB;
+    text-align: center;
+    display: none;
+}
+#about p {
+    margin-left: 5.5em;
+    width: 710px;
+}
+#about a {
+    text-shadow: 1px 3px 0px #913FAB;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+#about a:hover {
+    color: #913FAB;
+    text-shadow: none;
+}
+#about a.mozilla {
+    text-shadow: 1px 3px 0px #B84343;
+    color: rgba(255, 255, 255, 0.9);
+}
+#about a.mozilla:hover {
+    color: #B84343;
+    text-shadow: none;
+}
+#about a.twitter {
+    text-shadow: 1px 3px 0px #2D79AB;
+    color: rgba(255, 255, 255, 0.9);
+}
+#about a.twitter:hover {
+    color: #2D79AB;
+    text-shadow: none;
+}
+#about a.more {
+    text-shadow: none;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 1em;
+    font-size: 0.8em;
+}
+#about a.more:hover {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 /* Content */
 #content {
-  width: 940px;
-  margin: 0 auto;
+    width: 940px;
+    margin: 0 auto;
 }
 #content h1.pagetitle {
-  font-family: 'Franchise', helvetica, sans-serif;
-  font-size: 1.2em;
-  text-align: center;
-  color: #999;
-  margin: -0.5em 0 1.5em;
+    font-family: 'Franchise', helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: #999;
+    margin: 0.5em 0 1em;
+    text-shadow: 1px 1px 1px #000;
+    text-transform: uppercase;
 }
 #content .error {
-  text-align: center;
+    text-align: center;
 }
 #content .error h1 {
-  font-family: 'Franchise', helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 7.5em;
-  text-align: center;
-  margin: 2em 0 0;
-  text-transform: uppercase;
-  color: #CCC;
+    font-family: 'Franchise', helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 7.5em;
+    text-align: center;
+    margin: 2em 0 0;
+    text-transform: uppercase;
+    color: #CCC;
 }
 
 /* posts */
@@ -232,73 +284,73 @@ article.post h1 a:hover {
     color: #555;
 }
 article.post time {
-  font-size: 0.8em;
-  font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  color: #888;
-  display: inline-block;
-  text-transform: uppercase;
-  margin-top: 10px;
+    font-size: 0.8em;
+    font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+    color: #888;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 article.post header .comments-link {
-  font-family: georgia, serif;
-  font-size: 0.8em;
+    font-family: georgia, serif;
+    font-size: 0.8em;
 }
 article.post .entry {
-  font-size: 0.9em;
-  line-height: 1.4;
+    font-size: 0.9em;
+    line-height: 1.4;
 }
-article.single footer {
-  text-align: right;
-  clear: both;
+article footer {
+    text-align: right;
+    clear: both;
 }
 
 /* Tags */
 .tag {
-  position: relative;
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
-  font-size: 0.8em;
-  height: 20px;
-  line-height: 1.45;
-  margin: 0 1em;
-  padding: 0 7px 0 3px;
-  text-shadow: 1px 1px 0 #999;
+    position: relative;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 0.8em;
+    height: 20px;
+    line-height: 1.45;
+    margin: 0 1em;
+    padding: 0 7px 0 3px;
+    text-shadow: 1px 1px 0 #999;
 }
 .tag a,
 .tag a:hover {
-  text-decoration: none;
-  color: #FFF;
+    text-decoration: none;
+    color: #FFF;
 }
 .tag span {
-  border-color: transparent rgba(255, 255, 255, 0.2) transparent transparent;
-  border-style: solid;
-  border-width: 10px 7px 10px 10px;
-  height: 0;
-  width: 0;
-  position: absolute;
-  display: inline-block;
-  left: -17px;
+    border-color: transparent rgba(255, 255, 255, 0.2) transparent transparent;
+    border-style: solid;
+    border-width: 10px 7px 10px 10px;
+    height: 0;
+    width: 0;
+    position: absolute;
+    display: inline-block;
+    left: -17px;
 }
 .tag:hover {
-  background-color: rgba(208, 231, 245, 0.8);
-  text-shadow: 1px 1px 0 #333;
+    background-color: rgba(208, 231, 245, 0.8);
+    text-shadow: 1px 1px 0 #333;
 }
 .tag:hover span {
-  border-color: transparent rgba(208, 231, 245, 0.8) transparent transparent;
+    border-color: transparent rgba(208, 231, 245, 0.8) transparent transparent;
 }
 
 article p.more-link {
-  text-align: right;
-  display: block;
+    text-align: right;
+    display: block;
 }
 article a.more-link {
-  text-decoration: none;
-  display: inline-block;
-  margin-right: 5em;
-  text-transform: uppercase;
-  font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 5em;
+    text-transform: uppercase;
+    font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
 }
 article a.more-link:hover {
     color: #2D79AB;
@@ -307,22 +359,22 @@ article a.more-link:hover {
 
 /* Navigation */
 nav li.left {
-  float: left;
+    float: left;
 }
 nav li.right {
-  float: right;
+    float: right;
 }
 .page-nav {
-  height: 2em;
+    height: 2em;
 }
 .post-nav {
-  font-size: 0.85em;
-  margin: 0 0 3em;
-  height: 2em;
-  color: #999;
+    font-size: 0.85em;
+    margin: 0 0 3em;
+    height: 2em;
+    color: #999;
 }
 .post-nav span {
-  font-style: italic;
+    font-style: italic;
 }
 .post-nav a {
     color: #999;
@@ -337,33 +389,33 @@ nav li.right {
 
 /* Footer */
 .copyright {
-  color: #CCC;
-  font-size: 0.8em;
-  text-align: center;
-  margin: 3em 0;
+    color: #CCC;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 3em 0;
 }
 .copyright a,
 .copyright a:hover {
-  color: #CCC;
+    color: #CCC;
 }
 
 /* Comments */
 #comments h2 {
-  font-family: 'Franchise', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  font-size: 1.8em;
-  text-transform: uppercase;
-  color: #CCC;
-  color: rgba(255, 255, 255, 0.6);
+    font-family: 'Franchise', 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: #CCC;
+    color: rgba(255, 255, 255, 0.6);
 }
 #respond h2,
 #pings h2 {
     color: #555;
 } 
 #comments .notice {
-  font-style: italic;
-  font-size: 1em;
-  margin: 1em;
-  color: #999;
+    font-style: italic;
+    font-size: 1em;
+    margin: 1em;
+    color: #999;
 }
 #comments .thread {
     background: #D0E7F5;
@@ -379,78 +431,78 @@ nav li.right {
     margin-top: 0;
 }
 #comments .awaiting {
-  float: right;
-  font-size: 0.9em;
-  font-weight: bold;
-  font-style: italic;
+    float: right;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: italic;
 }
 #comments cite a {
-  color: #333;
-  text-decoration: none;
+    color: #333;
+    text-decoration: none;
 }
 #comments cite a:hover {
-  color: #999;
-  text-decoration: underline;
+    color: #999;
+    text-decoration: underline;
 }
 #comments .metadata {
-  display: block;
+    display: block;
 }
 #comments time {
-  display: inline;
-  color: #666;
-  font-size: 0.8em;
+    display: inline;
+    color: #666;
+    font-size: 0.8em;
 }
 #comments .metadata a {
-  font-size: 0.75em;
+    font-size: 0.75em;
 }
 #comments .anchor {
-  text-decoration: none;
+    text-decoration: none;
 }
 #comments .avatar {
-  float: left;
-  margin-right: 0.5em;
+    float: left;
+    margin-right: 0.5em;
 }
 #comments .entry {
-  clear: both;
+    clear: both;
 }
 #comments .entry p {
-  margin: 1em 0 0 0;
-  font-size: 0.85em;
+    margin: 1em 0 0 0;
+    font-size: 0.85em;
 }
 #pings {
-  margin-top: 2em;
+    margin-top: 2em;
 }
 #comments .depth-2,
 #comments .depth-3,
 #comments .depth-4,
 #comments .depth-5,
 #comments .depth-6 {
-  margin-left: 2em;
-  padding-left: 1em;
-  border-left: 5px solid rgba(255, 255, 255, 0.3);
+    margin-left: 2em;
+    padding-left: 1em;
+    border-left: 5px solid rgba(255, 255, 255, 0.3);
 }
 #comments .depth-3 {
-  margin-left: 4em;
+    margin-left: 4em;
 }
 #comments .depth-4 {
-  margin-left: 6em;
+    margin-left: 6em;
 }
 #comments .depth-5 {
-  margin-left: 8em;
+    margin-left: 8em;
 }
 #comments .depth-6 {
-  margin-left: 10em;
+    margin-left: 10em;
 }
 #comments .bypostauthor {
-  background: #D3F8C0;
-  background: rgba(211, 248, 192, 0.5);
-  padding: 0.5em 0.5em 0.5em 1em;
+    background: #D3F8C0;
+    background: rgba(211, 248, 192, 0.5);
+    padding: 0.5em 0.5em 0.5em 1em;
 }
 #pings {
-  display: none;
-  background: #EEE;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 0 3px #333333 inset;
+    display: none;
+    background: #EEE;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 3px #333333 inset;
 }
 #pings h2 {
     padding: 0.5em;
@@ -461,72 +513,72 @@ nav li.right {
     margin: 0;
 }
 #comments .show-pings {
-  font-size: 0.9em;
-  margin-top: 3em;
+    font-size: 0.9em;
+    margin-top: 3em;
 }
 #comments .show-pings a {
-  color: #999;
+    color: #999;
 }
 
 /* Reply */
 #respond {
-  background: #FFF;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 1em;
-  margin-top: 2em;
+    background: #FFF;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1em;
+    margin-top: 2em;
 }
 #respond .left,
 #respond .right {
-  display: inline-block;
-  vertical-align: top;
+    display: inline-block;
+    vertical-align: top;
 }
 #respond .left {
-  min-width: 20em;
+    min-width: 20em;
 }
 #respond .clear {
-  margin-top: 0.5em;
+    margin-top: 0.5em;
 }
 #respond .cancel-reply {
-  font-size: 0.8em;
-  font-weight: normal;
-  font-family: helvetica;
-  margin-left: 2em;
+    font-size: 0.8em;
+    font-weight: normal;
+    font-family: helvetica;
+    margin-left: 2em;
 }
 #respond dt {
-  margin: 1em 0 0.2em 0;
-  font-size: 0.9em;
+    margin: 1em 0 0.2em 0;
+    font-size: 0.9em;
 }
 #respond dt span,
 #respond .info {
-  color: #666666;
-  font-size: 0.8em;
-  font-style: italic;
+    color: #666666;
+    font-size: 0.8em;
+    font-style: italic;
 }
 #respond .required {
-  color: #996666;
+    color: #996666;
 }
 #respond input,
 #respond textarea {
-  font-size: 0.9em;
-  border: none;
-  color: #666;
-  padding: 4px;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 0 3px #666 inset;
+    font-size: 0.9em;
+    border: none;
+    color: #666;
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 3px #666 inset;
 }
 #respond input:focus,
 #respond textarea:focus {
-  background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 1);
 }
 #respond .subscribe-to-comments input {
-  border: none;
+    border: none;
 }
 #respond .subscribe-to-comments {
-  font-size: 0.9em;
+    font-size: 0.9em;
 }
 #respond textarea {
-  width: 50em;
-  height: 7em;
+    width: 50em;
+    height: 7em;
 }
 #respond #submit,
 input[type="button"],
@@ -534,50 +586,49 @@ input[type="submit"],
 button {
     background: rgba(255, 255, 255, 0.5);
     padding: 5px 10px;
-  margin: 0.5em 0;
-  cursor: pointer;
-box-shadow: none;
+    margin: 0.5em 0;
+    cursor: pointer;
+    box-shadow: none;
 }
 #respond #submit:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
 button:hover {
-background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 /* Post content styles */
 .center {
-  text-align: center;
+    text-align: center;
 }
-
 article .entry p {
-  margin: 1.2em 0;
-  line-height: 1.7;
-  font-size: 1em;
+    margin: 1.2em 0;
+    line-height: 1.7;
+    font-size: 1em;
 }
 .nomargin,
 article .entry p.nomargin {
-  margin: 0;
+    margin: 0;
 }
 article .entry em {
-  font-style: italic;
+    font-style: italic;
 }
 article .entry ul,
 article .entry ol {
-  margin-left: 2em;
+    margin-left: 2em;
 }
 article .entry ul li {
-  list-style: disc;
-  margin-bottom: 0.5em;
+    list-style: disc;
+    margin-bottom: 0.5em;
 }
 article .entry ol li {
-  list-style: decimal;
-  margin-bottom: 0.5em;
+    list-style: decimal;
+    margin-bottom: 0.5em;
 }
 article .entry img {
-  padding: 0.3em;
-  margin: 0.5em;
-  background: url(images/darkwood.jpg);
+    padding: 0.3em;
+    margin: 0.5em;
+    background: url(images/darkwood.jpg);
 }
 article .entry a:hover img {
     background: rgba(255, 255, 255, 0.5);
@@ -586,145 +637,143 @@ article .entry img.plain,
 article .entry img.wp-smiley,
 article .entry a img.plain,
 article .entry a:hover img.plain {
-  border: none;
-  padding: 0;
-  margin: 0;
-  background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
 }
 article .entry .picturebox p {
-  margin: 0;
+    margin: 0;
 }
 article .entry .picturebox cite {
-  text-align: center;
-  font-size: 0.85em;
-  font-style: italic;
-  display: block;
-  margin: -0.5em 0 1em;
+    text-align: center;
+    font-size: 0.85em;
+    font-style: italic;
+    display: block;
+    margin: -0.5em 0 1em;
 }
 article .entry h2 {
-  font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  font-size: 1.4em;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #DDD, 1px 1px 1px #666;
+    font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #DDD, 1px 1px 1px #666;
 }
 article .entry h3,
 article .entry h4,
 article .entry .important {
-  font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  font-size: 1.3em;
-  font-weight: bold;
-  margin: 1.5em 0 -0.5em;
-  text-shadow: 1px 1px 1px #DDD, 1px 1px 1px #666;
+    font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 1.5em 0 -0.5em;
+    text-shadow: 1px 1px 1px #DDD, 1px 1px 1px #666;
 }
 article .entry tt,
 article .entry code,
 article .entry pre {
-  font-family: monospace;
-  white-space: pre;
+    font-family: monospace;
+    white-space: pre;
 }
 article .entry blockquote {
-  border-left: 5px solid #CCCCCC;
-  padding-left: 1em;
-  margin-left: 1em;
+    background: rgba(255, 255, 255, 0.5);
+    color: #666;
+    margin: 0 2em;
+    padding: 1px 1em;
 }
 article .entry blockquote.quote:before {
-  display: block;
-  float: left;
-  margin-left: -0.5em;
-  margin-top: .3em;
-  line-height: 0;
-  height: 0;
-  width: 0;
-  color: #CCC;
-  font-family: georgia, serif;
-  font-size: 400%;
-  content: '\201C';
+    display: block;
+    float: left;
+    margin-left: -0.5em;
+    margin-top: .3em;
+    line-height: 0;
+    height: 0;
+    width: 0;
+    color: #CCC;
+    font-family: georgia, serif;
+    font-size: 400%;
+    content: '\201C';
 }
 article .entry blockquote.quote {
-  border: none;
-  font-style: italic;
-  font-family: georgia;
-  color: #666;
-  margin: 1em;
+    border: none;
+    font-style: italic;
+    font-family: georgia;
+    color: #666;
+    margin: 1em;
 }
 article .entry blockquote.quote cite {
-  display: block;
-  font-family: helvetica;
-  font-style: normal;
-  font-size: 0.85em;
-  text-align: right;
-  margin-top: 0.5em;
+    display: block;
+    font-family: helvetica;
+    font-style: normal;
+    font-size: 0.85em;
+    text-align: right;
+    margin-top: 0.5em;
 }
 article .entry blockquote.quote cite time {
-  font-style: italic;
-  margin-left: 0.5em;
-  color: inherit;
-  font-size: 1em;
-  text-transform: none;
-  font-family: inherit;
+    font-style: italic;
+    margin-left: 0.5em;
+    color: inherit;
+    font-size: 1em;
+    text-transform: none;
+    font-family: inherit;
 }
 
 article .entry th {
-  font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  border-left: 1px solid #CCC;
-  border-bottom: 1px solid #CCC;
-  padding: 5px 10px;
-  vertical-align: middle;
+    font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    padding: 5px 10px;
+    vertical-align: middle;
 }
 article .entry th:first-child {
-  border-left: none;
+    border-left: none;
 }
 article .entry tfoot th {
-  font-weight: normal;
-  font-size: 0.85em;
-  font-family: inherit;
-  font-style: italic;
-  border: none;
+    font-weight: normal;
+    font-size: 0.85em;
+    font-family: inherit;
+    font-style: italic;
+    border: none;
 }
 article .entry td {
-  padding: 2px;
+    padding: 2px;
 }
 article .entry .noborders th {
-  border-left: none;
+    border-left: none;
 }
 article .entry .bottomsolid {
-  border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
 }
 article .entry .bottomdotted {
-  border-bottom: 1px dotted #CCC;
+    border-bottom: 1px dotted #CCC;
 }
 article .entry .rightdashed {
-  border-right: 1px dashed #CCC;
+    border-right: 1px dashed #CCC;
 }
 article .entry th.leftdashed {
-  border-left: 1px dashed #CCC;
+    border-left: 1px dashed #CCC;
 }
 article .entry th.noborders {
-  border: none;
+    border: none;
 }
 
 article .entry dl.pretty {
-  background-color: rgba(0, 0, 0, 0.025);
-  padding: 1em;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1em;
 }
 article .entry dl.pretty dt {
-  margin-top: 1em;
-  font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 1.1em;
+    margin-top: 1em;
+    font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 article .entry dl.pretty dt:first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
 article .entry dl.pretty dd {
-  margin: 0.5em 0 0 1em;
+    margin: 0.5em 0 0 1em;
 }
 
 .rssonly {
-  display: none;
+    display: none;
 }
