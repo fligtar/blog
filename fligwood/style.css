@@ -325,22 +325,21 @@ article.single footer {
 .tag {
     position: relative;
     display: inline-block;
-    background-color: #EEE;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #CCC;
+    background-color: rgba(255, 255, 255, 0.5);
     font-size: 0.8em;
     height: 20px;
     line-height: 1.45;
     margin: 0 1em;
     padding: 0 7px 0 3px;
-    text-shadow: 1px 1px 0 #999;
 }
 .tag a,
 .tag a:hover {
     text-decoration: none;
-    color: #FFF;
+    color: #999;
 }
 .tag span {
-    border-color: transparent rgba(255, 255, 255, 0.2) transparent transparent;
+    border-color: transparent rgba(255, 255, 255, 0.5) transparent transparent;
     border-style: solid;
     border-width: 10px 7px 10px 10px;
     height: 0;
@@ -350,11 +349,10 @@ article.single footer {
     left: -17px;
 }
 .tag:hover {
-    background-color: rgba(208, 231, 245, 0.8);
-    text-shadow: 1px 1px 0 #333;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 .tag:hover span {
-    border-color: transparent rgba(208, 231, 245, 0.8) transparent transparent;
+    border-color: transparent rgba(255, 255, 255, 0.9) transparent transparent;
 }
 
 article p.more-link {
@@ -719,30 +717,31 @@ article .entry blockquote {
 article .entry blockquote.quote:before {
     display: block;
     float: left;
-    margin-left: -0.5em;
+    margin-left: -0.4em;
     margin-top: .3em;
     line-height: 0;
     height: 0;
     width: 0;
     color: #CCC;
     font-family: georgia, serif;
-    font-size: 400%;
+    font-size: 600%;
     content: '\201C';
 }
 article .entry blockquote.quote {
-    border: none;
+    background-color: #CCC;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #666;
+    margin: 0 2em;
+    padding: 1px 1em;
     font-style: italic;
     font-family: georgia;
-    color: #666;
-    margin: 1em;
 }
 article .entry blockquote.quote cite {
     display: block;
-    font-family: helvetica;
+    font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
     font-style: normal;
     font-size: 0.85em;
     text-align: right;
-    margin-top: 0.5em;
 }
 article .entry blockquote.quote cite time {
     font-style: italic;
