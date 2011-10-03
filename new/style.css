@@ -1,7 +1,7 @@
 /*
 Theme Name: fligwood
 Theme URI: http://blog.fligtar.com
-Description: straightedge
+Description: no rounded corners!
 Version: 1.0
 Author: Justin Scott
 */
@@ -195,6 +195,9 @@ a:hover {
     -webkit-box-shadow: 0 0 10px #2D79AB;
     box-shadow: 0 0 10px #2D79AB;
     text-align: center;
+    display: none;
+}
+#about img {
     display: none;
 }
 #about p {
