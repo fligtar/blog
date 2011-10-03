@@ -246,7 +246,7 @@ a:hover {
 
 /* Content */
 #content {
-    width: 940px;
+    width: 950px;
     margin: 0 auto;
 }
 #content h1.pagetitle {
@@ -273,10 +273,10 @@ a:hover {
 
 /* posts */
 article.post {
-    margin: 40px 0;
-    padding: 20px;
+    margin: 2.5em 0;
+    padding: 2em;
     background-color: #CCC;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.85);
     -moz-box-shadow: 0 0 2px #FFFFFF, 0 0 5px #333333 inset;
     -webkit-box-shadow: 0 0 2px #FFFFFF, 0 0 5px #333333 inset;
     box-shadow: 0 0 2px #FFFFFF, 0 0 5px #333333 inset;
@@ -566,10 +566,11 @@ nav li.right {
     margin-top: 0.5em;
 }
 #respond .cancel-reply {
-    font-size: 0.8em;
+    font-size: 0.5em;
     font-weight: normal;
-    font-family: helvetica;
-    margin-left: 2em;
+    font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+    margin-left: 1em;
+    text-transform: none;
 }
 #respond dt {
     margin: 1em 0 0.2em 0;
