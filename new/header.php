@@ -15,16 +15,16 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-
+    
+    <script type="text/javascript" src="http://g.fligtar.com/modernizr.min.js"></script>
+    
     <?php wp_head(); ?>
 </head>
 
 <body<?php if (is_page(16)) { echo ' class="about-page"'; } ?>>
     <header id="header">
-        <hgroup class="inner">
-            <h1><a href="<?php echo get_option('home'); ?>/"><span>&middot;</span>FLIGTAR<span>&middot;</span></a></h1>
-            <h2><a href="#" onclick="$('#about').show(); $(this).hide(); return false;">about me</a></h2>
-        </hgroup>
+        <h1><a href="<?php echo get_option('home'); ?>/"><span>&middot;</span>FLIGTAR<span>&middot;</span></a></h1>
+        <h2><a href="#" onclick="$('#about').show(); $(this).hide(); return false;">about me</a></h2>
     </header>
 
     <section id="about">

@@ -108,9 +108,6 @@ body {
     color: #555;
     background: url(images/darkwood.jpg) repeat fixed;
 }
-.no-cssgradients body {
-    background: #000;
-}
 
 strong {
     font-weight: bold;
@@ -127,7 +124,7 @@ a:hover {
 }
 
 /* Header */
-#header .inner {
+#header {
     width: 900px;
     margin: 0 auto;
     text-align: center;
@@ -299,9 +296,12 @@ article.post .entry {
     font-size: 0.9em;
     line-height: 1.4;
 }
-article footer {
+article.post footer {
     text-align: right;
     clear: both;
+}
+article.single footer {
+    min-height: 20px;
 }
 
 /* Tags */
@@ -376,10 +376,12 @@ nav li.right {
 .post-nav span {
     font-style: italic;
 }
-.post-nav a {
+.post-nav a,
+.page-nav a {
     color: #999;
 }
-.post-nav a:hover {
+.post-nav a:hover,
+.page-nav a:hover {
     color: #CCC;
 }
 
@@ -412,7 +414,6 @@ nav li.right {
     color: #555;
 } 
 #comments .notice {
-    font-style: italic;
     font-size: 1em;
     margin: 1em;
     color: #999;
