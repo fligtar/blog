@@ -29,7 +29,7 @@
 
     <section id="about">
         <img src="<?php bloginfo('template_url'); ?>/images/headshot.jpg" alt=""/>
-        <p><a href="http://www.twitter.com/fligtar" class="twitter">Justin Scott</a> has an undiagnosed addiction to <a href="http://en.wikipedia.org/wiki/Cha_siu_baau">steamed pork buns</a><br/> and leads the <a href="https://addons.mozilla.org" class="mozilla">Add-ons</a> team at <a href="http://www.mozilla.org" class="mozilla">Mozilla</a>. <a href="http://about.me/fligtar" class="more">more <b>&raquo;</b></a></p>
+        <p><a href="http://www.twitter.com/fligtar" class="twitter">Justin Scott</a> has an undiagnosed addiction to <a href="http://en.wikipedia.org/wiki/Cha_siu_baau">steamed pork buns</a><br/> and works on the <a href="https://marketplace.mozilla.org" class="mozilla">Mozilla Marketplace</a> and <a href="https://addons.mozilla.org" class="mozilla">Firefox Add-ons</a>. <a href="http://about.me/fligtar" class="more">more <b>&raquo;</b></a></p>
     </section>
 
     <section id="content">
