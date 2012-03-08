@@ -64,7 +64,7 @@
     </section>
     
   <?php else: ?>
-      <p class="notice">(this post is more than a year old and new comments have been automatically disabled)</p>
+      <p class="notice">(this post is no longer accepting new comments)</p>
   <?php endif; ?>
 
   <?php // Display pings and tracebacks ?>
