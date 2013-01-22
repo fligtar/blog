@@ -1,6 +1,6 @@
     </section> <!-- /#content -->
 
-    <script type="text/javascript" src="http://g.fligtar.com/jquery.js"></script>
+    <!--<script type="text/javascript" src="http://g.fligtar.com/jquery.js"></script>-->
     <?php wp_footer(); ?>
 
     <?php if ( is_singular() ): ?>
