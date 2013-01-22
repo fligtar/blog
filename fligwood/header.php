@@ -24,7 +24,7 @@
 <body<?php if (is_page(16)) { echo ' class="about-page"'; } ?>>
     <header id="header">
         <h1><a href="<?php echo get_option('home'); ?>/"><span>&middot;</span>FLIGTAR<span>&middot;</span></a></h1>
-        <h2><a href="#" onclick="$(this).hide(); $('#about').fadeIn('slow'); return false;">about me</a></h2>
+        <h2><a href="#" onclick="jQuery(this).hide(); jQuery('#about').fadeIn('slow'); return false;">about me</a></h2>
     </header>
 
     <section id="about">
