@@ -125,7 +125,8 @@ a:hover {
 
 /* Header */
 #header {
-    width: 900px;
+    max-width: 900px;
+	min-width: 320px;
     margin: 0 auto;
     text-align: center;
 }
@@ -149,6 +150,12 @@ a:hover {
     -webkit-animation-timing-function: ease;
     -webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
+    animation-name: header;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    animation-play-state: running;
 }
 #header h1 a span {
     display: none;
@@ -168,6 +175,10 @@ a:hover {
     from { text-shadow: none; }
     to { text-shadow: 0 0 10px #2D79AB; }
 }
+@keyframes header {
+    from { text-shadow: none; }
+    to { text-shadow: 0 0 10px #2D79AB; }
+}
 #header h2 a {
     text-decoration: none;
     font-family: 'Franchise', helvetica, sans-serif;
@@ -181,7 +192,8 @@ a:hover {
 
 /* About */
 #about {
-    width: 880px;
+    max-width: 880px;
+	min-width: 260px;
     margin: 1em auto;
     color: #DDD;
     color: rgba(255, 255, 255, 0.9);
@@ -202,7 +214,7 @@ a:hover {
 }
 #about p {
     margin-left: 5.5em;
-    width: 710px;
+    max-width: 710px;
 }
 #about a {
     text-shadow: 1px 3px 0px #913FAB;
@@ -246,7 +258,8 @@ a:hover {
 
 /* Content */
 #content {
-    width: 950px;
+    max-width: 950px;
+	min-width: 320px;
     margin: 0 auto;
 }
 #content h1.pagetitle {
@@ -813,4 +826,28 @@ article .entry dl.pretty dd {
 
 .rssonly {
     display: none;
+}
+
+
+/************************
+   MOBILE/RESPONSIVE
+************************/
+@media (max-width: 500px) {
+	#header h1 a {
+		-moz-animation: none;
+		-webkit-animation: none;
+		animation: none;
+		text-shadow: 0 0 10px #2D79AB;
+	}
+	#header h1 a:hover span {
+	    display: none;
+	}
+	#about {
+	    background: #111 url(images/headshot.jpg) no-repeat 50% 1em;
+	    background: rgba(0, 0, 0, 0.5) url(images/headshot.jpg) no-repeat 50% 1em;
+	}
+	#about p {
+	    margin-top: 3.75em;
+		margin-left: 0;
+	}
 }
