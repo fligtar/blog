@@ -30,7 +30,7 @@
 
     <section id="about">
         <img src="<?php bloginfo('template_url'); ?>/images/headshot.jpg" alt=""/>
-        <p><a href="http://www.twitter.com/fligtar" class="twitter">Justin Scott</a> has an undiagnosed addiction to <a href="http://en.wikipedia.org/wiki/Cha_siu_baau">steamed pork buns</a><br/> and works on webby stuff at <a href="http://www.mozilla.org" class="mozilla">Mozilla</a>. <a href="http://about.me/fligtar" class="more">more <b>&raquo;</b></a></p>
+        <p><a href="http://www.twitter.com/fligtar" class="twitter">Justin Scott</a> has an undiagnosed addiction to <a href="http://en.wikipedia.org/wiki/Cha_siu_baau">steamed pork buns</a><br/> and founded <a href="http://www.nextbib.com" class="twitter">NextBib</a>. (formerly at <a href="http://www.mozilla.org" class="mozilla">Mozilla</a>) <a href="http://about.me/fligtar" class="more">more <b>&raquo;</b></a></p>
     </section>
 
     <section id="content">
