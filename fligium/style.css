@@ -20,12 +20,12 @@ Author: Justin Scott
 }
 @font-face {
     font-family: 'bornregular';
-    src: url('born-webfont.eot');
-    src: url('born-webfont.eot?#iefix') format('embedded-opentype'),
-         url('born-webfont.woff2') format('woff2'),
-         url('born-webfont.woff') format('woff'),
-         url('born-webfont.ttf') format('truetype'),
-         url('born-webfont.svg#bornregular') format('svg');
+    src: url('fonts/born-webfont.eot');
+    src: url('fonts/born-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/born-webfont.woff2') format('woff2'),
+         url('fonts/born-webfont.woff') format('woff'),
+         url('fonts/born-webfont.ttf') format('truetype'),
+         url('fonts/born-webfont.svg#bornregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
