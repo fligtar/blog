@@ -13,9 +13,19 @@ $post_num = 1;
 
 	<?php if (true || $post_num <= $expanded_posts): ?>
 
-		<article class="post no-bg-yet<?php if ($post_num == 1) { echo " header-post"; }?>" id="post-<?php the_ID(); ?>">
-			<header>
-			  <div class="overlay">
+		<?php
+		$custom_fields = get_post_custom($post->ID);
+		$bg_position = $custom_fields['bg_position'];
+		$bg_color = $custom_fields['bg_color'];
+		?>
+
+		<article id="post-<?php the_ID(); ?>" class="post <?php if ($post_num == 1) { echo " header-post"; }?><?php echo has_post_thumbnail() ? "" : " no-bg-yet"; ?>">
+		  <?php if (has_post_thumbnail()): ?>
+		  <header style="background-image: url(<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0]; ?>); background-position: 50% <?php echo (!empty($bg_position[0])) ? $bg_position[0] : "40%" ?>;">
+		  <?php else: ?>
+		  <header>
+		  <?php endif; ?>
+		    <div class="overlay<?php echo (!empty($bg_color[0])) ? " bg-{$bg_color[0]}" : ""?>">
 			    <div class="container">
 			    	<hgroup>
 			      	<h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>

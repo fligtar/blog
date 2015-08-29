@@ -2,9 +2,19 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<article class="post header-post no-bg-yet" id="post-<?php the_ID(); ?>">
+<?php
+$custom_fields = get_post_custom($post->ID);
+$bg_position = $custom_fields['bg_position'];
+$bg_color = $custom_fields['bg_color'];
+?>
+
+<article id="post-<?php the_ID(); ?>" class="post header-post<?php echo has_post_thumbnail() ? "" : " no-bg-yet"; ?>">
+  <?php if (has_post_thumbnail()): ?>
+  <header style="background-image: url(<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0]; ?>); background-position: 50% <?php echo (!empty($bg_position[0])) ? $bg_position[0] : "40%" ?>;">
+  <?php else: ?>
   <header>
-    <div class="overlay">
+  <?php endif; ?>
+    <div class="overlay<?php echo (!empty($bg_color[0])) ? " bg-{$bg_color[0]}" : ""?>">
       <div class="container">
         <hgroup>
           <h1><?php the_title(); ?></h1>
