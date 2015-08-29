@@ -322,11 +322,10 @@ a.mini-post time {
     white-space: pre;
 }
 .post .content .entry blockquote {
-    background-color: #CCC;
-    background-color: rgba(255, 255, 255, 0.5);
     color: #666;
-    margin: 0 2em;
+    margin: 60px 0;
     padding: 1px 1em;
+    font-size: inherit;
 }
 .post .content .entry blockquote.quote:before {
     display: block;
@@ -336,25 +335,21 @@ a.mini-post time {
     line-height: 0;
     height: 0;
     width: 0;
-    color: #CCC;
-    font-family: georgia, serif;
+    color: #009EC3;
     font-size: 600%;
+    font-style: normal;
     content: '\201C';
 }
 .post .content .entry blockquote.quote {
-    background-color: #CCC;
-    background-color: rgba(255, 255, 255, 0.5);
     color: #666;
     margin: 0 2em;
     padding: 1px 1em;
     font-style: italic;
-    font-family: georgia;
 }
 .post .content .entry blockquote.quote cite {
     display: block;
-    font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
-    font-size: 0.85em;
     text-align: right;
 }
 .post .content .entry blockquote.quote cite time {
@@ -367,7 +362,7 @@ a.mini-post time {
 }
 
 .post .content .entry th {
-    font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     text-align: center;
     border-left: 1px solid #CCC;
@@ -414,7 +409,7 @@ a.mini-post time {
 }
 .post .content .entry dl.pretty dt {
     margin-top: 1em;
-    font-family: 'AurulentSans', 'Helvetica Neue', helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     font-size: 1.1em;
 }
