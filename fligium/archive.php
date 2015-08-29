@@ -14,11 +14,14 @@ $post_num = 1;
 		$custom_fields = get_post_custom($post->ID);
 		$bg_position = $custom_fields['bg_position'];
 		$bg_color = $custom_fields['bg_color'];
+		if (has_post_thumbnail()) {
+			$custom_bg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+		}
 		?>
 
 		<article id="post-<?php the_ID(); ?>" class="post <?php if ($post_num == 1) { echo " header-post"; }?><?php echo has_post_thumbnail() ? "" : " no-bg-yet"; ?>">
 		  <?php if (has_post_thumbnail()): ?>
-		  <header style="background-image: url(<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0]; ?>); background-position: 50% <?php echo (!empty($bg_position[0])) ? $bg_position[0] : "40%" ?>;">
+		  <header style="background-image: url(<?php echo $custom_bg[0]; ?>); background-position: 50% <?php echo (!empty($bg_position[0])) ? $bg_position[0] : "40%" ?>;">
 		  <?php else: ?>
 		  <header>
 		  <?php endif; ?>
